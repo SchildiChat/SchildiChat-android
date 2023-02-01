@@ -85,9 +85,14 @@
             android:name="com.google.android.gms.car.application"
             android:resource="@xml/automotive_app_desc" />
 
+        <meta-data
+            android:name="android.allow_multiple_resumed_activities"
+            android:value="true" />
+
         <activity
             android:name=".features.MainActivity"
-            android:theme="@style/AppTheme.Launcher.SC" />
+            android:theme="@style/AppTheme.Launcher.SC"
+            android:resizeableActivity="true"/>
 
         <activity android:name=".features.home.HomeActivity" />
 

@@ -177,6 +177,14 @@ class DefaultNavigator @Inject constructor(
 
         val args = TimelineArgs(roomId = roomId, eventId = eventId, isInviteAlreadyAccepted = isInviteAlreadyAccepted, openAtFirstUnread = openAtFirstUnread, openAnonymously = openAnonymously)
         val intent = RoomDetailActivity.newIntent(context, args, false)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N && vectorPreferences.isTabletModeEnabled()) {
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            if (vectorPreferences.isMultiChatEnabled()){
+                intent.flags = intent.flags or Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+            } else {
+                intent.flags = intent.flags or Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            }
+        }
         startActivity(context, intent, buildTask)
     }
 

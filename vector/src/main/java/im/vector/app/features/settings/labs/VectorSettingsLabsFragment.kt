@@ -121,14 +121,30 @@ class VectorSettingsLabsFragment :
             pref.isVisible = Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && vectorFeatures.isVoiceBroadcastEnabled()
         }
 
+        findPreference<VectorSwitchPreference>(VectorPreferences.SETTINGS_LABS_ENABLE_TABLET_MODE)?.let { pref ->
+            pref.isVisible = Build.VERSION.SDK_INT >= Build.VERSION_CODES.N
+            pref.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+                onTabletModePreferenceClicked()
+                true
+            }
+        }
+
         configureUnreadNotificationsAsTabPreference()
         configureEnableClientInfoRecordingPreference()
+        configureMultiChatPreference()
     }
 
     private fun configureUnreadNotificationsAsTabPreference() {
         findPreference<VectorSwitchPreference>(VectorPreferences.SETTINGS_LABS_UNREAD_NOTIFICATIONS_AS_TAB)?.let { pref ->
             pref.isVisible = !vectorFeatures.isNewAppLayoutFeatureEnabled()
             pref.isEnabled = !vectorPreferences.isNewAppLayoutEnabled()
+        }
+    }
+
+    private fun configureMultiChatPreference() {
+        findPreference<VectorSwitchPreference>(VectorPreferences.SETTINGS_LABS_ENABLE_MULTICHAT)?.let { pref ->
+            pref.isVisible = Build.VERSION.SDK_INT >= Build.VERSION_CODES.N
+            pref.isEnabled = vectorPreferences.isTabletModeEnabled()
         }
     }
 
@@ -178,6 +194,10 @@ class VectorSettingsLabsFragment :
      */
     private fun onNewLayoutPreferenceClicked() {
         configureUnreadNotificationsAsTabPreference()
+    }
+
+    private fun onTabletModePreferenceClicked() {
+        configureMultiChatPreference()
     }
 
     private fun configureEnableClientInfoRecordingPreference() {

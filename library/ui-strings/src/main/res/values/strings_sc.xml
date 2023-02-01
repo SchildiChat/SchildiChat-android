@@ -216,4 +216,9 @@
     <string name="settings_initial_sync">Initial sync</string>
     <string name="settings_initial_sync_summary">Clear cache and reload from server</string>
 
+    <string name="labs_enable_tablet_mode_title">Enable tablet mode (split screen)</string>
+    <string name="labs_enable_tablet_mode_summary">Allow Chats to be opened in split window.</string>
+    <string name="labs_enable_multichat_title">Enable multiwindow chats</string>
+    <string name="labs_enable_multichat_summary">Allow Multiple Chats to be opened in split windows (need tablet mode enabled).</string>
+
 </resources>

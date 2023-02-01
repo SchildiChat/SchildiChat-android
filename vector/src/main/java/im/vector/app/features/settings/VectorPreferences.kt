@@ -289,6 +289,9 @@ class VectorPreferences @Inject constructor(
         const val SETTINGS_UNVERIFIED_SESSIONS_ALERT_LAST_SHOWN_MILLIS = "SETTINGS_UNVERIFIED_SESSIONS_ALERT_LAST_SHOWN_MILLIS_"
         const val SETTINGS_NEW_LOGIN_ALERT_SHOWN_FOR_DEVICE = "SETTINGS_NEW_LOGIN_ALERT_SHOWN_FOR_DEVICE_"
 
+        const val SETTINGS_LABS_ENABLE_TABLET_MODE = "SETTINGS_LABS_ENABLE_TABLET_MODE"
+        const val SETTINGS_LABS_ENABLE_MULTICHAT = "SETTINGS_LABS_ENABLE_MULTICHAT"
+
         // Possible values for TAKE_PHOTO_VIDEO_MODE
         const val TAKE_PHOTO_VIDEO_MODE_ALWAYS_ASK = 0
         const val TAKE_PHOTO_VIDEO_MODE_PHOTO = 1
@@ -1557,5 +1560,14 @@ class VectorPreferences @Inject constructor(
         defaultPrefs.edit {
             putBoolean(SETTINGS_NEW_LOGIN_ALERT_SHOWN_FOR_DEVICE + deviceId, true)
         }
+    }
+
+    fun isTabletModeEnabled(): Boolean {
+        return defaultPrefs.getBoolean(SETTINGS_LABS_ENABLE_TABLET_MODE, false)
+    }
+
+
+    fun isMultiChatEnabled(): Boolean {
+        return defaultPrefs.getBoolean(SETTINGS_LABS_ENABLE_MULTICHAT, false)
     }
 }
