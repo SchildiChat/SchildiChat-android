@@ -32,17 +32,29 @@ class NotifiableEventProcessor @Inject constructor(
                             .also { Timber.d("notification message removed due to being read") }
                     else -> KEEP
                 }
+                is NotifiableJitsiEvent -> {
+                    if (it.isReceived != true) {
+                        KEEP
+                    } else {
+                        REMOVE
+                    }
+                }
                 is SimpleNotifiableEvent -> when (it.type) {
                     EventType.REDACTION -> REMOVE
                     else -> KEEP
                 }
             }
-            ProcessedEvent(type, it)
+
+            val updatedEvent = if (it is NotifiableJitsiEvent) it.updateReceivedStatus() else it
+            ProcessedEvent(type, updatedEvent)
         }
 
         val removedEventsDiff = renderedEvents.filter { renderedEvent ->
             queuedEvents.none { it.eventId == renderedEvent.event.eventId }
-        }.map { ProcessedEvent(REMOVE, it.event) }
+        }.map {
+            val updatedEvent = if (it.event is NotifiableJitsiEvent) it.event.updateReceivedStatus() else it.event
+            ProcessedEvent(REMOVE, updatedEvent)
+        }
 
         return removedEventsDiff + processedEvents
     }

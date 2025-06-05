@@ -33,6 +33,7 @@ import im.vector.app.features.home.room.detail.RoomDetailActivity
 import im.vector.app.features.home.room.threads.ThreadsActivity
 import im.vector.app.features.location.live.map.LiveLocationMapViewActivity
 import im.vector.app.features.notifications.NotificationDrawerManager
+import im.vector.app.features.notifications.NotificationUtils
 import im.vector.app.features.pin.UnlockedActivity
 import im.vector.app.features.pin.lockscreen.crypto.LockScreenKeyRepository
 import im.vector.app.features.pin.lockscreen.pincode.PinCodeHelper
@@ -80,7 +81,9 @@ class MainActivity : VectorBaseActivity<ActivityMainBinding>(), UnlockedActivity
         private const val EXTRA_NEXT_INTENT = "EXTRA_NEXT_INTENT"
         private const val EXTRA_INIT_SESSION = "EXTRA_INIT_SESSION"
         private const val EXTRA_ROOM_ID = "EXTRA_ROOM_ID"
+        private const val EXTRA_CALL_ID = "EXTRA_CALL_ID"
         private const val ACTION_ROOM_DETAILS_FROM_SHORTCUT = "ROOM_DETAILS_FROM_SHORTCUT"
+        private const val ACTION_ROOM_DETAILS_JITSI_CALL = "ROOM_DETAILS_JITSI_CALL"
 
         // Special action to clear cache and/or clear credentials
         fun restartApp(activity: Activity, args: MainActivityArgs) {
@@ -111,6 +114,20 @@ class MainActivity : VectorBaseActivity<ActivityMainBinding>(), UnlockedActivity
             }
         }
 
+        fun getCallIntent(
+                context: Context,
+                roomId: String,
+                callId: String,
+        ): Intent {
+            return Intent(context, MainActivity::class.java).apply {
+                action = ACTION_ROOM_DETAILS_JITSI_CALL
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+
+                putExtra(EXTRA_ROOM_ID, roomId)
+                putExtra(EXTRA_CALL_ID, callId)
+            }
+        }
+
         val allowList = listOf(
                 HomeActivity::class.java.name,
                 MainActivity::class.java.name,
@@ -129,6 +146,7 @@ class MainActivity : VectorBaseActivity<ActivityMainBinding>(), UnlockedActivity
     private lateinit var args: MainActivityArgs
 
     @Inject lateinit var notificationDrawerManager: NotificationDrawerManager
+    @Inject lateinit var notificationUtils: NotificationUtils
     @Inject lateinit var uiStateRepository: UiStateRepository
     @Inject lateinit var shortcutsHandler: ShortcutsHandler
     @Inject lateinit var pinCodeHelper: PinCodeHelper
@@ -196,6 +214,17 @@ class MainActivity : VectorBaseActivity<ActivityMainBinding>(), UnlockedActivity
             setResult(RESULT_OK)
             finish()
         } else if (intent.action == ACTION_ROOM_DETAILS_FROM_SHORTCUT) {
+            startSyncing()
+            val roomId = intent.getStringExtra(EXTRA_ROOM_ID)
+            if (roomId?.isNotEmpty() == true) {
+                navigator.openRoom(this, roomId, trigger = ViewRoom.Trigger.Shortcut)
+            }
+            finish()
+        } else if (intent.action == ACTION_ROOM_DETAILS_JITSI_CALL) {
+            val callId = intent.getStringExtra(EXTRA_CALL_ID).orEmpty()
+
+            notificationUtils.cancelNotificationMessage(callId, NotificationDrawerManager.JITSI_CALL_NOTIFICATION_ID)
+
             startSyncing()
             val roomId = intent.getStringExtra(EXTRA_ROOM_ID)
             if (roomId?.isNotEmpty() == true) {

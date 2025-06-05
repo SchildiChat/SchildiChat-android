@@ -18,8 +18,12 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.media.AudioAttributes
+import android.media.RingtoneManager
 import android.net.Uri
 import android.os.Build
+import android.os.PowerManager
+import android.provider.Settings
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
@@ -96,7 +100,7 @@ class NotificationUtils @Inject constructor(
         private const val NOISY_NOTIFICATION_CHANNEL_ID = "DEFAULT_NOISY_NOTIFICATION_CHANNEL_ID"
 
         const val SILENT_NOTIFICATION_CHANNEL_ID = "DEFAULT_SILENT_NOTIFICATION_CHANNEL_ID_V2"
-        private const val CALL_NOTIFICATION_CHANNEL_ID = "CALL_NOTIFICATION_CHANNEL_ID_V2"
+        const val CALL_NOTIFICATION_CHANNEL_ID = "CALL_NOTIFICATION_CHANNEL_ID_V2"
 
         @ChecksSdkIntAtLeast(api = Build.VERSION_CODES.O)
         fun supportNotificationChannels() = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
@@ -197,9 +201,14 @@ class NotificationUtils @Inject constructor(
         )
                 .apply {
                     description = stringProvider.getString(CommonStrings.call)
-                    setSound(null, null)
+                    enableVibration(true)
                     enableLights(true)
                     lightColor = accentColor
+                    val audioAttributes = AudioAttributes.Builder()
+                            .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                            .setUsage(AudioAttributes.USAGE_NOTIFICATION)
+                            .build()
+                    setSound(Settings.System.DEFAULT_RINGTONE_URI, audioAttributes)
                 })
     }
 
@@ -351,7 +360,7 @@ class NotificationUtils @Inject constructor(
         )
         if (fromBg) {
             // Compat: Display the incoming call notification on the lock screen
-            builder.priority = NotificationCompat.PRIORITY_HIGH
+            builder.priority = NotificationCompat.PRIORITY_MAX
             builder.setFullScreenIntent(contentPendingIntent, true)
         }
         return builder.build()
@@ -453,7 +462,7 @@ class NotificationUtils @Inject constructor(
         return builder.build()
     }
 
-    private fun buildRejectCallPendingIntent(callId: String): PendingIntent {
+    fun buildRejectCallPendingIntent(callId: String): PendingIntent {
         val rejectCallActionReceiver = Intent(context, CallHeadsUpActionReceiver::class.java).apply {
             putExtra(CallHeadsUpActionReceiver.EXTRA_CALL_ID, callId)
             putExtra(CallHeadsUpActionReceiver.EXTRA_CALL_ACTION_KEY, CallHeadsUpActionReceiver.CALL_ACTION_REJECT)
@@ -1077,14 +1086,14 @@ class NotificationUtils @Inject constructor(
                 setting == NotificationManager.INTERRUPTION_FILTER_ALARMS
     }
 
-    private fun getActionText(@StringRes stringRes: Int, @AttrRes colorRes: Int): Spannable {
+    fun getActionText(@StringRes stringRes: Int, @AttrRes colorRes: Int): Spannable {
         return SpannableString(context.getText(stringRes)).apply {
             val foregroundColorSpan = ForegroundColorSpan(ThemeUtils.getColor(context, colorRes))
             setSpan(foregroundColorSpan, 0, length, 0)
         }
     }
 
-    private fun ensureTitleNotEmpty(title: String?): CharSequence {
+    fun ensureTitleNotEmpty(title: String?): CharSequence {
         if (title.isNullOrBlank()) {
             return buildMeta.applicationName
         }

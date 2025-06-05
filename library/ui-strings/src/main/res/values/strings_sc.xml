@@ -239,6 +239,8 @@
     <string name="settings_call_ringtone_use_default_stun_summary">Will use %s as assist when your homeserver does not offer one (your IP address will be seen by the stun server during a call
 )</string>
 
+    <string name="labs_enable_group_call_notifications_summary">Ring for group calls</string>
+    <string name="call_notification_open_app_action">Open App</string>
     <string name="settings_integrations_scalar_warning">⚠️ This setting by default (unless overridden by your homeserver\'s configuration) enables access to \"scalar\", Element\'s integration manager which is unfortunately proprietary, i.e. its source code is not open and can not be checked by the public or the SchildiChat developers.</string>
 
 </resources>

@@ -71,7 +71,7 @@ class RoomGroupMessageCreator @Inject constructor(
                         largeIcon = largeBitmap,
                         lastMessageTimestamp,
                         userDisplayName,
-                        tickerText
+                        tickerText,
                 ),
                 meta
         )

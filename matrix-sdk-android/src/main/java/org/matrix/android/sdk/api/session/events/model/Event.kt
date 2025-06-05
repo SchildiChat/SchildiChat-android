@@ -23,7 +23,9 @@ import org.matrix.android.sdk.api.extensions.tryOrNull
 import org.matrix.android.sdk.api.failure.MatrixError
 import org.matrix.android.sdk.api.session.crypto.MXCryptoError
 import org.matrix.android.sdk.api.session.crypto.model.OlmDecryptionResult
+import org.matrix.android.sdk.api.session.events.model.EventType.IS_JITSI_CALL
 import org.matrix.android.sdk.api.session.events.model.content.EncryptedEventContent
+import org.matrix.android.sdk.api.session.room.model.JitsiEventContent
 import org.matrix.android.sdk.api.session.room.model.Membership
 import org.matrix.android.sdk.api.session.room.model.RoomMemberContent
 import org.matrix.android.sdk.api.session.room.model.message.MessageContent
@@ -497,6 +499,9 @@ fun Event.isInvitation(): Boolean = type == EventType.STATE_ROOM_MEMBER &&
 fun Event.getPollContent(): MessagePollContent? {
     return getClearContent().toModel<MessagePollContent>()
 }
+
+fun Event.isJitsiEvent() = content?.toModel<JitsiEventContent>()?.type?.lowercase() == IS_JITSI_CALL &&
+        content.toModel<JitsiEventContent>()?.name?.lowercase() == IS_JITSI_CALL
 
 fun Event.supportsNotification() =
         this.getClearType() in EventType.MESSAGE +

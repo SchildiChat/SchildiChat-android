@@ -111,6 +111,9 @@ object EventType {
     // Relation Events
     const val REACTION = "m.reaction"
 
+    // Jitsi call
+    const val IS_JITSI_CALL = "jitsi"
+
     // Poll
     val POLL_START = StableUnstableId(stable = "m.poll.start", unstable = "org.matrix.msc3381.poll.start")
     val POLL_RESPONSE = StableUnstableId(stable = "m.poll.response", unstable = "org.matrix.msc3381.poll.response")

@@ -8,6 +8,7 @@
 package im.vector.app.features.notifications
 
 import im.vector.app.features.notifications.ProcessedEvent.Type
+import im.vector.app.test.fakes.FakeJitsiNotificationUtils
 import im.vector.app.test.fakes.FakeNotificationUtils
 import im.vector.app.test.fakes.FakeRoomGroupMessageCreator
 import im.vector.app.test.fakes.FakeSummaryGroupMessageCreator
@@ -31,11 +32,13 @@ class NotificationFactoryTest {
     private val notificationUtils = FakeNotificationUtils()
     private val roomGroupMessageCreator = FakeRoomGroupMessageCreator()
     private val summaryGroupMessageCreator = FakeSummaryGroupMessageCreator()
+    private val jitsiNotificationUtils = FakeJitsiNotificationUtils()
 
     private val notificationFactory = NotificationFactory(
             notificationUtils.instance,
             roomGroupMessageCreator.instance,
-            summaryGroupMessageCreator.instance
+            summaryGroupMessageCreator.instance,
+            jitsiNotificationUtils.instance,
     )
 
     @Test

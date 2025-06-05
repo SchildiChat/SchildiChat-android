@@ -11,6 +11,7 @@ package im.vector.app.core.services
 import android.content.Context
 import android.content.Intent
 import android.os.Binder
+import android.os.PowerManager
 import android.support.v4.media.session.MediaSessionCompat
 import android.view.KeyEvent
 import androidx.core.app.NotificationManagerCompat
@@ -75,6 +76,8 @@ class CallAndroidService : VectorAndroidService() {
         }
     }
 
+    private var wakeLock: PowerManager.WakeLock? = null
+
     override fun onCreate() {
         super.onCreate()
         notificationManager = NotificationManagerCompat.from(this)
@@ -87,6 +90,9 @@ class CallAndroidService : VectorAndroidService() {
         callRingPlayerIncoming?.stop()
         callRingPlayerOutgoing?.stop()
         mediaSession?.release()
+        if (wakeLock?.isHeld == true) {
+            wakeLock?.release()
+        }
         mediaSession = null
     }
 
@@ -142,6 +148,11 @@ class CallAndroidService : VectorAndroidService() {
      */
     private fun displayIncomingCallNotification(intent: Intent) {
         Timber.tag(loggerTag.value).v("displayIncomingCallNotification $intent")
+
+        val powerManager = getSystemService(Context.POWER_SERVICE) as PowerManager
+        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "SchildiChat-android:CallWakeLock")
+        wakeLock!!.acquire(60 * 1000L)
+
         val callId = intent.getStringExtra(EXTRA_CALL_ID) ?: ""
         val call = callManager.getCallById(callId) ?: return Unit.also {
             handleUnexpectedState(callId)
@@ -179,6 +190,7 @@ class CallAndroidService : VectorAndroidService() {
             notificationManager.notify(callId.hashCode(), notification)
         }
         knownCalls[callId] = callInformation
+        wakeLock?.release()
     }
 
     private fun handleCallTerminated(intent: Intent) {
