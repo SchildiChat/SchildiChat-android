@@ -160,18 +160,20 @@
         style="@style/Widget.Vector.TextView.Body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
+        android:background="@android:color/transparent"
         android:drawablePadding="9dp"
+        android:enabled="false"
         android:gravity="center_vertical"
         android:minWidth="120dp"
         android:minHeight="52dp"
         android:padding="16dp"
         android:text="@string/logout"
+        android:textColor="?android:attr/textColorHint"
         app:drawableStartCompat="@drawable/ic_signout_18dp"
-        app:drawableTint="?vctr_content_secondary"
+        app:drawableTint="?android:attr/textColorHint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tint="?vctr_content_secondary"
+        app:tint="?android:attr/textColorHint"
         tools:ignore="MissingPrefix" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

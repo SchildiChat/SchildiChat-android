@@ -79,11 +79,6 @@ class HomeDrawerFragment :
             sharedActionViewModel.post(HomeActivitySharedAction.CloseDrawer)
             navigator.openSettings(requireActivity())
         }
-        // Sign out
-        views.homeDrawerHeaderSignoutView.debouncedClicks {
-            sharedActionViewModel.post(HomeActivitySharedAction.CloseDrawer)
-            SignOutUiWorker(requireActivity()).perform()
-        }
 
         views.homeDrawerQRCodeButton.debouncedClicks {
             UserCodeActivity.newIntent(requireContext(), sharedActionViewModel.session.myUserId).let {
