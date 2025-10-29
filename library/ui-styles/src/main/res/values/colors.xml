@@ -144,8 +144,8 @@
     <color name="vctr_live_location_dark">@color/palette_prune</color>
 
     <!-- Shield colors -->
-    <color name="shield_color_trust">#8BC34A</color>
-    <color name="shield_color_trust_background">#0F8BC34A</color>
+    <color name="shield_color_trust">#1E40AF</color>
+    <color name="shield_color_trust_background">#0F1E40AF</color>
     <color name="shield_color_black">#212121</color>
     <color name="shield_color_gray">#808080</color>
     <color name="shield_color_warning">#E53935</color>

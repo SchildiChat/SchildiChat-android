@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Accent colors -->
-    <color name="accent_sc">#8BC34A</color>
-    <color name="accent_sc_alpha25">#3F8BC34A</color>
-    <color name="accent_sc_alpha12">#1E8BC34A</color>
-    <color name="accent_sc_noalpha12">#edf4e6</color> <!-- same as accent_sc_alpha12 when displayed on #fafafa -->
-    <color name="accent_sc_dark">#689F38</color>
-    <color name="accent_sc_50">#F1F8E9</color>
-    <color name="accent_sc_100">#DCEDC8</color>
-    <color name="accent_sc_200">#C5E1A5</color>
-    <color name="accent_sc_300">#AED581</color>
-    <color name="accent_sc_900">#33691E</color>
+    <!-- Accent colors - Navy Blue -->
+    <color name="accent_sc">#1E40AF</color>
+    <color name="accent_sc_alpha25">#3F1E40AF</color>
+    <color name="accent_sc_alpha12">#1E1E40AF</color>
+    <color name="accent_sc_noalpha12">#e6ebf5</color> <!-- same as accent_sc_alpha12 when displayed on #fafafa -->
+    <color name="accent_sc_dark">#1E3A8A</color>
+    <color name="accent_sc_50">#EFF6FF</color>
+    <color name="accent_sc_100">#DBEAFE</color>
+    <color name="accent_sc_200">#BFDBFE</color>
+    <color name="accent_sc_300">#93C5FD</color>
+    <color name="accent_sc_900">#1E3A8A</color>
     <color name="accent_sc_pale">@color/accent_sc_300</color>
     <color name="direct_chat_ring_color_sc">@color/accent_sc_dark</color>
 
@@ -68,8 +68,8 @@
     <color name="user_color_sc_pl_95">#FF5722</color>
     <color name="user_color_sc_pl_51">#03A9F4</color>
     <color name="user_color_sc_pl_50">#2196F3</color>
-    <color name="user_color_sc_pl_1">#CDDC39</color>
-    <color name="user_color_sc_pl_0">#8bc34a</color>
+    <color name="user_color_sc_pl_1">#60A5FA</color>
+    <color name="user_color_sc_pl_0">#1E40AF</color>
     <!--
     <color name="user_color_sc_pl_100">#F44336</color>
     <color name="user_color_sc_pl_95">#FF5722</color>
