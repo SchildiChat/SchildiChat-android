@@ -157,18 +157,16 @@ abstract class VectorBaseFragment<VB : ViewBinding> : Fragment(), MavericksView 
     }
 
     private fun setupMenu() {
+        // Keep MenuProvider for back/close button handling, but disable overflow menu items
         if (this !is VectorMenuProvider) return
         if (getMenuRes() == -1) return
         val menuHost: MenuHost = requireActivity()
         menuHost.addMenuProvider(
                 object : MenuProvider {
                     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                        menuInflater.inflate(getMenuRes(), menu)
-                        handlePostCreateMenu(menu)
                     }
 
                     override fun onPrepareMenu(menu: Menu) {
-                        handlePrepareMenu(menu)
                     }
 
                     override fun onMenuItemSelected(menuItem: MenuItem): Boolean {

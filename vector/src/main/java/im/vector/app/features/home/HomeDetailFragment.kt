@@ -562,10 +562,6 @@ class HomeDetailFragment :
         setupToolbar(views.groupToolbar)
                 .setTitle(null)
 
-        views.groupToolbarAvatarImageView.debouncedClicks {
-            sharedActionViewModel.post(HomeActivitySharedAction.OpenDrawer)
-        }
-
         views.homeToolbarContent.debouncedClicks {
             withState(viewModel) { viewState ->
                 viewState.selectedSpace?.let {

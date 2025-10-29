@@ -271,19 +271,14 @@ abstract class VectorBaseActivity<VB : ViewBinding> : AppCompatActivity(), Maver
     }
 
     private fun setupMenu() {
-        // Always add a MenuProvider to handle the back action from the Toolbar
+        // Keep MenuProvider for back/close button handling, but disable overflow menu items
         val vectorMenuProvider = this as? VectorMenuProvider
         addMenuProvider(
                 object : MenuProvider {
                     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                        vectorMenuProvider?.let {
-                            menuInflater.inflate(it.getMenuRes(), menu)
-                            it.handlePostCreateMenu(menu)
-                        }
                     }
 
                     override fun onPrepareMenu(menu: Menu) {
-                        vectorMenuProvider?.handlePrepareMenu(menu)
                     }
 
                     override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
