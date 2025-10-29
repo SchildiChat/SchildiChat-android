@@ -24,7 +24,7 @@
     <!-- It is the push gateway for UnifiedPush -->
     <string name="default_push_gateway_http_url" translatable="false">https://up.schildi.chat/_matrix/push/v1/notify</string>
     <!-- Note: pusher_app_id cannot exceed 64 chars -->
-    <string name="pusher_app_id" translatable="false">de.spiritcroc.riotx</string>
+    <string name="pusher_app_id" translatable="false">com.kela.chat</string>
 
     <!-- preferred jitsi domain -->
     <string name="preferred_jitsi_domain" translatable="false">meet.element.io</string>

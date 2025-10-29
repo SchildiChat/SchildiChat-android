@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:326900467720:android:675ae0d20ab67aa73b29bd",
         "android_client_info": {
-          "package_name": "de.spiritcroc.riotx.debug"
+          "package_name": "com.kela.chat.debug"
         }
       },
       "oauth_client": [
