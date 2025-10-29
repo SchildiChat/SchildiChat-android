@@ -52,7 +52,7 @@ object Config {
     /**
      * The onboarding flow.
      */
-    val ONBOARDING_VARIANT = OnboardingVariant.LEGACY
+    val ONBOARDING_VARIANT = OnboardingVariant.FTUE_AUTH
 
     /**
      * If set, MSC3086 asserted identity messages sent on VoIP calls will cause the call to appear in the room corresponding to the asserted identity.
