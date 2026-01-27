@@ -188,4 +188,6 @@
     <string name="settings_space_back_navigation_summary">Pressione voltar para mostrar o espaço anteriormente selecionado</string>
     <string name="settings_enable_member_name_click_summary">Clique em um nome de usuário para mencioná-lo</string>
     <string name="recommend_unified_push_description">O serviço de sincronização em segundo plano não funciona de forma confiável e causa problemas em versões recentes do Android. Por favor, utilize UnifiedPush ou, caso tenha o Google Play Services instalado, instale uma variante do SchildiChat que suporte FCM.</string>
+    <string name="settings_space_pager_prefer_space_1">Preferir root space menor</string>
+    <string name="settings_sc_dbg_show_duplicate_read_receipts">Recibos de leitura duplicados</string>
 </resources>
