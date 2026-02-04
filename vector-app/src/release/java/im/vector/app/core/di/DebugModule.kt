@@ -14,10 +14,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import im.vector.app.core.debug.DebugNavigator
 import im.vector.app.core.debug.DebugReceiver
-import im.vector.app.core.debug.FlipperProxy
 import im.vector.app.core.debug.LeakDetector
-import okhttp3.Interceptor
-import org.matrix.android.sdk.api.Matrix
 
 @InstallIn(SingletonComponent::class)
 @Module
@@ -39,15 +36,6 @@ object DebugModule {
         override fun unregister(context: Context) {
             // no op
         }
-    }
-
-    @Provides
-    fun providesFlipperProxy() = object : FlipperProxy {
-        override fun init(matrix: Matrix) {
-            // no op
-        }
-
-        override fun networkInterceptor(): Interceptor? = null
     }
 
     @Provides

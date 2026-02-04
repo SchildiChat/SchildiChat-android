@@ -20,7 +20,7 @@ data class SessionOverviewViewState(
         val isLoading: Boolean = false,
         val notificationsStatus: NotificationsStatus = NotificationsStatus.NOT_SUPPORTED,
         val isShowingIpAddress: Boolean = false,
-        val externalAccountManagementUrl: String? = null,
+        val externalDeleteDeviceUrl: String? = null,
 ) : MavericksState {
     constructor(args: SessionOverviewArgs) : this(
             deviceId = args.deviceId

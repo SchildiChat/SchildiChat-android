@@ -35,14 +35,12 @@ import com.airbnb.mvrx.Mavericks
 import com.facebook.stetho.Stetho
 import com.gabrielittner.threetenbp.LazyThreeTen
 import com.github.rubensousa.gravitysnaphelper.GravitySnapHelper
-import com.mapbox.mapboxsdk.Mapbox
 import com.vanniktech.emoji.EmojiManager
 import com.vanniktech.emoji.google.GoogleEmojiProvider
 import dagger.hilt.android.HiltAndroidApp
 import de.spiritcroc.matrixsdk.StaticScSdkHelper
 import de.spiritcroc.matrixsdk.util.DbgUtil
 import im.vector.app.config.Config
-import im.vector.app.core.debug.FlipperProxy
 import im.vector.app.core.debug.LeakDetector
 import im.vector.app.core.di.ActiveSessionHolder
 import im.vector.app.core.pushers.FcmHelper
@@ -66,6 +64,7 @@ import im.vector.app.features.themes.ThemeUtils
 import im.vector.app.features.version.VersionProvider
 import im.vector.application.R
 import org.jitsi.meet.sdk.log.JitsiMeetDefaultLogHandler
+import org.maplibre.android.MapLibre
 import org.matrix.android.sdk.api.Matrix
 import org.matrix.android.sdk.api.auth.AuthenticationService
 import timber.log.Timber
@@ -101,7 +100,6 @@ class VectorApplication :
     @Inject lateinit var decryptionFailureTracker: DecryptionFailureTracker
     @Inject lateinit var vectorFileLogger: VectorFileLogger
     @Inject lateinit var vectorAnalytics: VectorAnalytics
-    @Inject lateinit var flipperProxy: FlipperProxy
     @Inject lateinit var matrix: Matrix
     @Inject lateinit var fcmHelper: FcmHelper
     @Inject lateinit var buildMeta: BuildMeta
@@ -125,7 +123,6 @@ class VectorApplication :
         enableStrictModeIfNeeded()
         super.onCreate()
         appContext = this
-        flipperProxy.init(matrix)
         vectorAnalytics.init()
         vectorAnalytics.updateSuperProperties(
                 SuperProperties(
@@ -231,7 +228,7 @@ class VectorApplication :
         EmojiManager.install(GoogleEmojiProvider())
 
         // Initialize Mapbox before inflating mapViews
-        Mapbox.getInstance(this)
+        MapLibre.getInstance(this)
 
         initMemoryLeakAnalysis()
 

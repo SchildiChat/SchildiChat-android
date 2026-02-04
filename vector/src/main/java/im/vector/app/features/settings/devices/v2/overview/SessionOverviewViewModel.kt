@@ -66,16 +66,16 @@ class SessionOverviewViewModel @AssistedInject constructor(
         observeNotificationsStatus(initialState.deviceId)
         refreshIpAddressVisibility()
         observePreferences()
-        initExternalAccountManagementUrl()
+        initExternalDeleteDeviceUrl()
     }
 
-    private fun initExternalAccountManagementUrl() {
+    private fun initExternalDeleteDeviceUrl() {
         setState {
             copy(
-                    externalAccountManagementUrl = activeSessionHolder.getSafeActiveSession()
+                    externalDeleteDeviceUrl = activeSessionHolder.getSafeActiveSession()
                             ?.homeServerCapabilitiesService()
                             ?.getHomeServerCapabilities()
-                            ?.externalAccountManagementUrl
+                            ?.getLogoutDeviceURL(deviceId)
             )
         }
     }

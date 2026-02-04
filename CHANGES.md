@@ -1,3 +1,16 @@
+Changes in Element v1.6.50 (2026-02-04)
+=======================================
+
+Other changes
+-------------
+ - Update the default bug reporting URL. ([#9097](https://github.com/element-hq/element-android/issues/9097))
+ - Update OAuth-awareness to support the stable version of MSC3824. ([#9102](https://github.com/element-hq/element-android/issues/9102))
+ - Update realm plugin to 10.19.0 ([#9111](https://github.com/element-hq/element-android/issues/9116))
+ - Bump org.matrix.rustcomponents:crypto-android from 26.1.22 to 26.1.28 ([#9114](https://github.com/element-hq/element-android/issues/9114))
+ - Update sentry to version 8.31.0 ([#9115](https://github.com/element-hq/element-android/issues/9115))
+ - Update Maplibre dependency to version 11.6.1 ([#9116](https://github.com/element-hq/element-android/issues/9116))
+ - Remove flipper from the codebase. ([#9117](https://github.com/element-hq/element-android/issues/9117))
+
 Changes in Element v1.6.48 (2025-10-15)
 =======================================
 

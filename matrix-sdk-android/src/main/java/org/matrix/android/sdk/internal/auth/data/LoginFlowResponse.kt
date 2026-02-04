@@ -19,6 +19,7 @@ package org.matrix.android.sdk.internal.auth.data
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import org.matrix.android.sdk.api.auth.data.SsoIdentityProvider
+import org.matrix.android.sdk.api.extensions.orFalse
 
 @JsonClass(generateAdapter = true)
 internal data class LoginFlowResponse(
@@ -46,12 +47,20 @@ internal data class LoginFlow(
         val ssoIdentityProvider: List<SsoIdentityProvider>? = null,
 
         /**
-         * Whether this login flow is preferred for OIDC-aware clients.
+         * Whether this login flow is preferred for OAuth 2.0-aware clients like we are.
          *
          * See [MSC3824](https://github.com/matrix-org/matrix-spec-proposals/pull/3824)
          */
+        @Json(name = "oauth_aware_preferred")
+        val oauthAwarePreferred: Boolean? = null,
+
+        /**
+          * Unstable name from MSC3824.
+          *
+          */
+        @Deprecated("Use oauthAwarePreferred instead")
         @Json(name = "org.matrix.msc3824.delegated_oidc_compatibility")
-        val delegatedOidcCompatibility: Boolean? = null,
+        val unstableDelegatedOidcCompatibility: Boolean? = null,
 
         /**
          * Whether a login flow of type m.login.token could accept a token issued using /login/get_token.
@@ -60,4 +69,7 @@ internal data class LoginFlow(
          */
         @Json(name = "get_login_token")
         val getLoginToken: Boolean? = null
-)
+) {
+    @Suppress("DEPRECATION") val delegatedOidcCompatibility: Boolean
+        get() = this.oauthAwarePreferred.orFalse() || this.unstableDelegatedOidcCompatibility.orFalse()
+}

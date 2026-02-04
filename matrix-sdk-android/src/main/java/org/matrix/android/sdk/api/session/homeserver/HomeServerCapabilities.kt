@@ -82,12 +82,17 @@ data class HomeServerCapabilities(
         var canRedactRelatedEvents: Boolean = false,
 
         /**
-         * External account management url for use with MSC3824 delegated OIDC, provided in Wellknown.
+         * External account management url for use with OAuth API, provided by MSC4191 /auth_metadata discovery or in unstable Wellknown.
          */
         val externalAccountManagementUrl: String? = null,
 
         /**
-         * Authentication issuer for use with MSC3824 delegated OIDC, provided in Wellknown.
+         * External account management supported actions for use with OAuth API, provided by MSC4191 /auth_metadata discovery.
+         */
+        val externalAccountManagementSupportedActions: List<String>? = null,
+
+        /**
+         * Authentication issuer for use with MSC3824 delegated OIDC, provided by /auth_metadata discovery or in unstable Wellknown.
          */
         val authenticationIssuer: String? = null,
 
@@ -161,5 +166,27 @@ data class HomeServerCapabilities(
         const val MAX_UPLOAD_FILE_SIZE_UNKNOWN = -1L
         const val ROOM_CAP_KNOCK = "knock"
         const val ROOM_CAP_RESTRICTED = "restricted"
+    }
+
+    fun getLogoutDeviceURL(deviceId: String): String? {
+        if (externalAccountManagementUrl == null) {
+            return null
+        }
+
+        // default to the stable value:
+        var action = "org.matrix.device_delete"
+        externalAccountManagementSupportedActions?.also { actions ->
+            if (actions.contains("org.matrix.device_delete")) {
+                // server supports stable version so use it
+            } else if (actions.contains("org.matrix.session_end")) {
+                // earlier version of MSC4191:
+                action = "org.matrix.session_end"
+            } else if (actions.contains("session_end")) {
+                // previous unspecified version
+                action = "session_end"
+            }
+        }
+
+        return externalAccountManagementUrl.removeSuffix("/") + "?action=${action}&device_id=${deviceId}"
     }
 }

@@ -17,7 +17,6 @@ import androidx.lifecycle.lifecycleScope
 import com.airbnb.mvrx.args
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
-import com.mapbox.mapboxsdk.maps.MapView
 import dagger.hilt.android.AndroidEntryPoint
 import im.vector.app.R
 import im.vector.app.core.platform.VectorBaseFragment
@@ -35,6 +34,7 @@ import im.vector.app.features.location.UrlMapProvider
 import im.vector.app.features.location.showUserLocationNotAvailableErrorDialog
 import im.vector.lib.strings.CommonStrings
 import kotlinx.coroutines.launch
+import org.maplibre.android.maps.MapView
 import java.lang.ref.WeakReference
 import javax.inject.Inject
 

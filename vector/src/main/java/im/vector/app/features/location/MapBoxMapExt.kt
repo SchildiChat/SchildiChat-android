@@ -7,14 +7,14 @@
 
 package im.vector.app.features.location
 
-import com.mapbox.mapboxsdk.camera.CameraPosition
-import com.mapbox.mapboxsdk.camera.CameraUpdateFactory
-import com.mapbox.mapboxsdk.constants.MapboxConstants
-import com.mapbox.mapboxsdk.geometry.LatLng
-import com.mapbox.mapboxsdk.geometry.LatLngBounds
-import com.mapbox.mapboxsdk.maps.MapboxMap
+import org.maplibre.android.camera.CameraPosition
+import org.maplibre.android.camera.CameraUpdateFactory
+import org.maplibre.android.constants.MapLibreConstants
+import org.maplibre.android.geometry.LatLng
+import org.maplibre.android.geometry.LatLngBounds
+import org.maplibre.android.maps.MapLibreMap
 
-fun MapboxMap?.zoomToLocation(locationData: LocationData, preserveCurrentZoomLevel: Boolean = false) {
+fun MapLibreMap?.zoomToLocation(locationData: LocationData, preserveCurrentZoomLevel: Boolean = false) {
     val zoomLevel = if (preserveCurrentZoomLevel && this?.cameraPosition != null) {
         cameraPosition.zoom
     } else {
@@ -28,11 +28,11 @@ fun MapboxMap?.zoomToLocation(locationData: LocationData, preserveCurrentZoomLev
     this?.easeCamera(cameraUpdate)
 }
 
-fun MapboxMap?.zoomToBounds(latLngBounds: LatLngBounds) {
+fun MapLibreMap?.zoomToBounds(latLngBounds: LatLngBounds) {
     this?.getCameraForLatLngBounds(latLngBounds)?.let { camPosition ->
         // unZoom a little to avoid having pins exactly at the edges of the map
         cameraPosition = CameraPosition.Builder(camPosition)
-                .zoom((camPosition.zoom - 1).coerceAtLeast(MapboxConstants.MINIMUM_ZOOM.toDouble()))
+                .zoom((camPosition.zoom - 1).coerceAtLeast(MapLibreConstants.MINIMUM_ZOOM.toDouble()))
                 .build()
     }
 }

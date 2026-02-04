@@ -18,6 +18,7 @@ package org.matrix.android.sdk.internal.session.homeserver
 
 import com.zhuinden.monarchy.Monarchy
 import org.matrix.android.sdk.api.MatrixPatterns.getServerName
+import org.matrix.android.sdk.api.auth.data.AuthMetadata
 import org.matrix.android.sdk.api.auth.data.HomeServerConnectionConfig
 import org.matrix.android.sdk.api.auth.wellknown.WellknownResult
 import org.matrix.android.sdk.api.extensions.orFalse
@@ -66,7 +67,8 @@ internal class DefaultGetHomeServerCapabilitiesTask @Inject constructor(
         private val configExtractor: IntegrationManagerConfigExtractor,
         private val homeServerConnectionConfig: HomeServerConnectionConfig,
         @UserId
-        private val userId: String
+        private val userId: String,
+        private val authMetadataAPI: AuthMetadataAPI,
 ) : GetHomeServerCapabilitiesTask {
 
     override suspend fun execute(params: GetHomeServerCapabilitiesTask.Params) {
@@ -104,6 +106,12 @@ internal class DefaultGetHomeServerCapabilitiesTask @Inject constructor(
             }
         }.getOrNull()
 
+        val authMetadata = runCatching {
+            executeRequest(globalErrorReceiver = null) {
+                authMetadataAPI.getAuthMetadata()
+            }
+        }.getOrNull()
+
         // Domain may include a port (eg, matrix.org:8080)
         // Per https://spec.matrix.org/latest/client-server-api/#well-known-uri we should extract the hostname from the server name
         // So we take everything before the last : as the domain for the well-known task.
@@ -117,14 +125,15 @@ internal class DefaultGetHomeServerCapabilitiesTask @Inject constructor(
             )
         }.getOrNull()
 
-        insertInDb(capabilities, mediaConfig, versions, wellknownResult)
+        insertInDb(capabilities, mediaConfig, versions, wellknownResult, authMetadata)
     }
 
     private suspend fun insertInDb(
             getCapabilitiesResult: GetCapabilitiesResult?,
             getMediaConfigResult: GetMediaConfigResult?,
             getVersionResult: Versions?,
-            getWellknownResult: WellknownResult?
+            getWellknownResult: WellknownResult?,
+            authMetadata: AuthMetadata?,
     ) {
         monarchy.awaitTransaction { realm ->
             val homeServerCapabilitiesEntity = HomeServerCapabilitiesEntity.getOrCreate(realm)
@@ -174,9 +183,17 @@ internal class DefaultGetHomeServerCapabilitiesTask @Inject constructor(
                     Timber.v("Extracted integration config : $config")
                     realm.insertOrUpdate(config)
                 }
+                // Getting the OAuth 2.0 metadata from well-known was in unstable MSC:
                 homeServerCapabilitiesEntity.authenticationIssuer = getWellknownResult.wellKnown.unstableDelegatedAuthConfig?.issuer
                 homeServerCapabilitiesEntity.externalAccountManagementUrl = getWellknownResult.wellKnown.unstableDelegatedAuthConfig?.accountManagementUrl
                 homeServerCapabilitiesEntity.disableNetworkConstraint = getWellknownResult.wellKnown.disableNetworkConstraint
+            }
+
+            // If the server returns OAuth 2.0 metadata then prefer that over the well-known values:
+            if (authMetadata != null) {
+                homeServerCapabilitiesEntity.authenticationIssuer = authMetadata.issuer
+                homeServerCapabilitiesEntity.externalAccountManagementUrl = authMetadata.accountManagementUri
+                homeServerCapabilitiesEntity.externalAccountManagementSupportedActions = authMetadata.accountManagementActionsSupported?.joinToString(",")
             }
 
             homeServerCapabilitiesEntity.canLoginWithQrCode = canLoginWithQrCode(getCapabilitiesResult, getVersionResult)

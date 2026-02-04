@@ -21,7 +21,6 @@ import androidx.lifecycle.lifecycleScope
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.mapbox.mapboxsdk.maps.MapView
 import dagger.hilt.android.AndroidEntryPoint
 import im.vector.app.core.platform.VectorBaseBottomSheetDialogFragment
 import im.vector.app.core.platform.VectorBaseFragment
@@ -39,6 +38,7 @@ import im.vector.app.features.location.option.LocationSharingOption
 import im.vector.app.features.settings.VectorPreferences
 import im.vector.lib.strings.CommonStrings
 import kotlinx.coroutines.launch
+import org.maplibre.android.maps.MapView
 import org.matrix.android.sdk.api.util.MatrixItem
 import java.lang.ref.WeakReference
 import javax.inject.Inject

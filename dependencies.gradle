@@ -19,14 +19,13 @@ def markwon = "4.6.2"
 def moshi = "1.15.1"
 def lifecycle = "2.8.3"
 def flowBinding = "1.2.0"
-def flipper = "0.259.0"
 def epoxy = "5.0.0"
 def mavericks = "3.0.9"
 def glide = "4.16.0"
 def bigImageViewer = "1.8.1"
 def jjwt = "0.11.5"
 def vanniktechEmoji = "0.16.0"
-def sentry = "6.18.1"
+def sentry = "8.31.0"
 def fragment = "1.8.6"
 // Testing
 def mockk = "1.13.11"
@@ -96,10 +95,6 @@ ext.libs = [
                 'hiltAndroidTesting'      : "com.google.dagger:hilt-android-testing:$dagger",
                 'hiltCompiler'            : "com.google.dagger:hilt-compiler:$dagger"
         ],
-        flipper     : [
-                'flipper'                 : "com.facebook.flipper:flipper:$flipper",
-                'flipperNetworkPlugin'    : "com.facebook.flipper:flipper-network-plugin:$flipper",
-        ],
         element     : [
                 'opusencoder'             : "io.element.android:opusencoder:1.1.0",
                 'wysiwyg'                 : "io.element.android:wysiwyg:2.38.2"
@@ -133,8 +128,8 @@ ext.libs = [
                 'mavericksTesting'       : "com.airbnb.android:mavericks-testing:$mavericks"
         ],
         maplibre    : [
-                'androidSdk'             : "org.maplibre.gl:android-sdk:10.0.2",
-                'pluginAnnotation'       : "org.maplibre.gl:android-plugin-annotation-v9:1.0.0"
+                'androidSdk'             : "org.maplibre.gl:android-sdk:11.6.1",
+                'pluginAnnotation'       : "org.maplibre.gl:android-plugin-annotation-v9:3.0.2"
         ],
         mockk      : [
                 'mockk'                   : "io.mockk:mockk:$mockk",

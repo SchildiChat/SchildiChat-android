@@ -21,18 +21,6 @@ import androidx.lifecycle.lifecycleScope
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.mapbox.mapboxsdk.geometry.LatLng
-import com.mapbox.mapboxsdk.geometry.LatLngBounds
-import com.mapbox.mapboxsdk.maps.MapView
-import com.mapbox.mapboxsdk.maps.MapboxMap
-import com.mapbox.mapboxsdk.maps.MapboxMapOptions
-import com.mapbox.mapboxsdk.maps.Style
-import com.mapbox.mapboxsdk.maps.SupportMapFragment
-import com.mapbox.mapboxsdk.plugins.annotation.OnSymbolClickListener
-import com.mapbox.mapboxsdk.plugins.annotation.Symbol
-import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager
-import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions
-import com.mapbox.mapboxsdk.style.layers.Property
 import dagger.hilt.android.AndroidEntryPoint
 import im.vector.app.R
 import im.vector.app.core.extensions.addChildFragment
@@ -54,6 +42,18 @@ import im.vector.app.features.location.zoomToBounds
 import im.vector.app.features.location.zoomToLocation
 import im.vector.lib.strings.CommonStrings
 import kotlinx.coroutines.launch
+import org.maplibre.android.geometry.LatLng
+import org.maplibre.android.geometry.LatLngBounds
+import org.maplibre.android.maps.MapLibreMap
+import org.maplibre.android.maps.MapLibreMapOptions
+import org.maplibre.android.maps.MapView
+import org.maplibre.android.maps.Style
+import org.maplibre.android.maps.SupportMapFragment
+import org.maplibre.android.plugins.annotation.OnSymbolClickListener
+import org.maplibre.android.plugins.annotation.Symbol
+import org.maplibre.android.plugins.annotation.SymbolManager
+import org.maplibre.android.plugins.annotation.SymbolOptions
+import org.maplibre.android.style.layers.Property
 import timber.log.Timber
 import java.lang.ref.WeakReference
 import javax.inject.Inject
@@ -74,7 +74,7 @@ class LiveLocationMapViewFragment :
 
     private val viewModel: LiveLocationMapViewModel by fragmentViewModel()
 
-    private var mapboxMap: WeakReference<MapboxMap>? = null
+    private var mapboxMap: WeakReference<MapLibreMap>? = null
     private var mapView: MapView? = null
     private var symbolManager: SymbolManager? = null
     private var mapStyle: Style? = null
@@ -214,7 +214,7 @@ class LiveLocationMapViewFragment :
     private fun getOrCreateSupportMapFragment() =
             childFragmentManager.findFragmentByTag(MAP_FRAGMENT_TAG) as? SupportMapFragment
                     ?: run {
-                        val options = MapboxMapOptions.createFromAttributes(requireContext(), null)
+                        val options = MapLibreMapOptions.createFromAttributes(requireContext(), null)
                         SupportMapFragment.newInstance(options)
                                 .also { addChildFragment(R.id.liveLocationMapFragmentContainer, it, tag = MAP_FRAGMENT_TAG) }
                     }

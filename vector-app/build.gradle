@@ -37,7 +37,7 @@ ext.versionMinor = 6
 // Note: even values are reserved for regular release, odd values for hotfix release.
 // When creating a hotfix, you should decrease the value, since the current value
 // is the value for the next regular release.
-ext.versionPatch = 48
+ext.versionPatch = 50
 
 ext.scVersion = 90
 
@@ -395,16 +395,6 @@ dependencies {
     implementation libs.dagger.hilt
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation "androidx.sharetarget:sharetarget:1.2.0"
-
-    // Flipper, debug builds only
-    debugImplementation(libs.flipper.flipper) {
-        exclude group: 'com.facebook.fbjni', module: 'fbjni'
-    }
-    debugImplementation(libs.flipper.flipperNetworkPlugin) {
-        exclude group: 'com.facebook.fbjni', module: 'fbjni'
-    }
-    debugImplementation 'com.facebook.soloader:soloader:0.10.5'
-    debugImplementation "com.kgurgul.flipper:flipper-realm-android:2.3.0"
 
     gplayImplementation "com.google.android.gms:play-services-location:21.3.0"
     // UnifiedPush gplay flavor only

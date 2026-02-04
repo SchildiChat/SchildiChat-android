@@ -19,16 +19,16 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.view.marginBottom
 import androidx.core.view.marginTop
 import androidx.core.view.updateLayoutParams
-import com.mapbox.mapboxsdk.geometry.LatLng
-import com.mapbox.mapboxsdk.maps.MapView
-import com.mapbox.mapboxsdk.maps.MapboxMap
-import com.mapbox.mapboxsdk.maps.Style
-import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager
-import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions
-import com.mapbox.mapboxsdk.style.layers.Property
 import im.vector.app.R
 import im.vector.app.core.utils.DimensionConverter
 import im.vector.lib.strings.CommonStrings
+import org.maplibre.android.geometry.LatLng
+import org.maplibre.android.maps.MapLibreMap
+import org.maplibre.android.maps.MapView
+import org.maplibre.android.maps.Style
+import org.maplibre.android.plugins.annotation.SymbolManager
+import org.maplibre.android.plugins.annotation.SymbolOptions
+import org.maplibre.android.style.layers.Property
 import timber.log.Timber
 
 private const val USER_PIN_ID = "user-pin-id"
@@ -42,7 +42,7 @@ class MapTilerMapView @JvmOverloads constructor(
     private var pendingState: MapState? = null
 
     data class MapRefs(
-            val map: MapboxMap,
+            val map: MapLibreMap,
             val symbolManager: SymbolManager,
             val style: Style
     )
@@ -94,7 +94,7 @@ class MapTilerMapView @JvmOverloads constructor(
         }
     }
 
-    private fun initMapStyle(map: MapboxMap, url: String) {
+    private fun initMapStyle(map: MapLibreMap, url: String) {
         map.setStyle(url) { style ->
             val symbolManager = SymbolManager(this, map, style)
             symbolManager.iconAllowOverlap = true
@@ -108,7 +108,7 @@ class MapTilerMapView @JvmOverloads constructor(
         }
     }
 
-    private fun initLocateButton(map: MapboxMap) {
+    private fun initLocateButton(map: MapLibreMap) {
         if (showLocationButton) {
             addView(locateButton)
             adjustCompassButton(map)
@@ -132,7 +132,7 @@ class MapTilerMapView @JvmOverloads constructor(
                 }
             }
 
-    private fun adjustCompassButton(map: MapboxMap) {
+    private fun adjustCompassButton(map: MapLibreMap) {
         locateButton.post {
             val marginTop = locateButton.height + locateButton.marginTop + locateButton.marginBottom
             val marginRight = context.resources.getDimensionPixelOffset(im.vector.lib.ui.styles.R.dimen.location_sharing_compass_button_margin_horizontal)
@@ -140,7 +140,7 @@ class MapTilerMapView @JvmOverloads constructor(
         }
     }
 
-    private fun listenCameraMove(map: MapboxMap, locationTargetChangeListener: LocationTargetChangeListener?) {
+    private fun listenCameraMove(map: MapLibreMap, locationTargetChangeListener: LocationTargetChangeListener?) {
         map.addOnCameraMoveListener {
             notifyLocationOfMapCenter(locationTargetChangeListener)
         }

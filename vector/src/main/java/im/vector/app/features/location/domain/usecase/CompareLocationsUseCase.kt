@@ -7,9 +7,9 @@
 
 package im.vector.app.features.location.domain.usecase
 
-import com.mapbox.mapboxsdk.geometry.LatLng
 import im.vector.app.features.location.LocationData
 import kotlinx.coroutines.withContext
+import org.maplibre.android.geometry.LatLng
 import org.matrix.android.sdk.api.session.Session
 import javax.inject.Inject
 

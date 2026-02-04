@@ -19,7 +19,7 @@ package org.matrix.android.sdk.api.auth
 /**
  * See https://github.com/matrix-org/matrix-spec-proposals/pull/3824
  */
-enum class SSOAction {
-    LOGIN,
-    REGISTER;
+enum class SSOAction(val value: String) {
+    LOGIN("login"),
+    REGISTER("register");
 }

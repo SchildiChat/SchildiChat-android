@@ -11,6 +11,7 @@ import io.sentry.ISpan
 import io.sentry.ITransaction
 import io.sentry.Sentry
 import io.sentry.SpanStatus
+import io.sentry.TransactionOptions
 import org.matrix.android.sdk.api.metrics.SyncDurationMetricPlugin
 import java.util.EmptyStackException
 import java.util.Stack
@@ -58,7 +59,13 @@ class SentrySyncDurationMetrics @Inject constructor() : SyncDurationMetricPlugin
 
     override fun startTransaction() {
         if (Sentry.isEnabled()) {
-            transaction = Sentry.startTransaction("sync_response_handler", "task", true)
+            transaction = Sentry.startTransaction(
+                    "sync_response_handler",
+                    "task",
+                    TransactionOptions().apply {
+                        isBindToScope = true
+                    },
+            )
             logTransaction("Sentry transaction started")
         }
     }

@@ -34,6 +34,13 @@ internal abstract class HomeServerCapabilitiesModule {
         fun providesCapabilitiesAPI(retrofit: Retrofit): CapabilitiesAPI {
             return retrofit.create(CapabilitiesAPI::class.java)
         }
+
+        @Provides
+        @JvmStatic
+        @SessionScope
+        fun providesAuthMetadataAPI(retrofit: Retrofit): AuthMetadataAPI {
+            return retrofit.create(AuthMetadataAPI::class.java)
+        }
     }
 
     @Binds

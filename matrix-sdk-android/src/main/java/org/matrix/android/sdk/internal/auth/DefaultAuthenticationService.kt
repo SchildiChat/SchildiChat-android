@@ -106,7 +106,11 @@ internal class DefaultAuthenticationService @Inject constructor(
             }
 
             // unstable MSC3824 action param
-            appendParamToUrl("org.matrix.msc3824.action", action.toString())
+            // This can be removed once servers have been updated to support the stable one.
+            appendParamToUrl("org.matrix.msc3824.action", action.value)
+
+            // stable param:
+            appendParamToUrl("action", action.value)
         }
     }
 
@@ -297,8 +301,8 @@ internal class DefaultAuthenticationService @Inject constructor(
             authAPI.getLoginFlows()
         }
 
-        // If an m.login.sso flow is present that is flagged as being for MSC3824 OIDC compatibility then we only return that flow
-        val oidcCompatibilityFlow = loginFlowResponse.flows.orEmpty().firstOrNull { it.type == "m.login.sso" && it.delegatedOidcCompatibility == true }
+        // If an m.login.sso flow is present that is flagged as being for MSC3824 OAuth compatibility then we only return that flow
+        val oidcCompatibilityFlow = loginFlowResponse.flows.orEmpty().firstOrNull { it.type == "m.login.sso" && it.delegatedOidcCompatibility }
         val flows = if (oidcCompatibilityFlow != null) listOf(oidcCompatibilityFlow) else loginFlowResponse.flows
 
         val supportsGetLoginTokenFlow = loginFlowResponse.flows.orEmpty().firstOrNull { it.type == "m.login.token" && it.getLoginToken == true } != null
