@@ -1,4 +1,2 @@
-- Update codebase to Element v1.5.32
-- Fix crash for protected access settings
-- Do not ellipsize message previews because of a single trailing newline
-- Fix long freeform reactions hiding sender and timestamp from reaction info
+Main changes in this version: beta support for Spaces. Compress video before sending.
+Full changelog: https://github.com/element-hq/element-android/releases/tag/v1.1.7
