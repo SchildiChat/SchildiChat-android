@@ -774,8 +774,8 @@
     <string name="does_not_look_like_valid_email">Þetta lítur ekki út eins og gilt tölvupóstfang</string>
     <string name="login_set_email_title">Skrá tölvupóstfang</string>
     <string name="login_server_url_form_common_notice">Sláðu inn vistfang netþjónsins sem þú vilt nota</string>
-    <string name="login_server_url_form_modular_notice">Sláðu inn vistfang Modular Element-þjóns eða netþjónsins sem þú vilt nota</string>
-    <string name="login_server_url_form_modular_hint">Vistfang fyrir Element Matrix þjónustur</string>
+    <string name="login_server_url_form_modular_notice">Sláðu inn vistfang Modular SchildiChat-þjóns eða netþjónsins sem þú vilt nota</string>
+    <string name="login_server_url_form_modular_hint">Vistfang fyrir SchildiChat Matrix þjónustur</string>
     <string name="login_signin_to">Skrá inn í %1$s</string>
     <string name="login_connect_to">Tengjast við %1$s</string>
     <string name="login_social_signup_with">Skrá inn með %s</string>
@@ -1541,7 +1541,7 @@
     <string name="login_connect_using_matrix_id_submit">Skrá inn með Matrix-auðkenni</string>
     <string name="login_terms_title">Samþykktu skilmálana til að halda áfram</string>
     <string name="login_a11y_choose_other">Velja sérsniðinn heimaþjón</string>
-    <string name="login_a11y_choose_modular">Velja Element Matrix þjónustur</string>
+    <string name="login_a11y_choose_modular">Velja SchildiChat Matrix þjónustur</string>
     <string name="login_a11y_choose_matrix_org">Velja matrix.org</string>
     <string name="direct_room_join_rules_invite_by_you">Þú gerðir þetta einungis aðgengilegt gegn boði.</string>
     <string name="direct_room_join_rules_invite">%1$s gerði þetta einungis aðgengilegt gegn boði.</string>
@@ -1593,7 +1593,7 @@
     <string name="three_pid_revoke_invite_dialog_content">Afturkalla boð til %1$s\?</string>
     <string name="three_pid_revoke_invite_dialog_title">Afturkalla boð</string>
     <string name="save_recovery_key_chooser_hint">Vista endurheimtulykil í</string>
-    <string name="disclaimer_title">Riot heitir núna Element!</string>
+    <string name="disclaimer_title">Riot heitir núna SchildiChat!</string>
     <string name="bottom_sheet_setup_secure_backup_title">Varið öryggisafrit</string>
     <string name="change_password_summary">Setja upp nýtt lykilorð notandaaðgangs…</string>
     <string name="encryption_information_cross_signing_state">Kross-undirritun</string>
@@ -1614,7 +1614,7 @@
     <string name="login_server_url_form_modular_text">Premium-hýsing fyrir samtök/fyrirtæki</string>
     <string name="login_signin_sso">Halda áfram með SSO</string>
     <string name="login_connect_to_a_custom_server">Tengjast sérsniðnum þjóni</string>
-    <string name="login_connect_to_modular">Tengjast Element Matrix þjónustum</string>
+    <string name="login_connect_to_modular">Tengjast SchildiChat Matrix þjónustum</string>
     <string name="login_server_other_text">Sérsniðnar og ítarlegar stillingar</string>
     <string name="login_server_modular_text">Premium-hýsing fyrir samtök/fyrirtæki</string>
     <string name="login_server_title">Veldu netþjón</string>
@@ -2104,7 +2104,7 @@
     <string name="auth_reset_password_error_unverified">Tölvupóstfang ekki staðfest, athugaðu pósthólfið þitt</string>
     <string name="invites_empty_title">Ekkert nýtt.</string>
     <string name="space_list_empty_title">Engin svæði ennþá.</string>
-    <string name="labs_enable_new_app_layout_summary">Einfaldað Element með valkvæðum flipum</string>
+    <string name="labs_enable_new_app_layout_summary">Einfaldað SchildiChat með valkvæðum flipum</string>
     <string name="labs_enable_new_app_layout_title">Virkja nýja framsetningu</string>
     <string name="home_layout_preferences">Kjörstillingar framsetningar</string>
     <string name="change_space">Skipta um svæði</string>

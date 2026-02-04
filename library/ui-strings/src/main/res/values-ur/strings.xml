@@ -387,7 +387,7 @@
     <string name="system_alerts_header">نظام کی تنبیہات</string>
     <string name="matrix_only_filter">صرف میٹرکس رابطے</string>
     <string name="settings_category_room_directory">کمروں کا راہنامچہ</string>
-    <string name="labs_enable_new_app_layout_summary">ایک آسان کردہ Element (ایلیمنٹ) مع اختیاری جدولات</string>
+    <string name="labs_enable_new_app_layout_summary">ایک آسان کردہ SchildiChat (ایلیمنٹ) مع اختیاری جدولات</string>
     <string name="invites_empty_message">یہ ہے جہاں آپکی نئی درخواستیں اور دعوتیں ہونگی۔</string>
     <string name="direct_chats_header">گفتگوئیں</string>
     <string name="video_meeting">بصری ملاقات شروع کریں</string>

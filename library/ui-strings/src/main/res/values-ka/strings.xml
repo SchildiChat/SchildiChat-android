@@ -340,7 +340,7 @@
     <string name="home_layout_preferences_sort_by">სორტირება</string>
     <string name="home_layout_preferences_sort_activity">აქტივობა</string>
     <string name="home_layout_preferences_sort_name">ა - ჰ</string>
-    <string name="labs_enable_new_app_layout_summary">გარტავებული Element-ს მარტივი ტაბების ვარიანტით</string>
+    <string name="labs_enable_new_app_layout_summary">გარტავებული SchildiChat-ს მარტივი ტაბების ვარიანტით</string>
     <string name="labs_enable_deferred_dm_summary">პირადი შეტყობინების შექმნა მხოლოდ პირველ შეტყობინებაზე</string>
     <string name="invitations_header">მოწვევები</string>
     <string name="low_priority_header">დაბალი პრიორიტეტი</string>
@@ -2254,7 +2254,7 @@
     <string name="crypto_error_withheld_blacklisted">ვერ ხსნით ამ შეტყობინებას, რადგან გამგზავნმა დაგბლოკათ</string>
     <string name="crypto_error_withheld_generic">ვერ ხსნით ამ შეტყობინებას, რადგან გამგზავნმა სპეციალურად არ გამოგიგზავნათ გასაღებები</string>
     <string name="notice_crypto_unable_to_decrypt_merged">მიმდინარეობს დაშიფრული ისტორიის ლოდინი</string>
-    <string tools:ignore="UnusedResources" name="disclaimer_title">Riot ახლა არის Element!</string>
+    <string tools:ignore="UnusedResources" name="disclaimer_title">Riot ახლა არის SchildiChat!</string>
     <string tools:ignore="UnusedResources" name="disclaimer_negative_button">მივიღე</string>
     <string tools:ignore="UnusedResources" name="disclaimer_positive_button">გაიგეთ მეტი</string>
     <string name="save_recovery_key_chooser_hint">შეინახეთ აღდგენის გასაღები</string>
@@ -2967,6 +2967,6 @@
     <string name="settings_discovery_consent_notice_off_2">თქვენი კონტაქტები კერძოა. კონტაქტებიდან მომხმარებლების აღმოსაჩენად, საჭიროა თქვენი ნებართვა, რომ კონტაქტების ინფორმაცია გაგზავნოთ თქვენი იდენტობის სერვერზე.</string>
     <string name="ftue_personalize_lets_go">წავიდეთ</string>
     <string name="call_unsupported">მხარდაუჭერი ზარი</string>
-    <string name="call_unsupported_matrix_rtc_call">მხარდაუჭერი ზარი. ამ ზარში შესაერთებლად საჭიროა ახალი აპლიკაცია Element X.</string>
+    <string name="call_unsupported_matrix_rtc_call">მხარდაუჭერი ზარი. ამ ზარში შესაერთებლად საჭიროა ახალი აპლიკაცია SchildiChat Next.</string>
     <string name="pill_message_unknown_room_or_space">ოთახი/სივრცე</string>
 </resources>
