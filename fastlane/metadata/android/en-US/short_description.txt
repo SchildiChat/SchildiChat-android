@@ -1,1 +1,1 @@
-Previous generation Element
+Feature-rich messenger for Matrix based on Element with some extras and tweaks
