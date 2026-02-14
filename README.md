@@ -1,6 +1,11 @@
 [![Translation status](https://weblate.spiritcroc.de/widgets/schildichat/-/schildichat-android/svg-badge.svg)](https://weblate.spiritcroc.de/projects/schildichat/schildichat-android/)
 [![SchildiChat-Android Matrix room #android:schildi.chat](https://img.shields.io/matrix/android:schildi.chat.svg?label=%23android:schildi.chat&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#android:schildi.chat)
 
+# Deprecation notice
+
+This first generation of SchildiChat for Android is only barely maintained at this point, and may reach end-of-live soon.
+You may want to check out its successor, [SchildiChat Next](https://github.com/SchildiChat/schildichat-android-next).
+
 # SchildiChat for Android
 
 SchildiChat for Android is a Matrix Client based on [Element Android](https://github.com/vector-im/element-android),
