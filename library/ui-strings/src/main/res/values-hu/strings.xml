@@ -1012,7 +1012,7 @@ A Visszaállítási Kulcsot tartsd biztonságos helyen, mint pl. egy jelszókeze
     <string name="login_server_url_form_modular_hint">Element Matrix Services Cím</string>
     <string name="login_server_url_form_other_hint">Cím</string>
     <string name="login_server_url_form_modular_text">Prémium kiszolgáló-üzemeltetés a szervezetek részére</string>
-    <string name="login_server_url_form_modular_notice">Adja meg a használni kívánt Modular Element vagy kiszolgáló címét</string>
+    <string name="login_server_url_form_modular_notice">Adja meg a használni kívánt Modular SchildiChat vagy kiszolgáló címét</string>
     <string name="login_sso_error_message">Az oldal betöltésekor hiba történt: %1$s (%2$d)</string>
     <string name="login_registration_disabled">Ez a kiszolgáló nem fogad új fiókokat.</string>
     <string name="login_login_with_email_error">Ez az e-mail cím egyik fiókhoz sincs társítva.</string>
@@ -1547,7 +1547,7 @@ A Visszaállítási Kulcsot tartsd biztonságos helyen, mint pl. egy jelszókeze
     <string name="crypto_error_withheld_unverified">Nem érheted el ezt az üzenetet, mert a feladó nem bízik a munkamenetedben</string>
     <string name="crypto_error_withheld_generic">Nem érheted el ezt az üzenetet, mert a feladó szándékosan nem küldte el a kulcsokat</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Várakozás a titkosítási előzményekre</string>
-    <string name="disclaimer_title">A Riot mostantól Element!</string>
+    <string name="disclaimer_title">A Riot mostantól SchildiChat!</string>
     <string name="disclaimer_content">Örömmel jelentjük be, hogy nevet változtattunk! Az alkalmazás naprakész, és be vagy jelentkezve a fiókodba.</string>
     <string name="disclaimer_negative_button">ÉRTEM</string>
     <string name="disclaimer_positive_button">TOVÁBBI INFORMÁCIÓK</string>
@@ -1901,7 +1901,7 @@ A Visszaállítási Kulcsot tartsd biztonságos helyen, mint pl. egy jelszókeze
     <string name="settings_security_pin_code_change_pin_summary">Jelenlegi PIN kód megváltoztatása</string>
     <string name="settings_security_pin_code_change_pin_title">PIN megváltoztatása</string>
     <string name="settings_security_pin_code_grace_period_summary_off">${app_name} megnyitásához mindig PIN kód szükséges.</string>
-    <string name="settings_security_pin_code_grace_period_summary_on">Ha 2 percnél hosszabb ideig nem használod az ${app_name} Element alkalmazást, PIN kódot fog kérni.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">Ha 2 percnél hosszabb ideig nem használod az ${app_name} SchildiChat alkalmazást, PIN kódot fog kérni.</string>
     <string name="settings_security_pin_code_grace_period_title">2 perc elteltével PIN szükséges</string>
     <string name="settings_security_pin_code_use_biometrics_summary_on">Eszköz specifikus biometrikus azonosítás engedélyezése, mint ujjlenyomat vagy arcfelismerés.</string>
     <plurals name="entries">
@@ -2697,7 +2697,7 @@ A Visszaállítási Kulcsot tartsd biztonságos helyen, mint pl. egy jelszókeze
     <string name="device_manager_verification_status_detail_current_session_verified">Az aktuális munkamenet készen áll a biztonságos üzenetküldésre.</string>
     <string name="labs_enable_deferred_dm_summary">Közvetlen beszélgetés indítása csak az első üzenettel</string>
     <string name="labs_enable_deferred_dm_title">Késleltetett közvetlen üzenetek engedélyezése</string>
-    <string name="labs_enable_new_app_layout_summary">Egyszerűsített Element nem kötelező lapokkal</string>
+    <string name="labs_enable_new_app_layout_summary">Egyszerűsített SchildiChat nem kötelező lapokkal</string>
     <string name="labs_enable_new_app_layout_title">Új kinézet engedélyezése</string>
     <string name="device_manager_learn_more_session_rename">Más felhasználók akikkel közvetlenül vagy szobában beszélgetsz látják a teljes listát a munkameneteidről.
 \n

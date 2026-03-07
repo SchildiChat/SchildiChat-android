@@ -1058,7 +1058,7 @@
     <string name="login_server_url_form_modular_hint">Element Matrix Services 位址</string>
     <string name="login_server_url_form_other_hint">位址</string>
     <string name="login_server_url_form_modular_text">組織用的收費代管服務</string>
-    <string name="login_server_url_form_modular_notice">輸入 Modular Element 或您想要使用的伺服器位址</string>
+    <string name="login_server_url_form_modular_notice">輸入 Modular SchildiChat 或您想要使用的伺服器位址</string>
     <string name="login_sso_error_message">載入頁面時發生錯誤：%1$s（%2$d）</string>
     <string name="login_mode_not_supported">應用程式無法登入此家伺服器。家伺服器支援以下登入類型：%1$s。
 \n
@@ -1564,8 +1564,8 @@
     <string name="crypto_error_withheld_unverified">您無法存取此訊息，因為您的工作階段未被傳送者所信任</string>
     <string name="crypto_error_withheld_generic">您無法存取此訊息，因為傳送者刻意不傳送金鑰</string>
     <string name="notice_crypto_unable_to_decrypt_merged">正在等待加密紀錄</string>
-    <string name="disclaimer_title">Riot 改名為 Element 了！</string>
-    <string name="disclaimer_content">很高興宣布，我們已更名為 Element！您的應用程式已更新到最新版，您也已經成功登入帳號。</string>
+    <string name="disclaimer_title">Riot 改名為 SchildiChat 了！</string>
+    <string name="disclaimer_content">很高興宣布，我們已更名為 SchildiChat！您的應用程式已更新到最新版，您也已經成功登入帳號。</string>
     <string name="disclaimer_negative_button">了解</string>
     <string name="disclaimer_positive_button">取得更多資訊</string>
     <string name="save_recovery_key_chooser_hint">儲存復原金鑰於</string>
@@ -2646,7 +2646,7 @@
     <string name="device_manager_verification_status_detail_current_session_verified">您目前的工作階段已準備好安全通訊。</string>
     <string name="labs_enable_deferred_dm_summary">僅在第一則訊息上建立私密訊息</string>
     <string name="labs_enable_deferred_dm_title">啟用延期的私密訊息</string>
-    <string name="labs_enable_new_app_layout_summary">包含選擇性分頁的簡潔 Element</string>
+    <string name="labs_enable_new_app_layout_summary">包含選擇性分頁的簡潔 SchildiChat</string>
     <string name="labs_enable_new_app_layout_title">啟用新佈局</string>
     <string name="device_manager_learn_more_session_rename">私人訊息與您加入的聊天室當中的其他使用者，可以檢視您有哪些工作階段。
 \n
@@ -2910,7 +2910,7 @@
     <string name="message_report_user">回報使用者</string>
     <string name="view_download_replacement_app_title">下載 %1$s</string>
     <string name="microphone_in_use_title">麥克風使用中</string>
-    <string name="call_unsupported_matrix_rtc_call">不支援的通話。需要新的 Element X 應用程式才能加入此通話。</string>
+    <string name="call_unsupported_matrix_rtc_call">不支援的通話。需要新的 SchildiChat Next 應用程式才能加入此通話。</string>
     <string name="call_unsupported">不支援的通話</string>
     <string name="error_mas_not_supported_title">您無法再使用此應用程式建立 %1$s 的帳號</string>
     <string name="error_mas_not_supported_subtitle">下載 %1$s 以將 %2$s 用於您的帳號或選擇其他家伺服器。</string>
