@@ -1,0 +1,5 @@
+- Update codebase to Element v1.5.26
+- Support webp rendering in the timeline
+- Support image captions in the overview
+- Fix bug rendering the wrong timeline after clicking a broken event link
+- Fixes related to URL preview image rendering
