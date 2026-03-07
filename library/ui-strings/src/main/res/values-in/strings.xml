@@ -1052,7 +1052,7 @@ Di masa mendatang proses verifikasi ini akan dimutakhirkan.</string>
 \nApakah Anda ingin masuk menggunakan klien web\?</string>
     <string name="login_sso_error_message">Ada kesalahan terjadi saat memuat halaman: %1$s (%2$d)</string>
     <string name="login_server_url_form_common_notice">Masukkan alamat server yang ingin Anda gunakan</string>
-    <string name="login_server_url_form_modular_notice">Masukkan alamat Modular SchildiChat atau Server yang ingin Anda gunakan</string>
+    <string name="login_server_url_form_modular_notice">Masukkan alamat Modular Element atau Server yang ingin Anda gunakan</string>
     <string name="login_server_url_form_modular_text">Hosting premium untuk organisasi</string>
     <string name="login_server_url_form_other_hint">Alamat</string>
     <string name="login_server_url_form_modular_hint">Alamat Element Matrix Services</string>
@@ -1866,7 +1866,7 @@ Di masa mendatang proses verifikasi ini akan dimutakhirkan.</string>
     <string name="disclaimer_positive_button">PELAJARI LEBIH LANJUT</string>
     <string name="disclaimer_negative_button">MENGERTI</string>
     <string name="disclaimer_content">Kami senang mengumumkan kami telah mengubah nama! Aplikasi Anda mutakhir dan Anda telah masuk ke akun Anda.</string>
-    <string name="disclaimer_title">Riot sekarang telah menjadi SchildiChat!</string>
+    <string name="disclaimer_title">Riot sekarang telah menjadi Element!</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Menunggu untuk riwayat enkripsi</string>
     <string name="crypto_error_withheld_generic">Anda tidak dapat mengakses pesan ini karena pengirim telah sengaja tidak mengirim kuncinya</string>
     <string name="crypto_error_withheld_unverified">Anda tidak dapat mengakses pesan ini karena sesi Anda tidak dipercayai oleh pengirim</string>
@@ -2648,7 +2648,7 @@ Di masa mendatang proses verifikasi ini akan dimutakhirkan.</string>
     <string name="device_manager_verification_status_detail_current_session_verified">Sesi Anda saat ini siap untuk perpesanan aman.</string>
     <string name="labs_enable_deferred_dm_summary">Buat pesan langsung hanya pada pesan pertama</string>
     <string name="labs_enable_deferred_dm_title">Aktifkan pesan langsung tangguhan</string>
-    <string name="labs_enable_new_app_layout_summary">Sebuah SchildiChat yang sederhana dengan fitur tab opsional</string>
+    <string name="labs_enable_new_app_layout_summary">Sebuah Element yang sederhana dengan fitur tab opsional</string>
     <string name="labs_enable_new_app_layout_title">Aktifkan tata letak baru</string>
     <string name="device_manager_learn_more_session_rename">Pengguna lain dalam pesan langsung dan ruangan yang Anda bergabung dapat melihat daftar sesi Anda yang lengkap.
 \n
@@ -2781,7 +2781,7 @@ Di masa mendatang proses verifikasi ini akan dimutakhirkan.</string>
     <string name="error_voice_broadcast_unauthorized_title">Tidak dapat memulai siaran suara baru</string>
     <string name="a11y_voice_broadcast_fast_forward">Maju cepat 30 detik</string>
     <string name="a11y_voice_broadcast_fast_backward">Mundur cepat 30 detik</string>
-    <string name="device_manager_learn_more_sessions_verified_description">Sesi terverifikasi ada di mana pun Anda menggunakan SchildiChat setelah memasukkan frasa sandi atau mengonfirmasi identitas Anda dengan sesi terverifikasi lainnya.
+    <string name="device_manager_learn_more_sessions_verified_description">Sesi terverifikasi ada di mana pun Anda menggunakan Element setelah memasukkan frasa sandi atau mengonfirmasi identitas Anda dengan sesi terverifikasi lainnya.
 \n
 \nIni berarti Anda memiliki semua kunci yang diperlukan untuk membuka kunci pesan terenkripsi dan mengonfirmasi kepada pengguna lain bahwa Anda memercayai sesi ini.</string>
     <plurals name="device_manager_other_sessions_multi_signout_all">
@@ -2912,7 +2912,7 @@ Di masa mendatang proses verifikasi ini akan dimutakhirkan.</string>
 \nJika Anda tidak ingin melihat konten lagi dari pengguna ini, Anda dapat mengabaikan untuk menyembunyikan pesannya.</string>
     <string name="microphone_in_use_title">Mikrofon digunakan</string>
     <string name="call_unsupported">Panggilan tidak didukung</string>
-    <string name="call_unsupported_matrix_rtc_call">Panggilan tidak didukung. Aplikasi SchildiChat Next yang baru diperlukan untuk bergabung ke panggilan ini.</string>
+    <string name="call_unsupported_matrix_rtc_call">Panggilan tidak didukung. Aplikasi Element X yang baru diperlukan untuk bergabung ke panggilan ini.</string>
     <string name="view_download_replacement_app_title">Unduh %1$s</string>
     <string name="view_download_replacement_app_subtitle">Lebih cepat, lebih aman, dan lengkap dengan peralatan kolaborasi yang lebih berdaya.</string>
     <string name="error_mas_not_supported_title">Anda sudah tidak bisa lagi membuat akun dengan %1$s menggunakan aplikasi ini</string>
