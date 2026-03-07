@@ -11,6 +11,6 @@ object VectorSettingsUrls {
     const val HELP = "https://schildi.chat/android/faq"
     const val COPYRIGHT = "https://element.io/copyright"
     const val ACCEPTABLE_USE_POLICY = "https://element.io/acceptable-use-policy-terms"
-    const val PRIVACY_POLICY = "https://schildi.chat/android/privacy"
+    const val PRIVACY_POLICY = "https://schildi.chat/legacy/android/privacy/"
     const val THIRD_PARTY_LICENSES = "file:///android_asset/open_source_licenses.html"
 }
