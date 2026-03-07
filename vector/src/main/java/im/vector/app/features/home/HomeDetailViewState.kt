@@ -36,7 +36,9 @@ data class HomeDetailViewState(
         val incrementalSyncRequestState: SyncRequestState.IncrementalSyncRequestState? = null,
         val pushCounter: Int = 0,
         val pstnSupportFlag: Boolean = false,
-        val forceDialPadTab: Boolean = false
+        val forceDialPadTab: Boolean = false,
+        // Set to true by default to avoid glitch
+        val isSessionVerified: Boolean = true,
 ) : MavericksState {
     val showDialPadTab = forceDialPadTab || pstnSupportFlag
 }

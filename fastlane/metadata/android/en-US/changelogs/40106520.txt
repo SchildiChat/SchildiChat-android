@@ -1,0 +1,2 @@
+Main changes in this version: updated Jitsi version.
+Full changelog: https://github.com/element-hq/element-android/releases

@@ -367,11 +367,13 @@ class HomeActivityViewModel @AssistedInject constructor(
             // cross signing keys have been reset
             // Trigger a popup to re-verify
             // Note: user can be unknown in case of logout
-            session.getUserOrDefault(session.myUserId)
-                    .toMatrixItem()
-                    .let { user ->
-                        _viewEvents.post(HomeActivityViewEvents.OnCrossSignedInvalidated(user))
-                    }
+
+            // This is now handled by the banner in the HomeFragment
+            // session.getUserOrDefault(session.myUserId)
+            //         .toMatrixItem()
+            //         .let { user ->
+            //             _viewEvents.post(HomeActivityViewEvents.OnCrossSignedInvalidated(user))
+            //         }
         }
     }
 
@@ -446,12 +448,13 @@ class HomeActivityViewModel @AssistedInject constructor(
                             val is4Ssetup = session.sharedSecretStorageService().isRecoverySetup()
                             if (hasTargetDeviceToVerifyAgainst || is4Ssetup) {
                                 // New session
-                                _viewEvents.post(
-                                        HomeActivityViewEvents.CurrentSessionNotVerified(
-                                                session.getUserOrDefault(session.myUserId).toMatrixItem(),
-                                                vectorPreferences.isOnRustCrypto() && vectorPreferences.hadExistingLegacyData()
-                                        )
-                                )
+                                // This is now handled by the banner in the HomeFragment
+                                // _viewEvents.post(
+                                //         HomeActivityViewEvents.CurrentSessionNotVerified(
+                                //                 session.getUserOrDefault(session.myUserId).toMatrixItem(),
+                                //                 vectorPreferences.isOnRustCrypto() && vectorPreferences.hadExistingLegacyData()
+                                //         )
+                                // )
                             } else {
                                 _viewEvents.post(
                                         HomeActivityViewEvents.CurrentSessionCannotBeVerified(

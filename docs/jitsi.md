@@ -32,7 +32,7 @@ Update the script `./tools/jitsi/build_jitsi_libs.sh` with the tag of the projec
 
 Latest tag can be found from this page: https://github.com/jitsi/jitsi-meet-release-notes/blob/master/CHANGELOG-MOBILE-SDKS.md
 
-Currently we are building the version with the tag `mobile-sdk-10.2.0`.
+Currently we are building the version with the tag `mobile-sdk-11.5.1`.
 
 #### Run the build script
 
@@ -49,7 +49,7 @@ It will build the Jitsi Meet Android library and put every generated files in th
 - Update the file `./build.gradle` to use the previously created local Maven repository. Currently we have this line:
 
 ```groovy
-url "https://github.com/element-hq/jitsi_libre_maven/raw/main/mobile-sdk-10.2.0"
+url "https://github.com/element-hq/jitsi_libre_maven/raw/main/mobile-sdk-11.5.1"
 ```
 
 You can uncomment and update the line starting with `// url "file://...` and comment the line starting with `url`, to test the library using the locally generated Maven repository.
@@ -57,7 +57,7 @@ You can uncomment and update the line starting with `// url "file://...` and com
 - Update the dependency of the Jitsi Meet library in the file `./vector/build.gradle`. Currently we have this line:
 
 ```groovy
-api('org.jitsi.react:jitsi-meet-sdk:10.2.0')
+api('org.jitsi.react:jitsi-meet-sdk:11.5.1')
 ```
 
 - Perform a gradle sync and build the project
@@ -82,7 +82,7 @@ If all the tests are passed, you can export the generated Jitsi library to our M
 - Update the file `./build.gradle` to use the previously created Maven repository. Currently we have this line:
 
 ```groovy
-url "https://github.com/element-hq/jitsi_libre_maven/raw/main/mobile-sdk-10.2.0"
+url "https://github.com/element-hq/jitsi_libre_maven/raw/main/mobile-sdk-11.5.1"
 ```
 
 - Build the project and perform the sanity tests again.

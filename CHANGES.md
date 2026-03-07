@@ -1,3 +1,10 @@
+Changes in Element v1.6.52 (2026-03-05)
+=======================================
+
+Other changes
+-------------
+ - Bump `jitsi_modile_sdk` to v11.5.1 ([#9124](https://github.com/element-hq/element-android/issues/9124)). This should fix the 16KB page size incompatibility.
+
 Changes in Element v1.6.50 (2026-02-04)
 =======================================
 

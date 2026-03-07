@@ -26,7 +26,7 @@ export LIBRE_BUILD=true
 cd jitsi-meet
 
 # Get the latest version from the changelog: https://github.com/jitsi/jitsi-meet-release-notes/blob/master/CHANGELOG-MOBILE-SDKS.md
-git checkout mobile-sdk-11.4.0
+git checkout mobile-sdk-11.5.1
 
 echo
 echo "##################################################"
@@ -52,11 +52,11 @@ npm install
 #
 #react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output index.android.bundle --assets-dest android/app/src/main/res/
 
+mkdir -p /tmp/jitsi/org/webkit/
 ./android/scripts/release-sdk.sh /tmp/jitsi/
 
 # Also copy jsc
 
-mkdir -p /tmp/jitsi/org/webkit/
 cp -r ./node_modules/jsc-android/dist/org/webkit/android-jsc /tmp/jitsi/org/webkit/
 
 echo

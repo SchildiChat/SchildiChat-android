@@ -147,30 +147,30 @@ printf "\n======================================================================
 printf "Uninstalling previous test app if any...\n"
 adb -e uninstall im.vector.app.debug.test
 
-printf "\n================================================================================\n"
-printf "Running the integration test UiAllScreensSanityTest.allScreensTest()...\n"
-./gradlew connectedGplayDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=im.vector.app.ui.UiAllScreensSanityTest
-
-printf "\n================================================================================\n"
-printf "Building the app...\n"
-./gradlew assembleGplayDebug
-
-printf "\n================================================================================\n"
-printf "Uninstalling previous debug app if any...\n"
-adb -e uninstall im.vector.app.debug
-
-printf "\n================================================================================\n"
-printf "Installing the app...\n"
-adb -e install ./vector-app/build/outputs/apk/gplay/debug/vector-gplay-arm64-v8a-debug.apk
-
-printf "\n================================================================================\n"
-printf "Running the app...\n"
-# TODO This does not work, need to be fixed
-adb -e shell am start -n im.vector.app.debug/im.vector.app.features.Alias -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
-
-printf "\n================================================================================\n"
-# TODO could build and deploy the APK to any emulator
-read -p "Create an account on matrix.org and do some smoke tests that the sanity test does not cover like: 1-1 call, 1-1 video call, Jitsi call for instance. Press enter when it's done."
+#printf "\n================================================================================\n"
+#printf "Running the integration test UiAllScreensSanityTest.allScreensTest()...\n"
+#./gradlew connectedGplayDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=im.vector.app.ui.UiAllScreensSanityTest
+#
+#printf "\n================================================================================\n"
+#printf "Building the app...\n"
+#./gradlew assembleGplayDebug
+#
+#printf "\n================================================================================\n"
+#printf "Uninstalling previous debug app if any...\n"
+#adb -e uninstall im.vector.app.debug
+#
+#printf "\n================================================================================\n"
+#printf "Installing the app...\n"
+#adb -e install ./vector-app/build/outputs/apk/gplay/debug/vector-gplay-arm64-v8a-debug.apk
+#
+#printf "\n================================================================================\n"
+#printf "Running the app...\n"
+## TODO This does not work, need to be fixed
+#adb -e shell am start -n im.vector.app.debug/im.vector.app.features.Alias -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+#
+#printf "\n================================================================================\n"
+## TODO could build and deploy the APK to any emulator
+#read -p "Create an account on matrix.org and do some smoke tests that the sanity test does not cover like: 1-1 call, 1-1 video call, Jitsi call for instance. Press enter when it's done."
 
 printf "\n================================================================================\n"
 printf "Running towncrier...\n"

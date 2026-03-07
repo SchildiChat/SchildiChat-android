@@ -96,8 +96,8 @@ ext.libs = [
                 'hiltCompiler'            : "com.google.dagger:hilt-compiler:$dagger"
         ],
         element     : [
-                'opusencoder'             : "io.element.android:opusencoder:1.1.0",
-                'wysiwyg'                 : "io.element.android:wysiwyg:2.38.2"
+                'opusencoder'             : "io.element.android:opusencoder:1.1.2",
+                'wysiwyg'                 : "io.element.android:wysiwyg:2.41.1-classic"
         ],
         squareup    : [
                 'moshi'                  : "com.squareup.moshi:moshi:$moshi",
