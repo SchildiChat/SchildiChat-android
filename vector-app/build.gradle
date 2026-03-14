@@ -39,7 +39,7 @@ ext.versionMinor = 6
 // is the value for the next regular release.
 ext.versionPatch = 52
 
-ext.scVersion = 90
+ext.scVersion = 91
 
 static def getGitTimestamp() {
     def cmd = 'git show -s --format=%ct'
@@ -154,8 +154,8 @@ android {
         renderscriptTargetApi 24
         renderscriptSupportModeEnabled true
 
-        versionCode 40101400
-        versionName "1.6.48.sc90"
+        versionCode 40101410
+        versionName "1.6.52.sc91"
 
         // Generate a random app task affinity
         manifestPlaceholders = [appTaskAffinitySuffix: "H_${gitRevision()}"]
@@ -322,14 +322,14 @@ android {
             }
 
             dimension "store"
-            versionName "1.6.48.sc90"
+            versionName "1.6.52.sc91"
             buildConfigField "String", "SHORT_FLAVOR_DESCRIPTION", "\"G\""
             buildConfigField "String", "FLAVOR_DESCRIPTION", "\"GooglePlay\""
         }
 
         fdroid {
             dimension "store"
-            versionName "1.6.48.sc90"
+            versionName "1.6.52.sc91"
             buildConfigField "String", "SHORT_FLAVOR_DESCRIPTION", "\"F\""
             buildConfigField "String", "FLAVOR_DESCRIPTION", "\"FDroid\""
             isDefault = true
