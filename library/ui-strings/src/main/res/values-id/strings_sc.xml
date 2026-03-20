@@ -186,4 +186,8 @@
     <string name="notification_sync_service_failed_summary">Pertimbangkan mengatur UnifiedPush dan menonaktifkan pembatasan baterai untuk SchildiChat dalam pengaturan sistem Anda.</string>
     <string name="notification_foreground_service_failed_title">Gagal memulai layanan latar depan</string>
     <string name="notification_foreground_service_failed_summary">Anda mungkin perlu mengecualikan SchildiChat dari pembatasan baterai dalam pengaturan sistem Anda.</string>
+    <string name="prompt_unified_push_title">Sinkronisasi latar belakang diaktifkan</string>
+    <string name="prompt_unified_push_description">Anda menggunakan layanan sinkronisasi latar belakang untuk menerima notifikasi. Pendekatan ini tidak berfungsi dengan baik dan menyebabkan kesalahan pada versi Android terbaru. Harap pertimbangkan untuk menyiapkan UnifiedPush sebagai gantinya.</string>
+    <string name="recommend_unified_push_title">UnifiedPush disarankan</string>
+    <string name="recommend_unified_push_description">Layanan sinkronisasi latar belakang tidak berfungsi dengan baik dan menyebabkan kerusakan pada versi Android terbaru. Silakan gunakan UnifiedPush atau instal varian SchildiChat yang mendukung FCM jika Anda telah menginstal Layanan Google Play.</string>
 </resources>
