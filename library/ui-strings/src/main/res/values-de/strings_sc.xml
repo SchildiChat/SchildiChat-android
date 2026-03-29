@@ -87,7 +87,7 @@
     <string name="sc_accent_bluelight">Hellblau</string>
     <string name="setting_sc_accent_color_light">Akzentfarbe für helle Themen</string>
     <string name="setting_sc_accent_color_dark">Akzentfarbe für dunkle Themen</string>
-    <string name="settings_unread_counter">Anzahl ungelesener Nachrichten</string>
+    <string name="settings_unread_counter">Zähler fürl ungelesener Nachrichten</string>
     <string name="settings_unimportant_counter_badge_v2">Stummgeschaltete Nachrichten mitzählen</string>
     <string name="settings_unimportant_counter_badge_summary_v2">Anzahl stummgeschalteter Nachrichten in der Chatübersicht anzeigen</string>
     <string name="settings_aggregate_unread_counts">Chats statt Nachrichten zählen</string>
@@ -175,7 +175,7 @@
     <string name="settings_space_pager_prefer_space_1">Unteren Root Space bevorzugen</string>
     <string name="action_send_as_sticker">Als Sticker senden</string>
     <string name="settings_call_ringtone_use_default_stun_summary">Wird %s als Hilfsserver nutzen, wenn dein Homeserver keinen anbietet (deine IP-Adresse wird für den Stun-Server während eines Anrufs sichtbar)</string>
-    <string name="settings_sc_dbg_show_read_tracking">Zeige Lesebestätigungen</string>
+    <string name="settings_sc_dbg_show_read_tracking">Zeige Lesestatus an</string>
     <string name="settings_sc_dbg_read_marker">Gelesen-Markierung-Debugging</string>
     <string name="custom_emotes_named_other_room">\"%1$s\" von %2$s</string>
     <string name="settings_space_back_navigation">Spaces zurück stapeln</string>
