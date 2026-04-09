@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="normal_priority_header">Нармальны прыярытэт</string>
+    <string name="settings_home_overview">Агляд</string>
+    <string name="settings_single_overview">Камбініраваны агляд чатаў</string>
+    <string name="settings_single_overview_summary">Прагляд паведамленняў і пакояў на адной старонцы</string>
+</resources>
