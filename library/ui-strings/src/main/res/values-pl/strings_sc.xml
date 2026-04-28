@@ -14,7 +14,7 @@
     <string name="settings_light_theme">Jasny tryb</string>
     <string name="settings_dark_theme">Ciemny tryb</string>
     <string name="settings_system_dark_theme_pre_ten">Używaj systemowego trybu ciemnego</string>
-    <string name="settings_single_overview_summary">Widok wiadomości prywatnych i pokojów na jednej stronie</string>
+    <string name="settings_single_overview_summary">Wyświetl wiadomości bezpośrednie i pokoje na jednej stronie</string>
     <string name="settings_room_unread_kind_dm">Podgląd wiadomości prywatnych</string>
     <string name="settings_room_unread_kind_group">Podgląd treści wiadomości grupowych</string>
     <string name="settings_room_unread_kind_content">Ukryj zmiany członków</string>
