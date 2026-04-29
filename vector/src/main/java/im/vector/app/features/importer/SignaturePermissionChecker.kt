@@ -26,7 +26,7 @@ class SignaturePermissionChecker {
         val pkgs = pm.getPackagesForUid(sendingUid) ?: return false
         for (pkg in pkgs) {
             Timber.w("ImporterService: checking package: $pkg")
-            BuildConfig.ALLOWED_APP_SIGNATURES.find { it.appId == pkg }?.let { allowedApp ->
+            (BuildConfig.ALLOWED_APP_SIGNATURES + SC_ALLOWED_APP_SIGNATURES).find { it.appId == pkg }?.let { allowedApp ->
                 Timber.d("ImporterService: found allowed appId $pkg, checking signature")
                 if (isSignatureAllowed(allowedApp, pm)) {
                     Timber.d("ImporterService: signature allowed for package $pkg")
