@@ -1849,7 +1849,7 @@
     <string name="login_terms_title">ຍອມຮັບເງື່ອນໄຂເພື່ອສືບຕໍ່</string>
     <string name="login_a11y_captcha_container">ກະລຸນາດໍາເນີນການ captcha</string>
     <string name="login_a11y_choose_other">ເລືອກ homeserver ແບບກຳນົດເອງ</string>
-    <string name="login_a11y_choose_modular">ເລືອກບໍລິການ Element Matrix</string>
+    <string name="login_a11y_choose_modular">ເລືອກບໍລິການ SchildiChat Matrix</string>
     <string name="login_a11y_choose_matrix_org">ເລືອກ matrix.org</string>
     <string name="login_signup_cancel_confirmation_content">ທ່ານຍັງບໍ່ໄດ້ສ້າງບັນຊີເທື່ອ.
 \n
@@ -1913,17 +1913,17 @@
 \nທ່ານຕ້ອງການເຂົ້າສູ່ລະບົບໂດຍໃຊ້ web client ບໍ\?</string>
     <string name="login_sso_error_message">ເກີດຄວາມຜິດພາດຂຶ້ນໃນເວລາໂຫລດໜ້າ: %1$s (%2$d)</string>
     <string name="login_server_url_form_common_notice">ໃສ່ທີ່ຢູ່ຂອງເຊີບເວີທີ່ທ່ານຕ້ອງການໃຊ້</string>
-    <string name="login_server_url_form_modular_notice">ໃສ່ທີ່ຢູ່ຂອງ Modular Element ຫຼື Server ທີ່ທ່ານຕ້ອງການໃຊ້</string>
+    <string name="login_server_url_form_modular_notice">ໃສ່ທີ່ຢູ່ຂອງ Modular SchildiChat ຫຼື Server ທີ່ທ່ານຕ້ອງການໃຊ້</string>
     <string name="login_server_url_form_modular_text">ການເປັນເຈົ້າພາບເປັນທີ່ນິຍົມສໍາລັບອົງການຈັດຕັ້ງ</string>
     <string name="login_server_url_form_other_hint">ທີ່ຢູ່</string>
-    <string name="login_server_url_form_modular_hint">ທີ່ຢູ່ບໍລິການ Element Matrix</string>
+    <string name="login_server_url_form_modular_hint">ທີ່ຢູ່ບໍລິການ SchildiChat Matrix</string>
     <string name="login_clear_homeserver_history">ລ້າງປະຫວັດ</string>
     <string name="login_signin_sso">ສືບຕໍ່ກັບລະບົບປະຕູດຽວ(SSO)</string>
     <string name="login_signin">ເຂົ້າສູ່ລະບົບ</string>
     <string name="login_signup">ລົງທະບຽນ</string>
     <string name="login_signin_to">ເຂົ້າສູ່ລະບົບ %1$s</string>
     <string name="login_connect_to_a_custom_server">ເຊື່ອມຕໍ່ກັບເຊີບເວີທີ່ກໍາຫນົດເອງ</string>
-    <string name="login_connect_to_modular">ເຊື່ອມຕໍ່ກັບການບໍລິການ Element Matrix</string>
+    <string name="login_connect_to_modular">ເຊື່ອມຕໍ່ກັບການບໍລິການ SchildiChat Matrix</string>
     <string name="login_connect_to">ເຊື່ອມຕໍ່ຫາ %1$s</string>
     <string name="login_continue">ສືບຕໍ່</string>
     <string name="login_social_sso">ລະບົບປະຕູດຽວ</string>

@@ -922,7 +922,7 @@
     <string name="login_server_url_form_modular_hint">Adres Element Matrix Services</string>
     <string name="login_server_url_form_other_hint">Adres</string>
     <string name="login_server_url_form_modular_text">Hosting premium dla organizacji</string>
-    <string name="login_server_url_form_modular_notice">Wprowadź adres Element Modular lub serwera którego chcesz użyć</string>
+    <string name="login_server_url_form_modular_notice">Wprowadź adres SchildiChat Modular lub serwera którego chcesz użyć</string>
     <string name="login_sso_error_message">Wystąpił błąd podczas ładowania strony: %1$s (%2$d)</string>
     <string name="login_mode_not_supported">Aplikacja nie jest w stanie zalogować się do tego serwera domowego. Serwer domowy obsluguje następujące metody logowania: %1$s.
 \n
@@ -1223,7 +1223,7 @@
     <string name="save_recovery_key_chooser_hint">Zapisz klucz odzyskiwania w</string>
     <string name="disclaimer_positive_button">DOWIEDZ SIĘ WIĘCEJ</string>
     <string name="disclaimer_content">Jesteśmy podekscytowani mogąc oznajmić, że zmieniliśmy nazwę! Twoja aplikacja jest aktualna i jesteś zalogowany do swojego konta.</string>
-    <string name="disclaimer_title">Riot nazywa się teraz Element!</string>
+    <string name="disclaimer_title">Riot nazywa się teraz SchildiChat!</string>
     <string name="crypto_error_withheld_generic">Nie masz dostępu do tej wiadomości ponieważ nadawca celowo nie wysłał jej kluczy</string>
     <string name="crypto_error_withheld_unverified">Nie masz dostępu do tej wiadomości ponieważ nadawca nie ufa Twojej sesji</string>
     <string name="crypto_error_withheld_blacklisted">Nie masz dostępu do tej wiadomości ponieważ zostałeś zablokowany przez jej nadawcę</string>
@@ -2729,7 +2729,7 @@
     <string name="change_space">Zmień przestrzeń</string>
     <string name="labs_enable_deferred_dm_summary">Stwórz prywatny chat dopiero po wysłaniu pierwszej wiadomości</string>
     <string name="labs_enable_deferred_dm_title">Włącz odroczone prywatne chaty</string>
-    <string name="labs_enable_new_app_layout_summary">Odświeżony wygląd Element z opcjonalnymi kartami</string>
+    <string name="labs_enable_new_app_layout_summary">Odświeżony wygląd SchildiChat z opcjonalnymi kartami</string>
     <string name="labs_enable_new_app_layout_title">Włącz nowy układ</string>
     <string name="home_empty_space_no_rooms_message">Przestrzenie to nowa metoda na grupowanie razem wielu pokoi i osób. Dodaj tu już istniejący pokój lub stwórz nowy używając przycisku w prawym-dolnym rogu.</string>
     <string name="space_list_empty_message">Jest to nowa metoda na grupowanie razem wielu pokoi i osób.</string>
@@ -2921,7 +2921,7 @@
 \nNie będziesz w stanie uczestniczyć w pokojach, gdzie szyfrowane jest włączone.
 \n
 \nDla najlepszego bezpieczeństwa i prywatności zaleca się korzystania z klientów Matrix, które wspierają szyfrowanie.</string>
-    <string name="device_manager_learn_more_sessions_verified_description">Sesje zweryfikowane są wszędzie, gdzie korzystasz z Element po wprowadzeniu swojego hasła lub zweryfikowaniu swojej tożsamości za pomocą innej sesji zweryfikowanej.
+    <string name="device_manager_learn_more_sessions_verified_description">Sesje zweryfikowane są wszędzie, gdzie korzystasz z SchildiChat po wprowadzeniu swojego hasła lub zweryfikowaniu swojej tożsamości za pomocą innej sesji zweryfikowanej.
 \n
 \nTo oznacza, że posiadasz wszystkie niezbędne klucze wymagane do odblokowania swoich zaszyfrowanych wiadomości i oznajmiasz innym użytkownikom, że ufasz tej sesji.</string>
     <string name="device_manager_learn_more_sessions_unverified">Sesje niezweryfikowane to sesje, w których zalogowano się za pomocą Twoich danych, lecz nie zostały zweryfikowane inną sesją.
