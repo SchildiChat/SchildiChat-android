@@ -207,6 +207,8 @@ interface CryptoService {
     fun getSharedWithInfo(roomId: String?, sessionId: String): MXUsersDevicesMap<Int>
     fun getWithHeldMegolmSession(roomId: String, sessionId: String): RoomKeyWithHeldContent?
 
+    fun exportSecrets(): Result<String>
+
     /**
      * Perform any background tasks that can be done before a message is ready to
      * send, in order to speed up sending of the message.
@@ -238,7 +240,8 @@ interface CryptoService {
             deviceChanges: DeviceListResponse?,
             keyCounts: DeviceOneTimeKeysCountSyncResponse?,
             deviceUnusedFallbackKeyTypes: List<String>?,
-            nextBatch: String?)
+            nextBatch: String?,
+    )
 
     suspend fun onLiveEvent(roomId: String, event: Event, isInitialSync: Boolean, cryptoStoreAggregator: CryptoStoreAggregator?)
     suspend fun onStateEvent(roomId: String, event: Event, cryptoStoreAggregator: CryptoStoreAggregator?) {}

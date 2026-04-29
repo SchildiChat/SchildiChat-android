@@ -14,7 +14,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.airbnb.mvrx.activityViewModel
@@ -398,7 +397,7 @@ class NewHomeDetailFragment :
                 it.pushCounter,
                 vectorPreferences.developerShowDebugInfo()
         )
-        views.homeVerifyDevice.isGone = it.isSessionVerified
+        views.homeVerifyDevice.isVisible = it.showVerifyDeviceBanner
         refreshAvatar()
         hasUnreadRooms = it.hasUnreadMessages
     }

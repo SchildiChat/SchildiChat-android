@@ -892,6 +892,12 @@ internal class RustCryptoService @Inject constructor(
         throw UnsupportedOperationException("Not supported by rust")
     }
 
+    override fun exportSecrets(): Result<String> {
+        return runCatching {
+            olmMachine.inner().exportSecretsBundle()
+        }
+    }
+
     override fun logDbUsageInfo() {
         // not available with rust
         // cryptoStore.logDbUsageInfo()

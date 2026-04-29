@@ -420,6 +420,11 @@
             android:foregroundServiceType="microphone"
             android:permission="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
 
+        <service
+            android:name=".features.importer.ImporterService"
+            android:exported="true"
+            tools:ignore="ExportedService" />
+
         <!-- Receivers -->
 
         <receiver

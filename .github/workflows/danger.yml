@@ -2,16 +2,20 @@ name: Danger CI
 
 on: [pull_request]
 
+permissions: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Danger
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - run: |
           npm install --save-dev @babel/plugin-transform-flow-strip-types
       - name: Danger
-        uses: danger/danger-js@11.2.6
+        uses: danger/danger-js@67ed2c1f42fd2fc198cc3c14b43c8f83351f4fe9 # 13.0.5
         with:
           args: "--dangerfile ./tools/danger/dangerfile.js"
         env:

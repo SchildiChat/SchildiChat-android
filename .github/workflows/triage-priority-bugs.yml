@@ -4,6 +4,8 @@ on:
   issues:
     types: [labeled, unlabeled]
 
+permissions: {}
+
 jobs:
   p1_issues_to_team_workboard:
     runs-on: ubuntu-latest

@@ -71,6 +71,59 @@ android {
             if (project.hasProperty("coverage")) {
                 testCoverageEnabled = project.properties["coverage"] == "true"
             }
+            buildConfigField(
+                    "java.util.List<im.vector.app.features.importer.ApplicationFingerprint>",
+                    "ALLOWED_APP_SIGNATURES",
+                    "java.util.Arrays.asList(\n" +
+                            // Element
+                            "new im.vector.app.features.importer.ApplicationFingerprint(\n" +
+                            "\"io.element.android.x.debug\",\n" +
+                            "java.util.Arrays.asList(\"B0:B0:51:DC:56:5C:81:2F:E1:7F:6F:3E:94:5B:4D:79:04:71:23:AB:0D:A6:12:86:76:9E:B2:94:91:97:13:0E\")\n" +
+                            "),\n" +
+                            // Element Pro
+                            "new im.vector.app.features.importer.ApplicationFingerprint(\n" +
+                            "\"io.element.enterprise.debug\",\n" +
+                            "java.util.Arrays.asList(\"B0:B0:51:DC:56:5C:81:2F:E1:7F:6F:3E:94:5B:4D:79:04:71:23:AB:0D:A6:12:86:76:9E:B2:94:91:97:13:0E\")\n" +
+                            ")\n" +
+                            ")",
+            )
+        }
+        nightly {
+            matchingFallbacks = ['release']
+            buildConfigField(
+                    "java.util.List<im.vector.app.features.importer.ApplicationFingerprint>",
+                    "ALLOWED_APP_SIGNATURES",
+                    "java.util.Arrays.asList(\n" +
+                            // Element
+                            "new im.vector.app.features.importer.ApplicationFingerprint(\n" +
+                            "\"io.element.android.x.nightly\",\n" +
+                            "java.util.Arrays.asList(\"CA:D3:85:16:84:3A:05:CC:EB:00:AB:7B:D3:80:0F:01:BA:8F:E0:4B:38:86:F3:97:D8:F7:9A:1B:C4:54:E4:0F\")\n" +
+                            "),\n" +
+                            // Element Pro
+                            "new im.vector.app.features.importer.ApplicationFingerprint(\n" +
+                            "\"io.element.enterprise.nightly\",\n" +
+                            "java.util.Arrays.asList(\"CA:D3:85:16:84:3A:05:CC:EB:00:AB:7B:D3:80:0F:01:BA:8F:E0:4B:38:86:F3:97:D8:F7:9A:1B:C4:54:E4:0F\")\n" +
+                            ")\n" +
+                            ")",
+            )
+        }
+        release {
+            buildConfigField(
+                    "java.util.List<im.vector.app.features.importer.ApplicationFingerprint>",
+                    "ALLOWED_APP_SIGNATURES",
+                    "java.util.Arrays.asList(\n" +
+                            // Element
+                            "new im.vector.app.features.importer.ApplicationFingerprint(\n" +
+                            "\"io.element.android.x\",\n" +
+                            "java.util.Arrays.asList(\"C6:DB:9B:9C:8C:BD:D6:5D:16:E8:EC:8C:8B:91:C8:31:B9:EF:C9:5C:BF:98:AE:41:F6:A9:D8:35:15:1A:7E:16\")\n" +
+                            "),\n" +
+                            // Element Pro
+                            "new im.vector.app.features.importer.ApplicationFingerprint(\n" +
+                            "\"io.element.enterprise\",\n" +
+                            "java.util.Arrays.asList(\"FF:03:21:B0:12:BB:F2:CD:AE:4A:EF:2F:D5:47:10:05:42:29:5E:AA:12:80:2F:17:E1:6A:E0:EA:09:D6:20:F4\")\n" +
+                            ")\n" +
+                            ")",
+            )
         }
     }
 

@@ -4,19 +4,23 @@ on:
   push:
     branches: [ develop ]
 
+permissions: {}
+
 jobs:
   docs:
     name: Generate and publish Android Matrix SDK documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Build docs
         run: ./gradlew dokkaHtml
 
       - name: Deploy docs
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./matrix-sdk-android/build/dokka/html
