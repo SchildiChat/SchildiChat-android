@@ -1,0 +1,7 @@
+SchildiChat is a client for the matrix protocol, based on the Element app.
+The matrix protocol is a decentralized approach to modern messaging, allowing for end-to-end encryption, shared message history across multiple devices, and more.
+By building on Element, SchildiChat inherits all features of one of the most complete and feature-rich Matrix-clients currently available.
+On top, SchildiChat adds a different design and various extra tweaks, customization options, and additional community features.
+
+SchildiChat is open source: https://github.com/SchildiChat/SchildiChat-android
+More information about the Matrix protocol: https://matrix.org/
