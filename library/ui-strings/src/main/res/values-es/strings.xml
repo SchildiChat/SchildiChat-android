@@ -1069,7 +1069,7 @@
     <string name="login_signin">Iniciar sesión</string>
     <string name="login_server_url_form_other_hint">Dirección</string>
     <string name="login_server_url_form_modular_text">Alojamiento de pago para organizaciones</string>
-    <string name="login_server_url_form_modular_notice">Introduzca la dirección de Modular SchildiChat o servidor que quieres usar</string>
+    <string name="login_server_url_form_modular_notice">Introduzca la dirección de Modular Element o servidor que quieres usar</string>
     <string name="login_sso_error_message">Se produjo un error al cargar la página: %1$s (%2$d)</string>
     <string name="login_mode_not_supported">La aplicación no es capaz de iniciar sesión en este servidor. Éste solo soporta el acceso mediante: %1$s.
 \n
@@ -1129,7 +1129,7 @@
     <string name="identity_server_error_outdated_identity_server">Servidor de identidad desactualizado. ${app_name} solo soporta API V2.</string>
     <string name="identity_server_error_outdated_home_server">Operación no posible. Servidor desactualizado.</string>
     <string name="identity_server_error_no_identity_server_configured">Por favor, configure primero un Servidor de Identidad.</string>
-    <string name="disclaimer_title">Riot ahora es SchildiChat!</string>
+    <string name="disclaimer_title">Riot ahora es Element!</string>
     <string name="disclaimer_negative_button">Entendido</string>
     <string name="disclaimer_positive_button">Aprender Mas</string>
     <string name="three_pid_revoke_invite_dialog_title">Rechazar invitación</string>
@@ -2658,7 +2658,7 @@
     <string name="labs_enable_rich_text_editor_summary">Prueba el editor de texto enriquecido (pronto llegará la opción de texto simple, sin formato)</string>
     <string name="labs_enable_rich_text_editor_title">Habilitar editor de texto enriquecido (rich text)</string>
     <string name="labs_enable_deferred_dm_summary">Crear MD únicamente al primer mensaje</string>
-    <string name="labs_enable_new_app_layout_summary">Una versión simplificada de SchildiChat con pestañas opcionales</string>
+    <string name="labs_enable_new_app_layout_summary">Una versión simplificada de Element con pestañas opcionales</string>
     <string name="labs_enable_new_app_layout_title">Habilitar nueva disposición</string>
     <string name="action_stop">Sí, Detener</string>
     <string name="action_deselect_all">Deseleccionar todo</string>

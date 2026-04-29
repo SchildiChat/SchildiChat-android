@@ -1067,7 +1067,7 @@
     <string name="login_server_url_form_modular_hint">Adresë Element Matrix Services</string>
     <string name="login_server_url_form_other_hint">Adresë</string>
     <string name="login_server_url_form_modular_text">Strehim me pagesë për ente</string>
-    <string name="login_server_url_form_modular_notice">Jepni adresën e Modular SchildiChat-it ose Shërbyesit që doni të përdoret</string>
+    <string name="login_server_url_form_modular_notice">Jepni adresën e Modular Element-it ose Shërbyesit që doni të përdoret</string>
     <string name="login_sso_error_message">Ndodhi një gabim kur ngarkohej faqja: %1$s (%2$d)</string>
     <string name="login_mode_not_supported">Aplikacioni s’është në gjendje të bëjë hyrje në llogari në këtë shërbyes Home. Shërbyesi Home mbulon llojet vijuese të hyrjes(ve): %1$s.
 \n
@@ -1626,7 +1626,7 @@
     <string name="crypto_error_withheld_unverified">S’mund të hapni këtë mesazh, ngaqë sesionit tuaj nuk i zihet besë nga dërguesi</string>
     <string name="crypto_error_withheld_generic">S’mund ta hapni këtë mesazh, ngaqë dërguesi qëllimisht nuk ju dërgoi kyçet</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Po pritet për historik fshehtëzimesh</string>
-    <string name="disclaimer_title">Riot-i tanimë quhet SchildiChat!</string>
+    <string name="disclaimer_title">Riot-i tanimë quhet Element!</string>
     <string name="disclaimer_content">Jemi të ngazëllyer t’ju njoftojmë se kemi ndërruar emër! Aplikacioni juaj është i përditësuar dhe jeni i futur në llogarinë tuaj.</string>
     <string name="disclaimer_negative_button">E MORA VESH</string>
     <string name="disclaimer_positive_button">MËSONI MË TEPËR</string>
@@ -2440,7 +2440,7 @@
     <string name="settings_presence">Prani</string>
     <string name="action_learn_more">Mësoni më tepër</string>
     <string name="action_try_it_out">Provojeni</string>
-    <string name="labs_enable_element_call_permission_shortcuts">Aktivizo shkurtore lejesh për Thirrje SchildiChat</string>
+    <string name="labs_enable_element_call_permission_shortcuts">Aktivizo shkurtore lejesh për Thirrje Element</string>
     <string name="settings_troubleshoot_test_distributors_fdroid">S’u gjet metodë tjetër veç njëkohësimit në prapaskenë.</string>
     <string name="initial_sync_request_content">${app_name}-it i duhet një fshehtinë e pastër, për të qenë i përditësuar, për arsyen vijuese:
 \n%s
@@ -2772,7 +2772,7 @@
     <string name="labs_enable_rich_text_editor_summary">Provoni përpunuesin e teksteve të pasur (për tekst të thjeshtë vjen së shpejti)</string>
     <string name="labs_enable_rich_text_editor_title">Aktivizo përpunues teksti të pasur</string>
     <string name="labs_enable_deferred_dm_summary">Krijo MD vetëm për mesazhin e parë</string>
-    <string name="labs_enable_new_app_layout_summary">Një SchildiChat i thjeshtuar, me skeda opsionale</string>
+    <string name="labs_enable_new_app_layout_summary">Një Element i thjeshtuar, me skeda opsionale</string>
     <string name="labs_enable_new_app_layout_title">Aktivizo skemë të re</string>
     <string name="home_layout_preferences_sort_name">A - Z</string>
     <string name="home_layout_preferences_sort_activity">Veprimtari</string>
@@ -2806,7 +2806,7 @@
     <string name="qr_code_login_header_show_qr_code_link_a_device_description">Skanoni kodin QR më poshtë me pajisjen tuaj prej nga është dalë nga llogaria.</string>
     <string name="qr_code_login_header_show_qr_code_new_device_description">Përdorni pajisjen tuaj ku jeni brenda llogarisë që të skanoni kodin QR më poshtë:</string>
     <string name="qr_code_login_header_scan_qr_code_description">Përdorni kamerën në këtë pajisje që të skanoni kodin QR të shfaqur në pajisjen tuaj tjetër:</string>
-    <string name="labs_enable_element_call_permission_shortcuts_summary">Mirato vetvetiu widget-e Thirrjesh SchildiChat dhe akordo përdorim kamere / mikrofoni</string>
+    <string name="labs_enable_element_call_permission_shortcuts_summary">Mirato vetvetiu widget-e Thirrjesh Element dhe akordo përdorim kamere / mikrofoni</string>
     <string name="labs_enable_msc3061_share_history">MSC3061: Po jepen kyçe dhome për mesazhe të dikurshëm</string>
     <string name="settings_show_latest_profile_description">Shfaq hollësitë më të reja të profileve (avatar dhe emër në ekran) për krejt mesazhet.</string>
     <string name="settings_security_incognito_keyboard_summary">Kërko doemos që tastiera të mos përditësojë ndonjë të dhënë të personalizuar, bie fjala, historik shtypjeje në të dhe fjalor bazuar në ç’keni shtypur në biseda. Kini parasysh se disa tastiera mund të mos e respektojnë këtë rregullim.</string>
@@ -2957,7 +2957,7 @@
 \n
 \nNëse s’doni të shihni më lëndë nga ky përdorues, mund ta shpërfillni, që mesazhet e tij të jenë të fshehura.</string>
     <string name="microphone_in_use_title">Mikrofon në përdorim</string>
-    <string name="call_unsupported_matrix_rtc_call">Thirrje që s’mbulohet. Për të marrë pjesë në këtë thirrje lypset aplikacioni i ri SchildiChat Next.</string>
+    <string name="call_unsupported_matrix_rtc_call">Thirrje që s’mbulohet. Për të marrë pjesë në këtë thirrje lypset aplikacioni i ri Element X.</string>
     <string name="call_unsupported">Thirrje që s’mbulohet</string>
     <string name="error_mas_not_supported_subtitle">Shkarkoni %1$s, që të përdorni %2$s për llogarinë tuaj, ose zgjidhni një tjetër shërbyes Home.</string>
     <string name="view_download_replacement_app_title">Shkarko %1$s</string>
