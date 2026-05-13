@@ -55,10 +55,13 @@ class VectorWebViewActivity : VectorBaseActivity<ActivityVectorWebViewBinding>()
             // Allow use of Local Storage
             domStorageEnabled = true
 
-            @Suppress("DEPRECATION")
-            allowFileAccessFromFileURLs = true
-            @Suppress("DEPRECATION")
-            allowUniversalAccessFromFileURLs = true
+            // allowFileAccessFromFileURLs and allowUniversalAccessFromFileURLs
+            // only take effect when the main frame is a file:// URL. This
+            // WebView is launched with an http/https URL (see EXTRA_URL
+            // wiring), so neither flag is load-bearing here, and
+            // allowUniversalAccessFromFileURLs in particular is a
+            // CWE-200 sandbox-escape vector if a file:// load ever lands
+            // in this Activity.
 
             displayZoomControls = false
         }
