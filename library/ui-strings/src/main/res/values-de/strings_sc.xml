@@ -182,4 +182,13 @@
     <string name="settings_sc_dbg_show_duplicate_read_receipts">Doppelte Lesebestätigungen</string>
     <string name="settings_space_pager_prefer_space_1_summary">Zeige in der unteren Leiste vorrangig die Spaces an, die du an den Anfang deiner Root-Spaces verschoben hast</string>
     <string name="settings_sc_dbg_read_receipts">Gelesen-Status Debugging</string>
+    <string name="notification_channel_app_errors">Anwendungs Fehler</string>
+    <string name="notification_sync_service_failed_title">Kann nicht Benachrichtigungen synchronisieren</string>
+    <string name="notification_sync_service_failed_summary">Erwäge UnifiedPush einzurichten und die Akku-Einschränkungen für SchildiChat in Ihren Systemeinstellungen zu deaktivieren.</string>
+    <string name="notification_foreground_service_failed_title">Vordergrundservice starten ist fehlgeschlagen</string>
+    <string name="notification_foreground_service_failed_summary">Möglicherweise musst du SchildiChat in deinen Systemeinstellungen von den Akku-Einschränkungen ausnehmen.</string>
+    <string name="prompt_unified_push_title">Hintergrundsynchronisation ist eingeschaltet</string>
+    <string name="prompt_unified_push_description">Du nutzst den Hintergrund-Synchronisierungsdienst, um Benachrichtigungen zu empfangen. Dieser Ansatz funktioniert nicht zuverlässig und führt bei neueren Android-Versionen zu Abstürzen. Bitte erwäge stattdessen die Einrichtung von UnifiedPush.</string>
+    <string name="recommend_unified_push_title">UnifiedPush empfohlen</string>
+    <string name="recommend_unified_push_description">Der Hintergrund-Synchronisierungsdienst funktioniert nicht zuverlässig und führt bei neueren Android-Versionen zu Abstürzen. Bitte nutze UnifiedPush oder installiere eine SchildiChat-Variante, die FCM unterstützt, falls du Google Play Services installiert hast.</string>
 </resources>
