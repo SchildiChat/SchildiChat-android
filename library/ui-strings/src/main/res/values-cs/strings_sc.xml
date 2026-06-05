@@ -18,10 +18,10 @@
     <string name="prompt_simplified_mode_on_text">Mám v plánu chatovat pouze s lidmi, které znám, a další možnosti považuji za matoucí.</string>
     <string name="prompt_simplified_mode_off">Kompletní</string>
     <string name="prompt_simplified_mode_off_text">Hledám plnou funkčnost včetně zjišťování veřejných místností a jemného nastavení místností a šifrování.</string>
-    <string name="settings_light_theme">Světlý režim</string>
-    <string name="settings_dark_theme">Tmavý režim</string>
-    <string name="settings_system_dark_theme_pre_ten">Podle nastavení tmavého režimu v systému</string>
-    <string name="settings_system_dark_theme_pre_ten_summary">Poskytnout samostatné nastavení vzhledu pro světlý a tmavý režim. Vaše aktuální verze systému Android nemusí podporovat přepínání světlých a tmavých režimů!</string>
+    <string name="settings_light_theme">Světlý motiv</string>
+    <string name="settings_dark_theme">Tmavý motiv</string>
+    <string name="settings_system_dark_theme_pre_ten">Podle nastavení tmavého motivu v systému</string>
+    <string name="settings_system_dark_theme_pre_ten_summary">Poskytnout samostatné nastavení vzhledu pro světlý a tmavý motiv. Vaše aktuální verze systému Android nemusí podporovat přepínání světlých a tmavých motivů!</string>
     <string name="sc_light_theme">SC světlý</string>
     <string name="sc_theme">SC černý</string>
     <string name="sc_dark_theme">SC tmavý</string>
