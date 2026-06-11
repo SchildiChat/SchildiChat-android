@@ -109,7 +109,7 @@
     <string name="settings_apply_sc_default_settings_dialog_title">Sabojāt iestatījumus</string>
     <string name="settings_enable_member_name_click">Klikšķināmi vārdi</string>
     <string name="settings_unifiedpush_force_custom_gateway">Piespiest izmantot pielāgotu paziņojumu piegādes vārteju</string>
-    <string name="settings_force_allow_background_sync">Ļaut fona sinhronizāciju papildus piegādei</string>
+    <string name="settings_force_allow_background_sync">Ļaut vienādošanu fonā papildus pašpiegādei</string>
     <string name="settings_force_allow_background_sync_summary">Noderīgs tikai paziņojumu piegādes atkļūdošanai.</string>
     <string name="settings_jump_to_bottom_on_send">Pārlēkt uz leju pēc nosūtīšanas</string>
     <string name="settings_jump_to_bottom_on_send_summary">Automātiski ritināt uz leju pēc ziņas nosūtīšanas</string>
@@ -181,4 +181,9 @@
     <string name="settings_space_pager_prefer_space_1">Dot priekšroku zemākai pamata vietai</string>
     <string name="settings_space_pager_prefer_space_1_summary">Rādīt vietas apakšējā vietu joslā, kuras ir pārvietotas uz pamata vietu saraksta augšgalu</string>
     <string name="settings_integrations_scalar_warning">⚠️ Šis iestatījums pēc noklusējuma (ja vien serverī nav norādīts citādi) iespējo piekļuvi \"scalar\", Element iekļaušanas pārvaldniekam, kam, diemžēl, ir slēgts kods, tas ir, tā pirmkods nav atvērts un cilvēki vai SchildiChat izstrādātāji nevar to pārbaudīt.</string>
+    <string name="notification_channel_app_errors">Lietotnes kļūdas</string>
+    <string name="notification_sync_service_failed_title">Nevar vienādot paziņojumus</string>
+    <string name="notification_foreground_service_failed_title">Neizdevās uzsākt priekšplāna pakalpojumu</string>
+    <string name="prompt_unified_push_title">Vienādošana fonā ir iespējota</string>
+    <string name="recommend_unified_push_title">Ieteicams UnifiedPush</string>
 </resources>
