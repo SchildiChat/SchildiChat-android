@@ -316,7 +316,7 @@
     <string name="disclaimer_positive_button">TÌM HIỂU THÊM</string>
     <string name="disclaimer_negative_button">HIỂU RỒI</string>
     <string name="disclaimer_content">Chúng tôi rất háo hức muốn tuyên bố rằng chúng tôi đã đổi tên! Ứng dụng của bạn đã được cập nhật và bạn đã đăng nhập vào tài khoản của bạn.</string>
-    <string name="disclaimer_title">Riot bây giờ là Element!</string>
+    <string name="disclaimer_title">Riot bây giờ là SchildiChat!</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Đang đợi lịch sử mã hoá</string>
     <string name="crypto_error_withheld_generic">Bạn không thể truy cập tin nhắn này vì người gửi đã cố tình không gửi các mã khoá</string>
     <string name="crypto_error_withheld_unverified">Bạn không thể truy cập tin nhắn này vì phiên làm việc của bạn không được người gửi tin cậy</string>
@@ -882,7 +882,7 @@
     <string name="login_terms_title">Chấp nhận điều khoản để tiếp tục</string>
     <string name="login_a11y_captcha_container">Hãy thực hiện thách thức captcha</string>
     <string name="login_a11y_choose_other">Chọn một máy chủ khác</string>
-    <string name="login_a11y_choose_modular">Chọn Dịch vụ Element Matrix</string>
+    <string name="login_a11y_choose_modular">Chọn Dịch vụ SchildiChat Matrix</string>
     <string name="login_a11y_choose_matrix_org">Chọn matrix.org</string>
     <string name="login_signup_cancel_confirmation_content">Tài khoản của bạn chưa được tạo. Bạn muốn ngừng tiến trình đăng ký\?</string>
     <string name="login_signup_cancel_confirmation_title">Cảnh báo</string>
@@ -934,7 +934,7 @@
     <string name="login_reset_password_on">Đặt lại mật khẩu ở %1$s</string>
     <string name="login_login_with_email_error">Địa chỉ thư điện tử này không được liên kết với tài khoản nào.</string>
     <string name="login_server_url_form_other_hint">Địa chỉ</string>
-    <string name="login_server_url_form_modular_hint">Địa chỉ Dịch vụ Element Matrix</string>
+    <string name="login_server_url_form_modular_hint">Địa chỉ Dịch vụ SchildiChat Matrix</string>
     <string name="login_clear_homeserver_history">Xóa lịch sử</string>
     <string name="login_signin_sso">Tiếp tục với SSO</string>
     <string name="login_signin">Đăng Nhập</string>
@@ -1755,7 +1755,7 @@
 \nBạn có muốn đăng nhập bằng máy khách web không\?</string>
     <string name="login_sso_error_message">Lỗi xảy ra khi tải trang: %1$s (%2$d)</string>
     <string name="login_server_url_form_common_notice">Nhập địa chỉ của máy chủ bạn muốn sử dụng</string>
-    <string name="login_server_url_form_modular_notice">Nhập địa chỉ của Mô-đun Element hoặc Máy chủ bạn muốn sử dụng</string>
+    <string name="login_server_url_form_modular_notice">Nhập địa chỉ của Mô-đun SchildiChat hoặc Máy chủ bạn muốn sử dụng</string>
     <string name="login_server_url_form_modular_text">Lưu trữ cao cấp cho các tổ chức</string>
     <string name="login_server_modular_text">Lưu trữ cao cấp cho các tổ chức</string>
     <string name="login_server_matrix_org_text">Tham gia hàng triệu máy chủ công cộng miễn phí lớn nhất</string>
@@ -2539,7 +2539,7 @@
     <string name="thread_list_empty_title">Sắp xếp các cuộc thảo luận với các chủ đề</string>
     <string name="thread_timeline_title">Chủ đề</string>
     <string name="thread_list_modal_my_threads_subtitle">Hiển thị tất cả chủ đề bạn đã tham gia</string>
-    <string name="labs_enable_new_app_layout_summary">Element đã được đơn giản hóa với các mục tùy chọn</string>
+    <string name="labs_enable_new_app_layout_summary">SchildiChat đã được đơn giản hóa với các mục tùy chọn</string>
     <string name="labs_enable_deferred_dm_summary">Chỉ tạo cuộc trò chuyện riêng cho tin nhắn đầu tiên</string>
     <string name="labs_enable_deferred_dm_title">Bật trì hoãn cho các tin nhắn riêng</string>
     <string name="thread_list_modal_my_threads_title">Các chủ đề của tôi</string>
@@ -2555,7 +2555,7 @@
     <string name="microphone_in_use_title">Micro đang được sử dụng</string>
     <string name="invite_unknown_users_dialog_submit">Cứ mời cho tôi</string>
     <string name="call_unsupported">Cuộc gọi không được hỗ trợ</string>
-    <string name="call_unsupported_matrix_rtc_call">Cuộc gọi này chỉ được ứng dụng Element X hỗ trợ.</string>
+    <string name="call_unsupported_matrix_rtc_call">Cuộc gọi này chỉ được ứng dụng SchildiChat Next hỗ trợ.</string>
     <string name="login_splash_sign_in">Đăng nhập</string>
     <string name="error_audio_message_unable_to_play">Không thể phát %1$s</string>
     <string name="settings_troubleshoot_test_system_settings_permission_failed">${app_name} cần quyền để hiển thị thông báo.
@@ -2584,7 +2584,7 @@
     <string name="audio_message_reply_content">%1$s (%2$s)</string>
     <string name="audio_message_file_size">(%1$s)</string>
     <string name="a11y_open_settings">Mở cài đặt</string>
-    <string name="ftue_auth_choose_server_ems_subtitle">Dịch vụ Matrix của Element (EMS) là một dịch vụ lưu trữ trò truyện thời gian thực nhanh và bảo mật. Thông tin thêm tại &lt;a href=\"${ftue_ems_url}\"&gt;element.io/ems&lt;/a&gt;</string>
+    <string name="ftue_auth_choose_server_ems_subtitle">Dịch vụ Matrix của SchildiChat (EMS) là một dịch vụ lưu trữ trò truyện thời gian thực nhanh và bảo mật. Thông tin thêm tại &lt;a href=\"${ftue_ems_url}\"&gt;element.io/ems&lt;/a&gt;</string>
     <string name="a11y_pause_audio_message">Tạm dừng %1$s</string>
     <string name="voice_broadcast_live">Trực tiếp</string>
     <string name="reply_in_thread">Trả lời trong thớt</string>
