@@ -1,0 +1,6 @@
+- Update codebase to Element v1.5.28
+- Escape @room in sent reply fallbacks to avoid unintentional pings in other clients
+- Support custom emote packs with state keys
+- Render emote pack names in autocompletion
+- Possibility to expand emote pack suggestions in autocompletion
+- Possibly fix bug with disappearing read receipts
