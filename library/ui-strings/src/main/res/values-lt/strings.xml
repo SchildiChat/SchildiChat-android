@@ -1451,7 +1451,7 @@
 \nAr norite prisijungti naudodami žiniatinklio klientą\?</string>
     <string name="login_sso_error_message">Įkeliant puslapį įvyko klaida: %1$s (%2$d)</string>
     <string name="login_server_url_form_common_notice">Įveskite norimo naudoti serverio adresą</string>
-    <string name="login_server_url_form_modular_notice">Įveskite adresą Modular SchildiChat arba serverio kurį norite naudoti</string>
+    <string name="login_server_url_form_modular_notice">Įveskite adresą Modular Element arba serverio kurį norite naudoti</string>
     <string name="login_server_url_form_modular_text">Aukščiausios kokybės talpinimas organizacijoms</string>
     <string name="login_server_url_form_other_hint">Adresas</string>
     <string name="login_server_url_form_modular_hint">Element Matrix Services Adresas</string>
@@ -2178,7 +2178,7 @@
     <string name="a11y_open_settings">Atidaryti nustatymus</string>
     <string name="labs_enable_deferred_dm_summary">Sukurti AŽ tik po pirmos žinutės</string>
     <string name="labs_enable_deferred_dm_title">Įjungti atidėtas AŽ</string>
-    <string name="labs_enable_new_app_layout_summary">Supaprastintas SchildiChat su nebūtinais skirtukais</string>
+    <string name="labs_enable_new_app_layout_summary">Supaprastintas Element su nebūtinais skirtukais</string>
     <string name="labs_enable_new_app_layout_title">Įjungti naują išdėstymą</string>
     <string name="thread_list_not_available">Jūsų namų serveris dar nepalaiko temų sąrašo.</string>
     <string name="settings_notification_error_on_update">Atnaujinant pranešimų nuostatas įvyko klaida. Bandykite dar kartą.</string>

@@ -701,7 +701,7 @@
     <string name="settings_show_join_leave_messages">События о вступлении/выходе</string>
     <string name="settings_show_avatar_display_name_changes_messages">События учётной записи</string>
     <string name="settings_show_avatar_display_name_changes_messages_summary">Включает изменения аватара и отображаемого имени.</string>
-    <string name="settings_labs_native_camera_summary">Использовать системную камеру вместо камеры SchildiChat.</string>
+    <string name="settings_labs_native_camera_summary">Использовать системную камеру вместо камеры Element.</string>
     <string name="generic_label_and_value">%1$s: %2$s</string>
     <string name="x_plus">+%d</string>
     <string name="no_valid_google_play_services_apk">Не найден APK сервисов Google Play. Уведомления могут работать неправильно.</string>
@@ -1083,7 +1083,7 @@
     <string name="login_server_url_form_modular_hint">Element Matrix Services Адрес</string>
     <string name="login_server_url_form_other_hint">Адрес</string>
     <string name="login_server_url_form_modular_text">Премиум-хостинг для организаций</string>
-    <string name="login_server_url_form_modular_notice">Введите адрес Modular SchildiChat или Сервер, который вы хотите использовать</string>
+    <string name="login_server_url_form_modular_notice">Введите адрес Modular Element или Сервер, который вы хотите использовать</string>
     <string name="login_sso_error_message">Произошла ошибка при загрузке страницы: %1$s (%2$d)</string>
     <string name="login_mode_not_supported">Приложение не может войти на этот домашний сервер. Домашний сервер поддерживает следующие типы входа: %1$s.
 \n
@@ -1636,7 +1636,7 @@
     <string name="crypto_error_withheld_unverified">Нет доступа к этому сообщению, так как отправитель не доверяет вашей сессии</string>
     <string name="crypto_error_withheld_generic">Вы не можете получить доступ к этому сообщению, потому что отправитель намеренно не отправил ключи</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Ожидание истории шифрования</string>
-    <string name="disclaimer_title">Riot теперь SchildiChat!</string>
+    <string name="disclaimer_title">Riot теперь Element!</string>
     <string name="disclaimer_content">Мы рады сообщить, что сменили имя! Ваше приложение обновлено, и вы вошли в свою учетную запись.</string>
     <string name="disclaimer_negative_button">ПОНЯТНО</string>
     <string name="disclaimer_positive_button">УЗНАТЬ БОЛЬШЕ</string>
@@ -2709,7 +2709,7 @@
     <string name="home_empty_no_unreads_message">Здесь будут отображаться непрочитанные сообщения, когда таковые будут.</string>
     <string name="font_size_use_system">Как в системе</string>
     <string name="change_space">Смена пространства</string>
-    <string name="labs_enable_new_app_layout_summary">Упрощённый SchildiChat с дополнительными вкладками</string>
+    <string name="labs_enable_new_app_layout_summary">Упрощённый Element с дополнительными вкладками</string>
     <string name="onboarding_new_app_layout_welcome_title">Добро пожаловать в новый вид!</string>
     <string name="home_empty_space_no_rooms_title">%s
 \nвыглядит слегка пустовато.</string>
@@ -3075,5 +3075,5 @@
     <string name="create_room_unknown_users_dialog_submit">Всё равно начать беседу</string>
     <string name="microphone_in_use_title">Используется микрофон</string>
     <string name="call_unsupported">Неподдерживаемый вызов</string>
-    <string name="call_unsupported_matrix_rtc_call">Вызов не поддерживается. Для подключения к этому вызову необходимо новое приложение SchildiChat Next.</string>
+    <string name="call_unsupported_matrix_rtc_call">Вызов не поддерживается. Для подключения к этому вызову необходимо новое приложение Element X.</string>
 </resources>

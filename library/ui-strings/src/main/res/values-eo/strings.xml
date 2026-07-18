@@ -1360,7 +1360,7 @@
     <string name="action_reset">Restarigi</string>
     <string name="initialize_cross_signing">Pretigi delegajn subskribojn</string>
     <string name="settings_rageshake">Kolera skuado</string>
-    <string name="login_server_url_form_modular_notice">Enigu la adreson de tiu servilo aŭ «Modular SchildiChat», kiun vi volas uzi</string>
+    <string name="login_server_url_form_modular_notice">Enigu la adreson de tiu servilo aŭ «Modular Element», kiun vi volas uzi</string>
     <string name="login_server_url_form_modular_text">Pagenda gastigado por organizaĵoj</string>
     <string name="login_server_other_title">Alia</string>
     <string name="login_server_modular_text">Pagenda gastigado por organizaĵoj</string>
@@ -1418,7 +1418,7 @@
     <string name="disclaimer_positive_button">EKSCIU PLION</string>
     <string name="disclaimer_negative_button">KOMPRENITE</string>
     <string name="disclaimer_content">Ni ĝojas anonci, ke ni ŝanĝis nian nomon! Via aplikaĵo estas ĝisdata kaj vi estas salutinta vian konton.</string>
-    <string name="disclaimer_title">Riot nun estas SchildiChat!</string>
+    <string name="disclaimer_title">Riot nun estas Element!</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Atendante historion de ĉifrado</string>
     <string name="crypto_error_withheld_generic">Vi ne povas aliri ĉi tiun mesaĝon, ĉar la sendinto intence ne sendis la ŝlosilojn</string>
     <string name="crypto_error_withheld_unverified">Vi ne povas aliri ĉi tiun mesaĝon ĉar la sendinto ne fidas vian salutaĵon</string>
@@ -2311,7 +2311,7 @@
     <string name="threads_labs_enable_notice_title">Fadenoj Betao</string>
     <string name="live_location_sharing_notification_title">${app_name} Tuja Loko</string>
     <string name="live_location_labs_promotion_switch_title">Ebligi loko-kunhavigado</string>
-    <string name="labs_enable_element_call_permission_shortcuts">Ebligi permesajn ŝparvojojn por SchildiChat Voko</string>
+    <string name="labs_enable_element_call_permission_shortcuts">Ebligi permesajn ŝparvojojn por Element Voko</string>
     <string name="rich_text_editor_format_strikethrough">Apliki forstrekitan formaton</string>
     <string name="command_not_supported_in_threads">La komando \"%s\" estas rekonita sed ne subtenata en fadenoj.</string>
     <string name="preference_help_title">Helpo kaj subteno</string>
@@ -2345,7 +2345,7 @@
     <string name="home_layout_preferences_sort_activity">Aktiveco</string>
     <string name="a11y_open_spaces">Malfermi la liston de spacoj</string>
     <string name="labs_enable_new_app_layout_title">Ebligi novan aranĝon</string>
-    <string name="labs_enable_new_app_layout_summary">Simpligita SchildiChato kun laŭvolaj langetoj</string>
+    <string name="labs_enable_new_app_layout_summary">Simpligita Elemento kun laŭvolaj langetoj</string>
     <string name="analytics_opt_in_title">Helpi plibonigi ${app_name}</string>
     <string name="labs_enable_deferred_dm_summary">Krei DM nur ĉe la unua mesaĝo</string>
     <string name="thread_list_modal_title">Filtrilo</string>
