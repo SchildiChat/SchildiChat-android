@@ -7,8 +7,9 @@
 package im.vector.app.fdroid.service
 
 import android.content.Intent
+import android.content.pm.ServiceInfo
+import androidx.core.app.ServiceCompat
 import dagger.hilt.android.AndroidEntryPoint
-import im.vector.app.core.extensions.startForegroundCompat
 import im.vector.app.core.services.VectorAndroidService
 import im.vector.app.features.notifications.NotificationUtils
 import im.vector.lib.strings.CommonStrings
@@ -28,7 +29,7 @@ class GuardAndroidService : VectorAndroidService() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         val notificationSubtitleRes = CommonStrings.notification_listening_for_notifications
         val notification = notificationUtils.buildForegroundServiceNotification(notificationSubtitleRes, false)
-        startForegroundCompat(NotificationUtils.NOTIFICATION_ID_FOREGROUND_SERVICE, notification, errorNotificationTitle = getString(CommonStrings.notification_sync_service_failed_title), errorNotificationSummary = getString(CommonStrings.notification_sync_service_failed_summary))
+        ServiceCompat.startForeground(this, NotificationUtils.NOTIFICATION_ID_FOREGROUND_SERVICE, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
         return START_STICKY
     }
 }
