@@ -1310,7 +1310,7 @@
 \nWil je inloggen met een webclient\?</string>
     <string name="login_sso_error_message">Er is een fout opgetreden bij het laden van de pagina: %1$s (%2$d)</string>
     <string name="login_server_url_form_common_notice">Voer het adres in van de server die je wil gebruiken</string>
-    <string name="login_server_url_form_modular_notice">Voer het adres in van de Modular SchildiChat of de server die je wil gebruiken</string>
+    <string name="login_server_url_form_modular_notice">Voer het adres in van de Modular Element of de server die je wil gebruiken</string>
     <string name="login_server_url_form_modular_text">Premium hosting voor organisaties</string>
     <string name="login_server_url_form_modular_hint">Element Matrix Services-adres</string>
     <string name="login_clear_homeserver_history">Geschiedenis wissen</string>
@@ -1787,7 +1787,7 @@
     <string name="disclaimer_positive_button">LEER MEER</string>
     <string name="disclaimer_negative_button">BEGREPEN</string>
     <string name="disclaimer_content">We zijn verheugd om aan te kondigen dat we van naam zijn veranderd! Jouw app is up-to-date en je bent ingelogd op jouw account.</string>
-    <string name="disclaimer_title">Riot is nu SchildiChat!</string>
+    <string name="disclaimer_title">Riot is nu Element!</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Wachten op versleutelingsgeschiedenis</string>
     <string name="crypto_error_withheld_generic">Je hebt geen toegang tot dit bericht omdat de afzender de sleutels met opzet niet heeft verzonden</string>
     <string name="crypto_error_withheld_blacklisted">Je hebt geen toegang tot dit bericht omdat je bent geblokkeerd door de afzender</string>
@@ -2576,8 +2576,8 @@
     <string name="font_size_section_manually">Handmatig kiezen</string>
     <string name="font_size_section_auto">Automatisch instellen</string>
     <string name="font_size_title">Kies lettergrootte</string>
-    <string name="labs_enable_element_call_permission_shortcuts_summary">Keur automatisch SchildiChat Oproep widgets goed en verleen camera-/microfoontoegang</string>
-    <string name="labs_enable_element_call_permission_shortcuts">Snelkoppelingen voor SchildiChat Oproep machtigingen inschakelen</string>
+    <string name="labs_enable_element_call_permission_shortcuts_summary">Keur automatisch Element Oproep widgets goed en verleen camera-/microfoontoegang</string>
+    <string name="labs_enable_element_call_permission_shortcuts">Snelkoppelingen voor Element Oproep machtigingen inschakelen</string>
     <string name="live_location_description">Live locatie</string>
     <string name="verify_invalid_qr_notice">Deze QR-code lijkt misvormd. Probeer te verifiëren met een andere methode.</string>
     <string name="crosssigning_cannot_verify_this_session_desc">Je hebt geen toegang tot de gecodeerde berichtgeschiedenis. Reset je Veilige Berichten Back-up en verificatiesleutels om opnieuw te beginnen.</string>
@@ -2669,7 +2669,7 @@
     <string name="labs_enable_rich_text_editor_summary">Probeer de rich-text-editor (platte tekst-modus binnenkort beschikbaar)</string>
     <string name="labs_enable_rich_text_editor_title">Rich-text-editor inschakelen</string>
     <string name="labs_enable_deferred_dm_title">Uitgestelde privéberichten inschakelen</string>
-    <string name="labs_enable_new_app_layout_summary">Een vereenvoudigde SchildiChat met optionele tabs</string>
+    <string name="labs_enable_new_app_layout_summary">Een vereenvoudigde Element met optionele tabs</string>
     <string name="labs_enable_new_app_layout_title">Nieuwe layout inschakelen</string>
     <string name="qr_code_login_confirm_security_code">Bevestigen</string>
     <string name="qr_code_login_try_again">Opnieuw proberen</string>
