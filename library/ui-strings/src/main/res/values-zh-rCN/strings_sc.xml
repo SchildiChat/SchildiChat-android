@@ -177,5 +177,15 @@
     <string name="action_send_as_sticker">作为表情发送</string>
     <string name="settings_clear_highlight_on_scroll">滚动时清除高亮</string>
     <string name="settings_clear_highlight_on_scroll_summary">滚动时清除消息的高亮显示</string>
-    <string name="settings_call_ringtone_use_default_stun_summary">当您的服务器不提供辅助时，将使用 %s 作为辅助（您的 IP 地址将在呼叫过程中被stun服务器看到）</string>
+    <string name="settings_call_ringtone_use_default_stun_summary">当您的 Matrix 服务器不提供IP解析服务时，将使用 %s （您的 IP 地址将在呼叫过程中对此STUN服务器可见）</string>
+    <string name="settings_space_pager_prefer_space_1_summary">在屏幕下方的空间栏里优先显示置顶的空间</string>
+    <string name="notification_channel_app_errors">应用故障</string>
+    <string name="notification_sync_service_failed_title">无法同步推送消息</string>
+    <string name="notification_sync_service_failed_summary">请考虑使用UnifiedPush，并在系统设置里为本应用禁用电池优化。</string>
+    <string name="notification_foreground_service_failed_title">无法启动前台服务</string>
+    <string name="notification_foreground_service_failed_summary">您可能需要在系统设置里为此应用关闭电池优化。</string>
+    <string name="prompt_unified_push_title">后台同步已开启</string>
+    <string name="prompt_unified_push_description">你正在使用后台同步服务接受推送。后台服务在新安卓版本上可能导致推送延迟或崩溃。请考虑使用UnifiedPush。</string>
+    <string name="recommend_unified_push_title">推荐使用UnifiedPush</string>
+    <string name="recommend_unified_push_description">后台同步服务在新安卓版本上无法稳定运行。请改用UnifiedPush或使用支持Google FCM的SchildiChat版本（需要Google Play Services）。</string>
 </resources>
