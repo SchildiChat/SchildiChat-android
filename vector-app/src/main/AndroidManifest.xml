@@ -18,6 +18,9 @@
         android:theme="@style/AppTheme.SC.Light"
         tools:ignore="UnusedAttribute"
         tools:replace="android:allowBackup">
+        <property
+            android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_SPLITS_ENABLED"
+            android:value="true" />
 
         <meta-data
             android:name="android.content.APP_RESTRICTIONS"
@@ -57,6 +60,9 @@
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
                 tools:node="remove" />
+            <meta-data
+                android:name="im.vector.app.features.ui.SplitInitializer"
+                android:value="androidx.startup" />
         </provider>
 
         <provider

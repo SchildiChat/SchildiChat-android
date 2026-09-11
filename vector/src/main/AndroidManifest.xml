@@ -86,6 +86,10 @@
 
     <application android:supportsRtl="true">
 
+        <activity
+            android:name=".features.home.PlaceholderActivity"
+            android:exported="false" />
+
         <!-- Sentry auto-initialization disable -->
         <meta-data
             android:name="io.sentry.auto-init"
