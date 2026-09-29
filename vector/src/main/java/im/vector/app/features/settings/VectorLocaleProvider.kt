@@ -24,6 +24,7 @@ class VectorLocaleProvider @Inject constructor(
      * SharedPref values has been initialized in [VectorLocale.init]
      */
     val applicationLocale: Locale
+        @Suppress("DEPRECATION")
         get() {
             val followSystemLocale = preferences.getBoolean(VectorPreferences.SETTINGS_FOLLOW_SYSTEM_LOCALE, false)
             return if (followSystemLocale) {

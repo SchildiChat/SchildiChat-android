@@ -42,6 +42,7 @@ class VectorLocale @Inject constructor(
         private const val ISO_15924_LATN = "Latn"
     }
 
+    @Suppress("DEPRECATION")
     private val defaultLocale = Locale("en", "US")
 
     /**
@@ -70,6 +71,7 @@ class VectorLocale @Inject constructor(
     /**
      * Init this singleton.
      */
+    @Suppress("DEPRECATION")
     fun init() {
         followSystemLocale = preferences.getBoolean(VectorPreferences.SETTINGS_FOLLOW_SYSTEM_LOCALE, false)
         reloadLocale()

@@ -2717,7 +2717,7 @@
     <string name="review_unverified_sessions_description">Review to ensure your account is safe</string>
     <!-- Argument will be replaced by the other session name (e.g, Desktop, mobile) -->
     <string name="verify_this_session">Verify the new login accessing your account: %1$s</string>
-    <string name="verify_this_session_content">As of October 2026 unverified devices will not be able to send and receive messages.</string>
+    <string name="verify_this_session_content">Soon, unverified devices will not be able to send and receive messages.</string>
     <string name="verify_now">Verify now</string>
 
     <string name="cross_signing_verify_by_text">Manually Verify by Text</string>
@@ -3649,5 +3649,9 @@
     <string name="error_mas_not_supported_subtitle">Download %1$s to use %2$s for your account or choose a different homeserver.</string>
     <string name="view_download_replacement_app_title">Download %1$s</string>
     <string name="view_download_replacement_app_subtitle">Faster, more secure, and packed with powerful collaboration tools.</string>
+
+    <string name="view_element_x_banner_title">Download Element X</string>
+    <string name="view_element_x_banner_body">"Faster sync, a cleaner design, and new features you won't find here. The Element Classic app will be retired soon, so now's the time to make the move."</string>
+    <string name="view_element_x_banner_button">Download app</string>
 
 </resources>
