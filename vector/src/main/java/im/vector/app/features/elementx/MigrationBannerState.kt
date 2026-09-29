@@ -15,7 +15,7 @@ import im.vector.lib.strings.R
 /**
  * Application id of the Element X FOSS app, used when the homeserver does not specify a target.
  */
-const val DEFAULT_TARGET_APP_ID = "io.element.android.x"
+const val DEFAULT_TARGET_APP_ID = "chat.schildi.android"
 
 sealed interface MigrationBannerState {
     data object Hide : MigrationBannerState
@@ -27,7 +27,7 @@ sealed interface MigrationBannerState {
             val targetAppId: String,
     ) : MigrationBannerState {
         val isElementX: Boolean
-            get() = targetAppId == DEFAULT_TARGET_APP_ID
+            get() = false && targetAppId == DEFAULT_TARGET_APP_ID
     }
 }
 

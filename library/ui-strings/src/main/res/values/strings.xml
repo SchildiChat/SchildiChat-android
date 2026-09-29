@@ -3651,7 +3651,7 @@
     <string name="view_download_replacement_app_subtitle">Faster, more secure, and packed with powerful collaboration tools.</string>
 
     <string name="view_element_x_banner_title">Download SchildiChat Next</string>
-    <string name="view_element_x_banner_body">"Faster sync, a cleaner design, and new features you won't find here. The SchildiChat Classic app will be retired soon, so now's the time to make the move."</string>
+    <string name="view_element_x_banner_body">"Faster sync, a cleaner design, and new features you won't find here. The SchildiChat Legacy app will be retired soon, so now's the time to make the move."</string>
     <string name="view_element_x_banner_button">Download app</string>
 
 </resources>

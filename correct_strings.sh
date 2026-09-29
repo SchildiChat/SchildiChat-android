@@ -22,6 +22,8 @@ find "$stringdir" -name strings.xml -exec \
     sed -i 's|Element|SchildiChat|g' '{}' \;
 find "$stringdir" -name strings.xml -exec \
     sed -i 's|SchildiChat X|SchildiChat Next|g' '{}' \;
+find "$stringdir" -name strings.xml -exec \
+    sed -i 's|SchildiChat Classic|SchildiChat Legacy|g' '{}' \;
 # Restore Element where it makes sense
 find "$stringdir" -name strings.xml -exec \
     sed -i 's/SchildiChat \(Web\|iOS\|Desktop\)/Element \1/g' '{}' \;
