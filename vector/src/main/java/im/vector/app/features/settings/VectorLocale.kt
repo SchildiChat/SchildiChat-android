@@ -77,6 +77,7 @@ class VectorLocale @Inject constructor(
         reloadLocale()
     }
 
+    @Suppress("DEPRECATION")
     fun reloadLocale() {
         if (followSystemLocale) {
             // Locale.getDefault() may have been changed by us, so we need to restore it from the system configuration explicitly
