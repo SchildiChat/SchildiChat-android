@@ -1,0 +1,7 @@
+- Update codebase to Element v1.5.30
+- Button to send supported custom emotes as sticker when entered as only content in the message composer
+- Fix sticker style in threads
+- Show sticker body instead of "Sticker" text in room previews
+- Move custom emojis below standard emojis in autocompletion
+- Fix possible crash when rendering certain formatted messages
+- Another attempt to fix all cases of wrong read receipt locations

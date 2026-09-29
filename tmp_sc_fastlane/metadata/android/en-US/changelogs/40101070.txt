@@ -1,0 +1,4 @@
+- Update codebase to Element v1.5.32
+- Fix crash for protected access settings
+- Do not ellipsize message previews because of a single trailing newline
+- Fix long freeform reactions hiding sender and timestamp from reaction info
