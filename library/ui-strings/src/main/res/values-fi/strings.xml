@@ -614,7 +614,7 @@
         <item quantity="other">%d aktiivista sovelmaa</item>
     </plurals>
     <string name="widget_integration_missing_parameter">Vaadittu parametri puuttuu.</string>
-    <string name="settings_labs_native_camera_summary">Käynnistä järjestelmän kamera Elementin kameraruudun sijaan.</string>
+    <string name="settings_labs_native_camera_summary">Käynnistä järjestelmän kamera SchildiChatin kameraruudun sijaan.</string>
     <string name="command_problem_with_parameters">Komento ”%s” vaatii enemmän parametreja, tai jotkin parametrit ovat virheellisiä.</string>
     <string name="command_description_emote">Näyttää toiminnon</string>
     <string name="command_description_ban_user">Estää käyttäjän annetulla id:llä</string>
@@ -1028,7 +1028,7 @@
     <string name="login_server_url_form_modular_hint">Element Matrix Services in osoite</string>
     <string name="login_server_url_form_other_hint">Osoite</string>
     <string name="login_server_url_form_modular_text">Korkealuokkaista isännöintiä organisaatioille</string>
-    <string name="login_server_url_form_modular_notice">Syötä Modular Elementin tai haluamasi palvelimen osoite</string>
+    <string name="login_server_url_form_modular_notice">Syötä Modular SchildiChatin tai haluamasi palvelimen osoite</string>
     <string name="login_sso_error_message">Sivun lataamisessa tapahtui virhe: %1$s (%2$d)</string>
     <string name="login_mode_not_supported">Sovellus ei pysty kirjautumaan sisään tälle kotipalvelimelle. Tämä kotipalvelin tukee seuraavia kirjautumistyyppejä: %1$s.
 \n
@@ -1688,7 +1688,7 @@
     <string name="disclaimer_positive_button">LUE LISÄÄ</string>
     <string name="disclaimer_negative_button">SELVÄ</string>
     <string name="disclaimer_content">Olemme iloisia uuden nimen lanseerauksesta! Sovelluksesi on ajan tasalla ja olet kirjautunut tilillesi.</string>
-    <string name="disclaimer_title">Riot on nyt Element!</string>
+    <string name="disclaimer_title">Riot on nyt SchildiChat!</string>
     <string name="room_settings_save_success">Muutit huoneen asetuksia onnistuneesti</string>
     <string name="a11y_start_camera">Käynnistä kamera</string>
     <string name="a11y_stop_camera">Pysäytä kamera</string>
@@ -2284,7 +2284,7 @@
     <string name="onboarding_new_app_layout_feedback_title">Anna palautetta</string>
     <string name="onboarding_new_app_layout_welcome_message">${app_name}in yksinkertaistaminen asetti välilehdet valinnaiseksi. Hallitse välilehtiä oikean yläkulman valikosta.</string>
     <string name="onboarding_new_app_layout_welcome_title">Tervetuloa uuteen näkymään!</string>
-    <string name="labs_enable_new_app_layout_summary">Yksinkertaistettu Element valinnaisilla välilehdillä</string>
+    <string name="labs_enable_new_app_layout_summary">Yksinkertaistettu SchildiChat valinnaisilla välilehdillä</string>
     <string name="labs_enable_new_app_layout_title">Ota uusi asettelu käyttöön</string>
     <string name="home_layout_preferences_sort_name">A - Ö</string>
     <string name="home_layout_preferences_sort_activity">Aktiivisuus</string>

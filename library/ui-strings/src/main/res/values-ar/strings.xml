@@ -388,7 +388,7 @@
         <item quantity="many">%d تغييرا على العضوية</item>
         <item quantity="other">%d تغيير على العضوية</item>
     </plurals>
-    <string name="permissions_rationale_msg_record_audio">يحتاج Element تصريحا منك للوصول إلى المِكرفون لإجراء المكالمات الصوتية.</string>
+    <string name="permissions_rationale_msg_record_audio">يحتاج SchildiChat تصريحا منك للوصول إلى المِكرفون لإجراء المكالمات الصوتية.</string>
     <string name="permissions_rationale_msg_camera_and_audio">يحتاج ${app_name} تصريحا منك للوصول إلى الكاميرا والمايكروفون لإجراء المكالمات المرئية.
 \n
 \nرجاءً اسمح بالوصول في النافذة التالية لتتمكن من إجراء المكالمة.</string>
@@ -503,13 +503,13 @@
 \nأتريد إضافة حزمة الآن؟</string>
     <string name="error_no_external_application_found">نأسف، لم نجد أي تطبيق خارجي لإكمال هذا الإجراء.</string>
     <string name="e2e_re_request_encryption_key"><u>أعِد طلب مفاتيح التعمية</u>من أجهزتك الأخرى.</string>
-    <string name="e2e_re_request_encryption_key_dialog_content">رجاءً أطلِق Element في جهاز آخر يقدر على فك تعمية الرسالة ليُرسل المفاتيح إلى هذا الجهاز.</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">رجاءً أطلِق SchildiChat في جهاز آخر يقدر على فك تعمية الرسالة ليُرسل المفاتيح إلى هذا الجهاز.</string>
     <string name="settings_messages_sent_by_bot">الرسائل التي أرسلها بوت</string>
     <string name="settings_set_sync_timeout">انتهت مهلة طلب المزامنة</string>
     <string name="settings_deactivate_account_section">ألغِ تنشيط الحساب</string>
     <string name="settings_deactivate_my_account">ألغِ تنشيط حسابي</string>
     <string name="settings_opt_in_of_analytics">أرسِل بيانات التحاليل</string>
-    <string name="settings_opt_in_of_analytics_summary">يجمع Element التحاليل بشكل مجهّل فيتيح لنا ذلك تحسين التطبيق.</string>
+    <string name="settings_opt_in_of_analytics_summary">يجمع SchildiChat التحاليل بشكل مجهّل فيتيح لنا ذلك تحسين التطبيق.</string>
     <string name="widget_integration_missing_parameter">ثمة معامل مطلوب ناقص.</string>
     <string name="dialog_user_consent_content">لمتابعة استخدام خادوم المنزل ⁨%1$s⁩ عليك مراجعة الشروط والقوانين والموافقة عليها.</string>
     <string name="dialog_user_consent_submit">سأراجعها الآن</string>
@@ -887,7 +887,7 @@
     <string name="login_signup">سجّل</string>
     <string name="login_signin_to">لج عبر %1$s</string>
     <string name="login_connect_to_a_custom_server">اتصل بخادم مخصص</string>
-    <string name="login_connect_to_modular">اتصل بخدمات مايتركس لـ Element</string>
+    <string name="login_connect_to_modular">اتصل بخدمات مايتركس لـ SchildiChat</string>
     <string name="login_connect_to">اتصل بـ %1$s</string>
     <string name="login_continue">تابع</string>
     <string name="login_social_signin_with">لِج عبر %s</string>
@@ -1232,7 +1232,7 @@
     <string name="preference_root_help_about">المساعدة &amp; حول</string>
     <string name="invite_friends">دعوة الأصدقاء</string>
     <string name="settings_discovery_manage">إدارة إعدادات الاستكشاف.</string>
-    <string name="labs_enable_new_app_layout_summary">Element مبسط مع نوافذ تبويب اختيارية</string>
+    <string name="labs_enable_new_app_layout_summary">SchildiChat مبسط مع نوافذ تبويب اختيارية</string>
     <string name="call_format_turn_hd_off">الغاء تشغيل HD</string>
     <plurals name="notice_room_canonical_alias_alternative_removed_by_you">
         <item quantity="zero">قد حذفت العنوان الثنائي %1$s لهذه الغرفة.</item>

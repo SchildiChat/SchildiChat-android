@@ -1963,7 +1963,7 @@
 \nウェブクライアントを使用してサインインしますか？</string>
     <string name="login_sso_error_message">ページ %1$s を読み込んでいる際にエラーが発生しました（%2$d）</string>
     <string name="login_server_url_form_common_notice">使用したいサーバーのアドレスを入力してください</string>
-    <string name="login_server_url_form_modular_notice">使用したいModular Elementまたはサーバーのアドレスを入力してください</string>
+    <string name="login_server_url_form_modular_notice">使用したいModular SchildiChatまたはサーバーのアドレスを入力してください</string>
     <string name="ftue_auth_use_case_skip">迷っていますか？%s</string>
     <string name="ftue_auth_use_case_subtitle">みんなと繋がる手助けをいたします</string>
     <string name="user_code_my_code">自分のコード</string>
@@ -1999,7 +1999,7 @@
     <string name="failed_to_unban">ユーザーのブロックの解除に失敗しました</string>
     <string name="three_pid_revoke_invite_dialog_content">%1$sへの招待を取り消しますか？</string>
     <string name="loading_contact_book">連絡先を取得しています…</string>
-    <string name="disclaimer_title">RiotはElementになりました！</string>
+    <string name="disclaimer_title">RiotはSchildiChatになりました！</string>
     <string name="notice_crypto_unable_to_decrypt_final">このメッセージにアクセスできません</string>
     <string name="room_settings_set_avatar">アバターを設定</string>
     <string name="identity_server_set_alternative_notice_no_default">IDサーバーのURLを入力してください</string>
@@ -2490,7 +2490,7 @@
     <string name="thread_list_not_available">あなたのホームサーバーはスレッドの一覧表示をまだサポートしていません。</string>
     <string name="invites_empty_message">ここに新しいリクエストと招待が表示されます。</string>
     <string name="labs_enable_rich_text_editor_summary">リッチテキストエディターを試してみる（プレーンテキストモードは近日公開）</string>
-    <string name="labs_enable_new_app_layout_summary">タブを使用してElementの表示をシンプルにする</string>
+    <string name="labs_enable_new_app_layout_summary">タブを使用してSchildiChatの表示をシンプルにする</string>
     <string name="device_manager_session_details_title">セッションの詳細</string>
     <plurals name="device_manager_filter_option_inactive_description">
         <item quantity="other">%1$d日以上使用されていません</item>

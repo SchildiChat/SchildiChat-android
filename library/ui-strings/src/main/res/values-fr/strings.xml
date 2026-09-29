@@ -1055,7 +1055,7 @@
     <string name="login_server_url_form_modular_hint">Adresse Element Matrix Services</string>
     <string name="login_server_url_form_other_hint">Adresse</string>
     <string name="login_server_url_form_modular_text">Hébergement privé pour les organisations</string>
-    <string name="login_server_url_form_modular_notice">Saisir l’adresse de Element ou du serveur de Modular que vous voulez utiliser</string>
+    <string name="login_server_url_form_modular_notice">Saisir l’adresse de SchildiChat ou du serveur de Modular que vous voulez utiliser</string>
     <string name="login_sso_error_message">Une erreur est survenue pendant le chargement de la page : %1$s (%2$d)</string>
     <string name="login_mode_not_supported">L’application ne peut pas s’authentifier sur ce serveur d’accueil. Le serveur d’accueil prend en charge le(s) type(s) d’authentification suivant(s) : %1$s.
 \n
@@ -1517,7 +1517,7 @@
     <string name="disclaimer_positive_button">EN SAVOIR PLUS</string>
     <string name="disclaimer_negative_button">COMPRIS</string>
     <string name="disclaimer_content">Nous sommes heureux de vous annoncer que nous avons un nouveau nom ! Votre application est à jour et vous êtes connectés à votre compte.</string>
-    <string name="disclaimer_title">Riot est désormais Element !</string>
+    <string name="disclaimer_title">Riot est désormais SchildiChat !</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Attente de l’historique du chiffrement</string>
     <string name="crypto_error_withheld_generic">Impossible d’accéder à ce message car l’envoyeur n’a intentionnellement pas envoyé les clés</string>
     <string name="crypto_error_withheld_unverified">Vous ne pouvez pas accéder à ce message car l’envoyeur n’a pas confiance en votre session</string>
@@ -2300,7 +2300,7 @@
     <string name="analytics_opt_in_list_item_2">Nous ne partageons <b>aucune</b> information avec des tiers</string>
     <string name="analytics_opt_in_list_item_1">Nous n’enregistrons ou ne profilons <b>aucune</b> donnée du compte</string>
     <string name="analytics_opt_in_content_link">ici</string>
-    <string name="analytics_opt_in_content">Aidez nous à identifier les problèmes et améliorer ${app_name} en envoyant des rapports d’usage anonymes. Pour comprendre de quelle manière les gens utilisent Element sur plusieurs appareils, nous créeront un identifiant aléatoire commun à tous vos appareils.
+    <string name="analytics_opt_in_content">Aidez nous à identifier les problèmes et améliorer ${app_name} en envoyant des rapports d’usage anonymes. Pour comprendre de quelle manière les gens utilisent SchildiChat sur plusieurs appareils, nous créeront un identifiant aléatoire commun à tous vos appareils.
 \n
 \nVous pouvez lire toutes les conditions %s.</string>
     <string name="analytics_opt_in_title">Aider à améliorer ${app_name}</string>
@@ -2632,7 +2632,7 @@
     <string name="onboarding_new_app_layout_feedback_title">Donner mon avis</string>
     <string name="onboarding_new_app_layout_spaces_message">Accédez à vos espaces (en bas à droite) plus rapidement et facilement qu’avant.</string>
     <string name="onboarding_new_app_layout_spaces_title">Accéder aux espaces</string>
-    <string name="onboarding_new_app_layout_welcome_message">Pour simplifier Element, les onglets sont désormais facultatifs. Gérez les depuis le menu en haut à droite.</string>
+    <string name="onboarding_new_app_layout_welcome_message">Pour simplifier SchildiChat, les onglets sont désormais facultatifs. Gérez les depuis le menu en haut à droite.</string>
     <string name="onboarding_new_app_layout_welcome_title">Bienvenu dans une nouvelle vue !</string>
     <string name="home_empty_no_unreads_message">C\'est ici que vos messages non lus s’afficheront lorsque vous en aurez.</string>
     <string name="home_empty_no_unreads_title">Rien à signaler.</string>
@@ -2702,7 +2702,7 @@
     <string name="device_manager_verification_status_detail_current_session_verified">Votre session est prête pour l’envoi de messages sécurisés.</string>
     <string name="labs_enable_deferred_dm_summary">Créer la conversation seulement lors du premier message</string>
     <string name="labs_enable_deferred_dm_title">Activer les conversations privées différées</string>
-    <string name="labs_enable_new_app_layout_summary">Un Element simplifié avec des onglets optionnels</string>
+    <string name="labs_enable_new_app_layout_summary">Un SchildiChat simplifié avec des onglets optionnels</string>
     <string name="labs_enable_new_app_layout_title">Activer la nouvelle présentation</string>
     <string name="device_manager_learn_more_session_rename">Les autres utilisateurs en conversations privées ou salons qui peuvent vous parler sont capables de voir la liste complète de vos sessions.
 \n
@@ -2971,7 +2971,7 @@
 \n
 \nSi vous ne voulez plus voir de contenu de cet utilisateur, vous pouvez l’ignorer pour masquer ses messages.</string>
     <string name="call_unsupported">Appel non pris en charge</string>
-    <string name="call_unsupported_matrix_rtc_call">Appel non pris en charge. La nouvelle application Element X est nécessaire pour rejoindre cet appel.</string>
+    <string name="call_unsupported_matrix_rtc_call">Appel non pris en charge. La nouvelle application SchildiChat Next est nécessaire pour rejoindre cet appel.</string>
     <string name="microphone_in_use_title">Microphone en service</string>
     <string name="error_mas_not_supported_title">Vous ne pouvez plus créer de compte sur %1$s avec cette application</string>
     <string name="error_mas_not_supported_subtitle">Téléchargez %1$s pour utiliser %2$s avec votre compte, ou choisissez un autre serveur d’accueil.</string>

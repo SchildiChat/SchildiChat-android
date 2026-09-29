@@ -297,7 +297,7 @@
     <string name="incoming_voice_call">Ienākošs AUDIO zvans</string>
     <string name="call_in_progress">Notiek zvans…</string>
     <string name="call_error_user_not_responding">Adresāts neatbildēja uz zvanu.</string>
-    <string name="permissions_rationale_popup_title">Element informācija</string>
+    <string name="permissions_rationale_popup_title">SchildiChat informācija</string>
     <string name="permissions_rationale_msg_record_audio">${app_name}-am nepieciešama atļauja piekļūt mikrofonam, lai nodrošinātu audio zvanus.</string>
     <string name="permissions_rationale_msg_camera_and_audio">${app_name} nepieciešama atļauja piekļūt kamerai un mikrofonam, lai veiktu videozvanus.
 \n
@@ -1074,7 +1074,7 @@ Nākotnē šī pārbaudes procedūra plānota sarežģītāka.</string>
 \nVai pieteikties tīmekļa klientā\?</string>
     <string name="login_sso_error_message">Radās kļūda, ielādējot lapu: %1$s (%2$d)</string>
     <string name="login_server_url_form_common_notice">Ievadiet servera adresi, kuru vēlaties izmantot</string>
-    <string name="login_server_url_form_modular_notice">Ievadiet Modular Element vai servera adresi, kuru vēlaties izmantot</string>
+    <string name="login_server_url_form_modular_notice">Ievadiet Modular SchildiChat vai servera adresi, kuru vēlaties izmantot</string>
     <string name="login_server_url_form_modular_text">Premium hostings organizācijām</string>
     <string name="login_server_url_form_other_hint">Adrese</string>
     <string name="login_server_url_form_modular_hint">Element Matrix Services adrese</string>
@@ -1164,7 +1164,7 @@ Nākotnē šī pārbaudes procedūra plānota sarežģītāka.</string>
     <string name="disclaimer_positive_button">UZZINĀT VAIRĀK</string>
     <string name="disclaimer_negative_button">SAPRATU</string>
     <string name="disclaimer_content">Esam priecīgi paziņot, ka mēs esam mainījuši nosaukumu. Lietotne ir atjaunināta, un Tu esi pierakstījies savā kontā.</string>
-    <string name="disclaimer_title">Riot tagad saucas Element!</string>
+    <string name="disclaimer_title">Riot tagad saucas SchildiChat!</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Gaida šifrēšanas vēsturi</string>
     <string name="room_settings_save_success">Tu veiksmīgi nomainīji istabas iestatījumus</string>
     <string name="power_level_title">Loma</string>
@@ -2155,7 +2155,7 @@ Nākotnē šī pārbaudes procedūra plānota sarežģītāka.</string>
 \n
 \nTas nodrošina viņiem pārliecību, ka viņi tiešām runā ar Tevi, bet tas arī nozīmē, ka viņi var redzēt šeit ievadītās sesijas nosaukumu.</string>
     <string name="threads_notice_migration_title">Pavedieni tuvojas Beta 🎉</string>
-    <string name="labs_enable_new_app_layout_summary">Vienkāršots Element ar cilnēm pēc izvēles</string>
+    <string name="labs_enable_new_app_layout_summary">Vienkāršots SchildiChat ar cilnēm pēc izvēles</string>
     <string name="labs_enable_deferred_dm_title">Iespējot atliktās tiešās ziņas</string>
     <string name="space_list_empty_message">Vietas ir jauns veids, kā apkopot istabas un cilvēkus. Jāizveido vieta, lai sāktu.</string>
     <string name="room_unsupported_e2e_algorithm">Šifrēšanas konfigurācijā ir kļūmes, tādēļ nevar nosūtīt ziņas. Lūgums sazināties ar pārvaldītāju, lai atjaunotu šifrēšanu derīgā stāvoklī.</string>
@@ -2819,7 +2819,7 @@ Nākotnē šī pārbaudes procedūra plānota sarežģītāka.</string>
     <string name="device_manager_session_details_device_operating_system">Operētājsistēma</string>
     <string name="device_manager_learn_more_sessions_verified_title">Apliecinātas sesijas</string>
     <string name="screen_sharing_notification_description">Notiek ekrāna kopīgošana</string>
-    <string name="labs_enable_element_call_permission_shortcuts_summary">Automātiski apstiprināt Element zvanu logrīkus un piešķirt piekļuvi kamerai/mikrofonam</string>
+    <string name="labs_enable_element_call_permission_shortcuts_summary">Automātiski apstiprināt SchildiChat zvanu logrīkus un piešķirt piekļuvi kamerai/mikrofonam</string>
     <string name="device_manager_filter_bottom_sheet_title">Atlase</string>
     <string name="device_manager_other_sessions_recommendation_title_unverified">Neapliecinātas</string>
     <string name="device_manager_session_details_application">Lietotne</string>
@@ -2911,7 +2911,7 @@ Nākotnē šī pārbaudes procedūra plānota sarežģītāka.</string>
         <item quantity="one">Jāapsver atteikšanās no vecajām sesijām (%1$d diena vai vairāk), kas vairs netiek izmantotas.</item>
         <item quantity="other">Jāapsver atteikšanās no vecajām sesijām (%1$d dienas vai vairāk), kas vairs netiek izmantotas.</item>
     </plurals>
-    <string name="labs_enable_element_call_permission_shortcuts">Iespējot Element zvanu atļauju īsceļus</string>
+    <string name="labs_enable_element_call_permission_shortcuts">Iespējot SchildiChat zvanu atļauju īsceļus</string>
     <string name="device_manager_session_last_activity">Pēdējā darbība %1$s</string>
     <string name="device_manager_sessions_other_description">Vislielākajai drošībai jāapliecina savas sesijas un jāatsakās no jebkuras neatpazītas vai neizmantotas sesijas.</string>
     <string name="device_manager_filter_option_unverified">Neapliecinātas</string>

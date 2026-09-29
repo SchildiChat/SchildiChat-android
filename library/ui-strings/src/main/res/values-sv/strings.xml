@@ -1379,7 +1379,7 @@
     <string name="login_server_url_form_modular_hint">Element Matrix Services-adress</string>
     <string name="login_server_url_form_other_hint">Adress</string>
     <string name="login_server_url_form_modular_text">Premiumservervärd för organisationer</string>
-    <string name="login_server_url_form_modular_notice">Skriv in adressen för den Modular Element eller server du vill använda</string>
+    <string name="login_server_url_form_modular_notice">Skriv in adressen för den Modular SchildiChat eller server du vill använda</string>
     <string name="login_server_url_form_common_notice">Skriv in adressen för servern du vill använda</string>
     <string name="login_sso_error_message">Ett fel inträffade vid laddning av sidan: %1$s (%2$d)</string>
     <string name="login_mode_not_supported">Appen kan inte logga in på den här hemservern. Hemservern stöder följande inloggningstyp(er): %1$s.
@@ -1616,7 +1616,7 @@
     <string name="room_settings_topic_hint">Ämne</string>
     <string name="room_settings_save_success">Du ändrade rumsinställningarna framgångsrikt</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Väntar på krypteringshistorik</string>
-    <string name="disclaimer_title">Riot är nu Element!</string>
+    <string name="disclaimer_title">Riot är nu SchildiChat!</string>
     <string name="disclaimer_content">Vi är glada att meddela att vi har bytt namn! Din app är uppdaterad och du är inloggad på ditt konto.</string>
     <string name="disclaimer_negative_button">UPPFATTAT</string>
     <string name="disclaimer_positive_button">LÄR DIG MER</string>
@@ -2593,7 +2593,7 @@
     <string name="space_list_empty_title">Inga utrymmen än.</string>
     <string name="labs_enable_deferred_dm_summary">Skapa DM först när du skickar första meddelandet</string>
     <string name="labs_enable_deferred_dm_title">Aktivera avvaktade DM:er</string>
-    <string name="labs_enable_new_app_layout_summary">En förenklad Element med valfria flikar</string>
+    <string name="labs_enable_new_app_layout_summary">En förenklad SchildiChat med valfria flikar</string>
     <string name="labs_enable_new_app_layout_title">Aktivera ny layout</string>
     <string name="home_layout_preferences_sort_name">A - Ö</string>
     <string name="home_layout_preferences_sort_activity">Aktivitet</string>
@@ -2970,7 +2970,7 @@
 \nOm du inte vill se något mer innehåll från den här användaren så kan du ignorera denne för att dölja dennes meddelanden.</string>
     <string name="microphone_in_use_title">Mikrofon används</string>
     <string name="call_unsupported">Samtal stöds inte</string>
-    <string name="call_unsupported_matrix_rtc_call">Samtal stöds inte. Nya Element X-appen behövs för att gå med i det här samtalet.</string>
+    <string name="call_unsupported_matrix_rtc_call">Samtal stöds inte. Nya SchildiChat Next-appen behövs för att gå med i det här samtalet.</string>
     <string name="view_download_replacement_app_title">Ladda ner %1$s</string>
     <string name="view_download_replacement_app_subtitle">Snabbare, säkrare och fullproppad med kraftfulla samarbetsverktyg.</string>
     <string name="error_mas_not_supported_title">Du kan inte längre skapa ett konto med %1$s med den här appen</string>
