@@ -639,7 +639,7 @@
     <string name="login_server_url_form_modular_hint">Element Matrix Services teenuse aadress</string>
     <string name="login_server_url_form_other_hint">Aadress</string>
     <string name="login_server_url_form_modular_text">Tasuline Matrix\'i majutusteenus organisatsioonidele</string>
-    <string name="login_server_url_form_modular_notice">Sisesta Modular SchildiChat teenuse või muu serveri aadress, mida sa soovid kasutada</string>
+    <string name="login_server_url_form_modular_notice">Sisesta Modular Element teenuse või muu serveri aadress, mida sa soovid kasutada</string>
     <string name="login_server_url_form_common_notice">Sisesta serveri aadress, mida sa soovid kasutada</string>
     <string name="login_sso_error_message">Lehe laadimisel tekkis viga %1$s (%2$d)</string>
     <string name="login_mode_not_supported">See rakendus ei saa sisse logida antud koduserverisse. See koduserver toetab järgmisi sisselogimise tüüp(e): %1$s.
@@ -1370,7 +1370,7 @@
     <string name="crypto_error_withheld_unverified">Sa ei saa seda sõnumit lugeda, kuna saatja ei usalda sinu sessiooni</string>
     <string name="crypto_error_withheld_generic">Sa ei saa seda sõnumit lugeda, kuna saatja teadlikult ei saatnud vajalikke võtmeid</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Ootan krüptimise ajalugu</string>
-    <string name="disclaimer_title">Riot\'i uus nimi on SchildiChat!</string>
+    <string name="disclaimer_title">Riot\'i uus nimi on Element!</string>
     <string name="disclaimer_content">Meil on hea meel teatada, et oleme muutnud nime! Sinu rakendus on uuendatud ning sa oled oma kontole sisse logitud.</string>
     <string name="disclaimer_negative_button">Selge lugu</string>
     <string name="disclaimer_positive_button">Vaata lisateavet</string>
@@ -2565,8 +2565,8 @@
     <string name="font_size_section_manually">Vali ise</string>
     <string name="font_size_section_auto">Määra automaatselt</string>
     <string name="font_size_title">Vali kirjatüübi suurus</string>
-    <string name="labs_enable_element_call_permission_shortcuts_summary">Luba automaatselt kasutada SchildiChat\'i põhiste kõnede vidinaid ning kinnita ligipääs kaamerale ja mikrofonile</string>
-    <string name="labs_enable_element_call_permission_shortcuts">Võta kasutsele SchildiChat\'i põhiste kõnede õiguste kiirnupud</string>
+    <string name="labs_enable_element_call_permission_shortcuts_summary">Luba automaatselt kasutada Element\'i põhiste kõnede vidinaid ning kinnita ligipääs kaamerale ja mikrofonile</string>
+    <string name="labs_enable_element_call_permission_shortcuts">Võta kasutsele Element\'i põhiste kõnede õiguste kiirnupud</string>
     <string name="live_location_description">Asukoht reaalajas</string>
     <string name="verify_invalid_qr_notice">See QR-kood tundub olema vigane. Palun proovi verifitseerimist mõne muu meetodiga.</string>
     <string name="crosssigning_cannot_verify_this_session_desc">Sa ei saa lugeda varasemaid krüptitud sõnumeid. Uuesti alustamiseks seadista varundusvõtmed ja verifitseerimisvõtmed.</string>
@@ -2691,7 +2691,7 @@
     <string name="device_manager_verification_status_detail_current_session_verified">Sinu praegune sessioon on valmis turvaliseks sõnumivahetuseks.</string>
     <string name="labs_enable_deferred_dm_summary">Alusta otsevestlust esimese sõnumiga</string>
     <string name="labs_enable_deferred_dm_title">Võta kasutusele viivitusega otsevestlused</string>
-    <string name="labs_enable_new_app_layout_summary">Lihtsustatud SchildiChat valikuliste kaartidega</string>
+    <string name="labs_enable_new_app_layout_summary">Lihtsustatud Element valikuliste kaartidega</string>
     <string name="labs_enable_new_app_layout_title">Võta kasutusele rakenduse uus välimus</string>
     <string name="room_settings_global_block_unverified_info_text">🔒 Sa oled rakenduse turvaseadistustes määranud, et krüptimine kehtib vaid verifitseeritud sessioonidele.</string>
     <string name="some_devices_will_not_be_able_to_decrypt">⚠ Selles jututoas on verifitseerimata seadmeid, mis ei saa sinu saadetud sõnumeid dekrüptida.</string>
@@ -2825,7 +2825,7 @@
     <string name="error_voice_broadcast_unauthorized_title">Uue ringhäälingukõne alustamine pole võimalik</string>
     <string name="a11y_voice_broadcast_fast_backward">Keri tagasi 30 sekundi kaupa</string>
     <string name="a11y_voice_broadcast_fast_forward">Keri edasi 30 sekundi kaupa</string>
-    <string name="device_manager_learn_more_sessions_verified_description">Verifitseeritud sessioonideks loetakse SchildiChat\'is või mõnes muus Matrix\'i rakenduses selliseid sessioone, kus sa kas oled sisestanud oma salafraasi või tuvastanud end mõne teise oma verifitseeritud sessiooni abil.
+    <string name="device_manager_learn_more_sessions_verified_description">Verifitseeritud sessioonideks loetakse Element\'is või mõnes muus Matrix\'i rakenduses selliseid sessioone, kus sa kas oled sisestanud oma salafraasi või tuvastanud end mõne teise oma verifitseeritud sessiooni abil.
 \n
 \nSee tähendab, et selles sessioonis on ka kõik vajalikud võtmed krüptitud sõnumite lugemiseks ja teistele kasutajatele kinnitamiseks, et sa usaldad seda sessiooni.</string>
     <plurals name="device_manager_other_sessions_multi_signout_all">
@@ -2970,7 +2970,7 @@
 \nKui sa ei soovi tema loodud sisu enam näha, siis kasuta eiramise võimalust.</string>
     <string name="microphone_in_use_title">Mikrofon on kasutusel</string>
     <string name="call_unsupported">See kõne pole toetatud</string>
-    <string name="call_unsupported_matrix_rtc_call">See kõne pole toetatud. Kõnega liitumiseks palun kasuta uut SchildiChat Next rakendust.</string>
+    <string name="call_unsupported_matrix_rtc_call">See kõne pole toetatud. Kõnega liitumiseks palun kasuta uut Element X rakendust.</string>
     <string name="view_download_replacement_app_title">Laadi alla %1$s</string>
     <string name="view_download_replacement_app_subtitle">Kiirem, turvalisem ja sisaldab palju võimsaid ühistöövahendeid.</string>
     <string name="error_mas_not_supported_title">Selle rakendusega enam ei saa luua kasutajakontot teenuses %1$s</string>

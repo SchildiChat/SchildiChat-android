@@ -1324,7 +1324,7 @@
     <string name="reply">Відповісти</string>
     <string name="edit">Редагувати</string>
     <string name="disclaimer_negative_button">Зрозуміло</string>
-    <string name="disclaimer_title">Riot тепер називається SchildiChat!</string>
+    <string name="disclaimer_title">Riot тепер називається Element!</string>
     <string name="downloaded_file">Файл %1$s було звантажено!</string>
     <string name="send_file_step_sending_file">Надсилання файлу (%1$s / %2$s)</string>
     <string name="send_file_step_encrypting_file">Шифрування файлу…</string>
@@ -1876,7 +1876,7 @@
     <string name="login_registration_disabled">Перепрошуємо, сервер не приймає нових облікових записів.</string>
     <string name="login_sso_error_message">Сталася помилка під час завантаження сторінки: %1$s (%2$d)</string>
     <string name="login_server_url_form_common_notice">Введіть адресу сервера, який ви хочете використовувати</string>
-    <string name="login_server_url_form_modular_notice">Введіть адресу Modular SchildiChat або сервера, який ви хочете використовувати</string>
+    <string name="login_server_url_form_modular_notice">Введіть адресу Modular Element або сервера, який ви хочете використовувати</string>
     <string name="login_reset_password_success_title">Успіх!</string>
     <string name="login_reset_password_success_notice">Ваш пароль скинуто.</string>
     <string name="login_reset_password_mail_confirmation_submit">Мною перевірено адресу е-пошти</string>
@@ -2672,7 +2672,7 @@
     <string name="font_size_section_manually">Вибрати вручну</string>
     <string name="font_size_section_auto">Установити автоматично</string>
     <string name="font_size_title">Виберіть розмір шрифту</string>
-    <string name="labs_enable_element_call_permission_shortcuts_summary">Віджети автосхвалення викликів SchildiChat і надання доступу до камери/мікрофона</string>
+    <string name="labs_enable_element_call_permission_shortcuts_summary">Віджети автосхвалення викликів Element і надання доступу до камери/мікрофона</string>
     <string name="labs_enable_element_call_permission_shortcuts">Увімкнути ярлики дозволів на виклик елемента</string>
     <string name="live_location_description">Місце перебування наживо</string>
     <string name="verify_invalid_qr_notice">Цей QR-код має неправильний вигляд. Спробуйте звірити іншим методом.</string>
@@ -2808,7 +2808,7 @@
     <string name="device_manager_verification_status_detail_current_session_verified">Ваш поточний сеанс готовий до безпечного обміну повідомленнями.</string>
     <string name="labs_enable_deferred_dm_summary">Створюйте приватні повідомлення лише за надсилання першого повідомлення</string>
     <string name="labs_enable_deferred_dm_title">Увімкнути відкладені приватні повідомлення</string>
-    <string name="labs_enable_new_app_layout_summary">Спрощений SchildiChat з опціональними вкладками</string>
+    <string name="labs_enable_new_app_layout_summary">Спрощений Element з опціональними вкладками</string>
     <string name="labs_enable_new_app_layout_title">Увімкнути новий вигляд</string>
     <string name="device_manager_learn_more_session_rename">Інші користувачі в особистих повідомленнях і кімнатах, до яких ви приєдналися, можуть переглядати повний список ваших сеансів.
 \n
@@ -3090,7 +3090,7 @@
 \nЯкщо ви більше хочете нічого не бачити від нього, ви можете ігнорувати його, щоб сховати його повідомлення.</string>
     <string name="microphone_in_use_title">Мікрофон використовується</string>
     <string name="call_unsupported">Непідтримуваний виклик</string>
-    <string name="call_unsupported_matrix_rtc_call">Непідтримуваний виклик. Потрібен застосунок SchildiChat Next, щоб приєднатися до цього виклику.</string>
+    <string name="call_unsupported_matrix_rtc_call">Непідтримуваний виклик. Потрібен застосунок Element X, щоб приєднатися до цього виклику.</string>
     <string name="error_mas_not_supported_title">Ви більше не можете створити обліковий запис з %1$s за допомогою цього застосунку</string>
     <string name="error_mas_not_supported_subtitle">Завантажте %1$s, щоб використовувати %2$s для свого облікового запису або виберіть інший домашній сервер.</string>
     <string name="view_download_replacement_app_title">Завантажити %1$s</string>

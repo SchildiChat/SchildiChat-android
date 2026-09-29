@@ -200,7 +200,7 @@
     </plurals>
     <string name="room_displayname_empty_room_was">Leerer Raum (war %s)</string>
     <plurals name="room_displayname_four_and_more_members">
-        <item quantity="one">%1$s, %2$s, %3$s und %4$d anderer</item>
+        <item quantity="one">%1$s, %2$s, %3$s und %4$d andere/r</item>
         <item quantity="other">%1$s, %2$s, %3$s und %4$d andere</item>
     </plurals>
     <string name="room_displayname_4_members">%1$s, %2$s, %3$s und %4$s</string>
@@ -714,7 +714,7 @@
     <string name="keys_backup_settings_delete_confirm_title">Lösche Sicherung</string>
     <string name="settings_notification_by_event">Präferenz der Benachrichtigungen nach Ereignis</string>
     <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]
-\nDieser Fehler ist außerhalb von ${app_name} passiert. Google sagt, dass dieses Gerät zu viele Apps registriert hat, um FCM zu nutzen. Der Fehler taucht nur auf, wenn sehr viele Apps installiert sind. Er sollte also den Durchschnittsnutzer nicht betreffen.</string>
+\nDieser Fehler ist außerhalb von ${app_name} passiert. Google sagt, dass dieses Gerät zu viele Apps registriert hat um FCM zu nutzen. Der Fehler taucht nur auf, wenn sehr viele Apps installiert sind. Er sollte also den Durchschnittsnutzer nicht betreffen.</string>
     <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]
 \nDieser Fehler liegt nicht unter der Kontrolle von ${app_name}. Er kann aus verschiedenen Gründen auftreten. Vielleicht wird es funktionieren, wenn du es später noch einmal probierst. Außerdem kannst Du prüfen, ob die Datennutzung der Google-Play-Dienste unbeschränkt ist und die Geräteuhr richtig eingestellt ist. Der Fehler kann aber auch unter Custom-ROMs auftreten.</string>
     <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
@@ -1123,7 +1123,7 @@
     <string name="room_join_rules_invite">%1$s hat den Raum auf \"nur-einladen\" gestellt.</string>
     <string name="login_splash_title">Es ist deine Konversation. Mache sie dir zu eigen.</string>
     <string name="login_server_url_form_modular_text">Premium-Hosting für Organisationen</string>
-    <string name="login_server_url_form_modular_notice">Gib die Adresse des Modular SchildiChat oder Servers ein, den du verwenden möchtest</string>
+    <string name="login_server_url_form_modular_notice">Gib die Adresse des Modular Element oder Servers ein, den du verwenden möchtest</string>
     <string name="login_mode_not_supported">Die Anwendung kann sich nicht bei diesem Heim-Server anmelden. Der Heim-Server unterstützt die folgenden Anmeldemöglichkeiten: %1$s.
 \n
 \nMöchtest du dich mit einer Web-Anwendung anmelden\?</string>
@@ -1593,7 +1593,7 @@
     <string name="crypto_error_withheld_unverified">Du kannst auf diese Nachricht nicht zugreifen, weil der Sender deiner Sitzung nicht vertraut</string>
     <string name="crypto_error_withheld_generic">Du kannst auf diese Nachricht nicht zugreifen, weil der Sender absichtlich die Schlüssel nicht gesendet hat</string>
     <string name="notice_crypto_unable_to_decrypt_merged">Warte auf Verschlüsselungshistorie</string>
-    <string name="disclaimer_title">Riot heißt nun SchildiChat!</string>
+    <string name="disclaimer_title">Riot heißt nun Element!</string>
     <string name="disclaimer_content">Wir sind begeistert unsere Namensänderung mitteilen zu können! Deine App ist auf dem neusten Stand und du bist mit deinem Account angemeldet.</string>
     <string name="disclaimer_negative_button">VERSTANDEN</string>
     <string name="disclaimer_positive_button">MEHR ERFAHREN</string>
@@ -2470,7 +2470,7 @@
 \n
 \nDiese Aktion wird die Anwendung neu starten und einige Zeit dauern.</string>
     <string name="keys_backup_settings_signature_from_this_user">Die Sicherung hat eine gültige Signatur von diesem Benutzer.</string>
-    <string name="settings_presence_user_always_appears_offline_summary">Wenn diese Option aktiviert ist, wirst Du anderen Nutzer immer als offline angezeigt, auch wenn Du die Anwendung verwendest.</string>
+    <string name="settings_presence_user_always_appears_offline_summary">Wenn diese Option aktiviert ist, wirst Du anderen Nutzer:innen immer als offline angezeigt, auch wenn Du die Anwendung verwendest.</string>
     <string name="settings_presence_user_always_appears_offline">Offline Modus</string>
     <string name="settings_presence">Präsenz</string>
     <string name="settings_autoplay_animated_images_summary">Animierte Bilder in der Zeitleiste abspielen, sobald sie sichtbar sind</string>
@@ -2491,7 +2491,7 @@
     <string name="action_learn_more">Mehr erfahren</string>
     <string name="time_unit_second_short">sek</string>
     <string name="time_unit_minute_short">min</string>
-    <string name="initial_sync_request_reason_unignored_users">- das Ignorieren einiger Benutzer wurde rückgängig gemacht</string>
+    <string name="initial_sync_request_reason_unignored_users">- das Ignorieren einiger Benutzer:innen wurde rückgängig gemacht</string>
     <string name="initial_sync_request_title">Initiale Synchronisierungsanfrage</string>
     <string name="space_explore_filter_no_result_description">Einige Ergebnisse werden möglicherweise ausgeblendet, weil sie privat sind und Du eine Einladung benötigst, um sie zu sehen.</string>
     <string name="space_explore_filter_no_result_title">Keine Ergebnisse gefunden</string>
@@ -2694,7 +2694,7 @@
     <string name="device_manager_verification_status_detail_other_session_verified">Diese Sitzung ist für sichere Kommunikation bereit.</string>
     <string name="a11y_device_manager_device_type_desktop">Desktop</string>
     <string name="invites_empty_message">Hier erscheinen deine neuen Anfragen und Einladungen.</string>
-    <string name="labs_enable_new_app_layout_summary">Ein vereinfachtes SchildiChat mit optionalen Tabs</string>
+    <string name="labs_enable_new_app_layout_summary">Ein vereinfachtes Element mit optionalen Tabs</string>
     <string name="labs_enable_new_app_layout_title">Neues Layout aktivieren</string>
     <string name="device_manager_session_details_session_last_activity">Neueste Aktivität</string>
     <string name="device_manager_session_last_activity">Neueste Aktivität %1$s</string>
@@ -2835,7 +2835,7 @@
     <string name="error_voice_broadcast_blocked_by_someone_else_message">Jemand anderes nimmt bereits eine Sprachübertragung auf. Warte auf das Ende der Übertragung, bevor du eine neue startest.</string>
     <string name="a11y_voice_broadcast_fast_forward">30 Sekunden vorspulen</string>
     <string name="a11y_voice_broadcast_fast_backward">30 Sekunden zurückspulen</string>
-    <string name="device_manager_learn_more_sessions_verified_description">Auf verifizierte Sitzungen kannst du überall mit deinem Konto zugreifen, wenn du deine Passphrase eingegeben oder SchildiChat mit einer anderen Sitzung verifiziert hast.
+    <string name="device_manager_learn_more_sessions_verified_description">Auf verifizierte Sitzungen kannst du überall mit deinem Konto zugreifen, wenn du deine Passphrase eingegeben oder Element mit einer anderen Sitzung verifiziert hast.
 \n
 \nDies bedeutet, dass du alle Schlüssel zum Entsperren deiner verschlüsselten Nachrichten hast und anderen bestätigst, dieser Sitzung zu vertrauen.</string>
     <plurals name="device_manager_other_sessions_multi_signout_all">
@@ -2971,5 +2971,5 @@
 \nWenn du keine Inhalte mehr von dieser Person sehen möchtest, kannst du sie ignorieren, um ihre Nachrichten auszublenden.</string>
     <string name="microphone_in_use_title">Mikrofon wird benutzt</string>
     <string name="call_unsupported">Nicht unterstützter Anruf</string>
-    <string name="call_unsupported_matrix_rtc_call">Nicht unterstützter Anruf. Die neue SchildiChat Next-App wird benötigt, um diesem Anruf beizutreten.</string>
+    <string name="call_unsupported_matrix_rtc_call">Nicht unterstützter Anruf. Die neue Element X-App wird benötigt, um diesem Anruf beizutreten.</string>
 </resources>
