@@ -1,2 +1,1 @@
-Main changes in this version: add support for gitter.im network.
-Full changelog: https://github.com/element-hq/element-android/releases/tag/v1.1.9
+- Update codebase to Element v1.6.3

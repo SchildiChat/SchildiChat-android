@@ -1,5 +1,0 @@
-- Render MSC2530 captions in notifications
-- Labs setting to clear highlighted message on scroll
-- Adjust fallback height for sent custom emotes to match MSC2545
-- Fix possible crash from emoji-autocompletion
-- Fix crash when rendering live location on Android < 7

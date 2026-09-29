@@ -1,6 +1,0 @@
-- Update codebase to Element v1.5.25
-- Improve reply rendering
-- Themed icon for Material You
-- Add setting to not mention members when clicking on their name
-- Clear composer text when canceling message edits
-- Various bug fixes
