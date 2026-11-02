@@ -2,17 +2,17 @@
 <resources>
     <string name="normal_priority_header">Normal prioritet</string>
     <string name="settings_home_overview">Oversikt</string>
-    <string name="settings_single_overview">Kombinert sludringsoversikt</string>
-    <string name="settings_room_unread_kind_dm">Forhåndsvisning av direktesludring</string>
-    <string name="settings_room_unread_kind_group">Forhåndsvisning av gruppesludringsinnhold</string>
+    <string name="settings_single_overview">Kombinert samtaleoversikt</string>
+    <string name="settings_room_unread_kind_dm">Forhåndsvisning av lynmelding</string>
+    <string name="settings_room_unread_kind_group">Forhåndsvisning av gruppesamtaleinnhold</string>
     <string name="settings_room_unread_kind_default">Vis alle hendelser</string>
     <string name="settings_room_unread_kind_content">Skjul medlemsendringer</string>
     <string name="settings_room_unread_kind_original_content">Skjul medlemsendringer og reaksjoner</string>
-    <string name="settings_simplified_mode">Enkelt modus</string>
+    <string name="settings_simplified_mode">Enkeltmodus</string>
     <string name="prompt_simplified_mode_title">Velg brukergrensesnitt</string>
     <string name="prompt_simplified_mode_text">Du kan endre dette senere i innstillingene.</string>
     <string name="prompt_simplified_mode_on">Enkelt</string>
-    <string name="prompt_simplified_mode_on_text">Jeg vil kun sludre med folk jeg kjenner, og synes ekstra valg er forvirrende.</string>
+    <string name="prompt_simplified_mode_on_text">Jeg vil kun snakke med kjentfolk, og synes ekstra valg er forvirrende.</string>
     <string name="prompt_simplified_mode_off">Fullstendig</string>
     <string name="settings_light_theme">Lys drakt</string>
     <string name="settings_dark_theme">Mørk drakt</string>
@@ -51,7 +51,7 @@
     <string name="settings_advanced_theme_settings">Avanserte draktvalg</string>
     <string name="settings_user_colors">Brukerfarger</string>
     <string name="settings_single_overview_summary">Vis både lynmeldinger og rom på én side</string>
-    <string name="settings_simplified_mode_summary">Skjul avansert funksjonalitet, inkludert offentlige romlister og sludringskrypteringsinnstillinger</string>
+    <string name="settings_simplified_mode_summary">Skjul avansert funksjonalitet, inkludert offentlige romlister og samtalekrypteringsinnstillinger</string>
     <string name="prompt_simplified_mode_off_text">Jeg vil ha all funksjonalitet, inkludert oppdaging av offentlige rom og finslepne rom- og krypteringsinnstillinger.</string>
     <string name="sc_dark_colored_theme">SC-mørk, fargede bobler</string>
     <string name="bubble_time_location">Tidsstempelsposisjon</string>
