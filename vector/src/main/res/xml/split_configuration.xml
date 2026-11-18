@@ -1,0 +1,34 @@
+<resources
+    xmlns:window="http://schemas.android.com/apk/res-auto">
+
+    <!-- Define a split for the named activity pair. -->
+    <SplitPairRule
+        window:splitRatio="0.4"
+        window:splitMinWidth="600dp"
+        window:finishPrimaryWithSecondary="never"
+        window:finishSecondaryWithPrimary="always">
+        <SplitPairFilter
+            window:primaryActivityName="im.vector.app.features.home.HomeActivity"
+            window:secondaryActivityName="im.vector.app.features.home.room.detail.RoomDetailActivity"/>
+    </SplitPairRule>
+
+
+    <!-- Automatically launch a placeholder for the list activity. -->
+    <SplitPlaceholderRule
+        window:placeholderActivityName="im.vector.app.features.home.PlaceholderActivity"
+        window:splitRatio="0.4"
+        window:splitMinWidth="600dp">
+        <ActivityFilter
+            window:activityName="im.vector.app.features.home.HomeActivity"/>
+    </SplitPlaceholderRule>
+
+    <!-- Define activities that should never enter a split. Note: Takes
+         precedence over other split rules. -->
+    <ActivityRule
+        window:alwaysExpand="true">
+        <ActivityFilter window:activityName="im.vector.app.features.media.VectorAttachmentViewerActivity"/>
+        <ActivityFilter window:activityName="im.vector.app.features.media.BigImageViewerActivity"/>
+
+    </ActivityRule>
+
+</resources>
